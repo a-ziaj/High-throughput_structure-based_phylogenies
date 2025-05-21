@@ -1,0 +1,13 @@
+Align F4MQ66.pdb 54 with F4MR19.pdb 318
+Twists 1 ini-len 40 ini-rmsd 2.29 opt-equ 42 opt-rmsd 1.72 chain-rmsd 4.71 Score 89.10 align-len 45 gaps 3 (6.67%)
+P-value 2.04e-01 Afp-num 6590 Identity 6.67% Similarity 22.22%
+Block  0 afp  3 score 67.10 rmsd  1.58 gap 2 (0.08%)
+Block  1 afp  2 score 47.75 rmsd  0.38 gap 0 (0.00%)
+
+                  .    :    .    :    .    :    .    :    .
+Chain 1:   11 TIEKALKRFQKVAS-SNKAEARKREYHLSKKEKRIYKQKQNRKYK
+              11111111111111 11111111111  22222222222222222
+Chain 2:  236 LLSDQLTYAHYYQTCYKFLDLIEKYN--NPVLYKKALNITENKLK
+
+Note: positions are from PDB; the numbers between alignments are block index
+

@@ -1,0 +1,37 @@
+Align F4MNZ6.pdb 371 with F4MPL0.pdb 804
+Twists 5 ini-len 184 ini-rmsd 5.72 opt-equ 177 opt-rmsd 4.54 chain-rmsd 21.54 Score 273.42 align-len 298 gaps 121 (40.60%)
+P-value 3.74e-01 Afp-num 108187 Identity 2.35% Similarity 11.41%
+Block  0 afp  5 score 89.44 rmsd  7.03 gap 24 (0.38%)
+Block  1 afp  1 score 23.92 rmsd  0.23 gap 0 (0.00%)
+Block  2 afp  3 score 26.28 rmsd  5.44 gap 8 (0.25%)
+Block  3 afp  5 score 91.25 rmsd  6.86 gap 7 (0.15%)
+Block  4 afp  6 score 108.59 rmsd  6.86 gap 15 (0.24%)
+Block  5 afp  3 score 62.68 rmsd  2.44 gap 1 (0.04%)
+
+                  .    :    .    :    .    :    .    :    .    :    .    :    .    :
+Chain 1:   87 IGTQTNNNNDLKNASERLKALAANNFTKNK----KQAWDSLQNASMTFYK--------------------
+              111111111111111111111111111       22222222222                         
+Chain 2:  510 EKIYEPMGAMAAAIPVAPLGMGLTTLLFKKFFNSTERQLGVAALIMGSIGISEGAIPFAIRDPRRAILCN
+
+                  .    :    .    :    .    :    .    :    .    :    .    :    .    :
+Chain 1:  133 -----------KVQPTAVNVLGYEQITKDNVEKLDKELKTVFLVFKDNTKETEKLEVELLPEINNGNKVI
+                         33333333    333333333333  33333               444444       
+Chain 2:  580 VVGSAVAGGIAGSLKVQDF----AAHGGPIVWVLGAVPYGIQSLYFFI---------AVVIGV-------
+
+                  .    :    .    :    .    :    .    :    .    :    .    :    .    :
+Chain 1:  192 DNGNLYLDLLEKPENLKLANQK----------SIIEVLRPEITKIKVVLQNTKNNN---------STNKE
+                     444444444444444          444444444444444444444444         55555
+Chain 2:  630 -------IVTSLMYGFWMVQESGKLGSVREAYVWSLIQTKKAKSEFINEKKQEIKDIKNNTKNKNLSEDQ
+
+                  .    :    .    :    .    :    .    :    .    :    .    :    .    :
+Chain 1:  243 DIKNTEVFNLLIKQLSIYLANAVKYFNSE--SG--IITTNPTFSYKTRSNQIYDYIVKNKKDELYKKLET
+              55555555555555555555555555555  55  555555555                   6666666
+Chain 2:  693 INQIQNINGQITNYINEYKTKLKQLKQSYLNLNKEEKAFMNNKK-------------------SEITDYK
+
+                  .    :    .
+Chain 1:  309 AFTSEFNKI-NFIDIFKD
+              666666666 66666666
+Chain 2:  744 KQTHSKYNQQISDLKQNN
+
+Note: positions are from PDB; the numbers between alignments are block index
+

@@ -1,0 +1,32 @@
+Align F4MP95.pdb 190 with F4MPL0.pdb 804
+Twists 5 ini-len 120 ini-rmsd 3.16 opt-equ 145 opt-rmsd 2.86 chain-rmsd 17.67 Score 152.61 align-len 254 gaps 109 (42.91%)
+P-value 6.44e-01 Afp-num 51246 Identity 7.87% Similarity 15.35%
+Block  0 afp  3 score 52.10 rmsd  3.03 gap 7 (0.23%)
+Block  1 afp  2 score 38.92 rmsd  1.56 gap 28 (0.64%)
+Block  2 afp  2 score 46.31 rmsd  1.43 gap 0 (0.00%)
+Block  3 afp  2 score 30.04 rmsd  1.74 gap 0 (0.00%)
+Block  4 afp  4 score 71.02 rmsd  4.30 gap 33 (0.51%)
+Block  5 afp  2 score 34.38 rmsd  1.91 gap 0 (0.00%)
+
+                  .    :    .    :    .    :    .    :    .    :    .    :    .    :
+Chain 1:   10 SGKYKKMKLQTLDSSITRPTLTRIKEDMFNIISNYFI-------------------FENKTSLDLFGGSG
+              11111111111     111111111111111111                      22222222222   
+Chain 2:    7 NKDYIFLNVNL-----KTKQEVFEFIASKAKELKIVTSKKALIDGFKLREAENTTGFEDGFAIPHPKDVK
+
+                  .    :    .    :    .    :    .    :    .    :    .    :    .    :
+Chain 1:   61 SLSIEG--------LSR-------GIKFAIINDL--------NKDANKIISFNLKKIPTSD-YVLYQKDY
+                            222       222222222         333333333333333333  44444444
+Chain 2:   72 QIKKPAVFVLKFTNPIEWNALDNKPIEIAIALLTPQTTDENNSHLTLLSQVAVKLTNQEFKTALKQAKTK
+
+                  .    :    .    :    .    :    .    :    .    :    .    :    .    :
+Chain 1:  107 LELLNLLKIQHQ-------------KVDLVYLDPPFK-----QIDYYYVVFDFLINNNLLNDWAIIISET
+              44444444444              555555555555     555555555555555555    555555
+Chain 2:  142 KEILNILNSNQNIEIKKENNNLENTKQLKIVAVTSCTVGIAHTYMAEEKLLQQALKQNYQ----IRVETQ
+
+                  .    :    .    :    .    :    .    :
+Chain 1:  159 NQK------------------------LDLTKIKDLSLLKFKDY
+              555                        66666666666666666
+Chain 2:  208 GSKGIGTALTNKEIKEADVVIIATDTAVDLTRFTGKKVYKTKVS
+
+Note: positions are from PDB; the numbers between alignments are block index
+

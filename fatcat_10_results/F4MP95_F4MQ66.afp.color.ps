@@ -1,0 +1,7209 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 500 500
+%%Creator: Yuzhen Ye
+%%Title: alignment graph from FATCAT
+%%Creation date: Wed May 21 01:08:24 2025
+%%EndComments
+%%BeginProlog
+/M { moveto } def
+/m { moveto } def
+/L { lineto } def
+/l { lineto } def
+/R { setrgbcolor } bind def
+/G { setgray } bind def
+/H { sethsbcolor } bind def
+/LW { setlinewidth } bind def
+/D { 0 setdash 0 setlinecap } bind def
+/ND { [] 0 setdash 1 setlinecap } bind def
+/box {
+	translate
+	newpath
+	-0 -3 moveto
+	-0 7 lineto
+	6 7 lineto
+	6 -3 lineto
+	closepath
+	fill
+	} def
+/cross {
+	translate
+	newpath
+	-4 -4 moveto
+	4 4 lineto
+	-4 4 moveto
+	4 -4 lineto
+	stroke
+	} def
+/arrow {
+	newpath
+	0 0 moveto
+	-8 -8 lineto
+	-4 -8 lineto
+	-4 -16 lineto
+	4 -16 lineto
+	4 -8 lineto
+	8 -8 lineto
+	0 0 lineto
+	closepath
+	fill
+	} def
+/uparrow {
+	translate
+	arrow
+	} def
+/downarrow {
+	translate
+	180 rotate
+	arrow
+	} def
+/leftarrow {
+	translate
+	90 rotate
+	arrow
+	} def
+/rightarrow {
+	translate
+	-90 rotate
+	arrow
+	} def
+/upleftarrow {
+	translate
+	45 rotate
+	arrow
+	} def
+/uprightarrow {
+	translate
+	-45 rotate
+	arrow
+	} def
+/downleftarrow {
+	translate
+	135 rotate
+	arrow
+	} def
+/downrightarrow {
+	translate
+	-135 rotate
+	arrow
+	} def
+/color_char { gsave
+	setrgbcolor
+	moveto
+	show
+	grestore
+	} def
+/color_inv { gsave
+	setrgbcolor
+	translate
+	box fill
+	grestore
+	moveto
+	show
+	} def
+/white_inv { gsave
+	setrgbcolor
+	translate
+	box fill
+	grestore
+	gsave
+	setrgbcolor
+	moveto
+	show
+	grestore
+	} def
+/FR { /Times-Roman findfont } bind def
+/TI { /Times-Italic findfont } bind def
+/TB { /Times-Bold findfont } bind def
+/TBI { /Times-BoldItalic findfont } bind def
+/FC { /Courier findfont } bind def
+/CI { /Courier-Italic findfont } bind def
+/CB { /Courier-Bold findfont } bind def
+/CBI { /Courier-BoldItalic findfont } bind def
+/FG { /Symbol findfont } bind def
+/PR { scalefont setfont show } bind def
+/SR { scalefont setfont } bind def
+/SC { 1.0 G } def
+/SCR { 1.0 0 0 R } def
+/circle { newpath 0 360 arc gsave SC grestore stroke } bind def
+/SS { newpath 0 360 arc gsave SC grestore stroke } bind def
+/SSF { newpath 0 360 arc gsave SC fill grestore stroke } bind def
+/SSR { newpath 0 360 arc gsave SCR fill grestore stroke } bind def
+/C {
+  1 index scalefont setfont
+  exch stringwidth pop -2 div exch -3 div rmoveto
+ } bind def
+/CR90 {
+  1 index scalefont setfont
+  exch stringwidth pop -2 div exch 3 div exch rmoveto
+ } bind def
+%%EndProlog
+%%BeginSetup
+%%IncludeResource: font Times-Roman
+%%IncludeResource: font Times-Italic
+%%IncludeResource: font Times-Bold
+%%IncludeResource: font Times-BoldItalic
+%%IncludeResource: font Courier
+%%IncludeResource: font Courier-Italic
+%%IncludeResource: font Courier-Bold
+%%IncludeResource: font Courier-BoldItalic
+%%IncludeResource: font Symbol
+1 setlinecap 1 setlinejoin 1 LW 0 G
+%%EndSetup
+%%Page 1
+gsave
+0.5 LW 0.0 G
+newpath
+50.0 50.0 M 450.0 50.0 L
+450.0 50.0 M 450.0 450.0 L
+450.0 450.0 M 50.0 450.0 L
+50.0 450.0 M 50.0 50.0 L
+stroke
+newpath
+67.10 452.00 M 67.10 450.00 L
+125.16 452.00 M 125.16 450.00 L
+183.23 452.00 M 183.23 450.00 L
+241.29 452.00 M 241.29 450.00 L
+299.35 452.00 M 299.35 450.00 L
+357.42 452.00 M 357.42 450.00 L
+415.48 452.00 M 415.48 450.00 L
+stroke
+0.00 0.00 0.00 R
+gsave
+67.10 460.00 M
+(0) 12.00 FR C
+(0) FR 12.00 PR
+125.16 460.00 M
+(20) 12.00 FR C
+(20) FR 12.00 PR
+183.23 460.00 M
+(40) 12.00 FR C
+(40) FR 12.00 PR
+241.29 460.00 M
+(60) 12.00 FR C
+(60) FR 12.00 PR
+299.35 460.00 M
+(80) 12.00 FR C
+(80) FR 12.00 PR
+357.42 460.00 M
+(100) 12.00 FR C
+(100) FR 12.00 PR
+415.48 460.00 M
+(120) 12.00 FR C
+(120) FR 12.00 PR
+grestore
+newpath
+50.00 436.79 M 48.00 436.79 L
+50.00 368.87 M 48.00 368.87 L
+50.00 300.94 M 48.00 300.94 L
+50.00 233.02 M 48.00 233.02 L
+50.00 165.09 M 48.00 165.09 L
+50.00 97.17 M 48.00 97.17 L
+stroke
+gsave
+25.00 436.79 M
+(0) FR 12.00 PR
+25.00 368.87 M
+(10) FR 12.00 PR
+25.00 300.94 M
+(20) FR 12.00 PR
+25.00 233.02 M
+(30) FR 12.00 PR
+25.00 165.09 M
+(40) FR 12.00 PR
+25.00 97.17 M
+(50) FR 12.00 PR
+grestore
+gsave
+250.00 470.00 M
+(F4MP95.pdb) 12.00 FR C
+(F4MP95.pdb) FR 12.00 PR
+grestore
+gsave
+15.00 250.00 M
+gsave
+90 rotate
+(F4MQ66.pdb) 12.00 FR C
+(F4MQ66.pdb) FR 12.00 PR
+grestore
+grestore
+%upsidedown: y-value 55 - real-value
+gsave
+67.10 63.21 translate
+2.9 6.8 scale
+newpath
+0.3 LW 0.80 G
+1.00 54.00 M 9.00 46.00 L
+stroke
+0.3 LW 0.80 G
+1.00 53.00 M 9.00 45.00 L
+stroke
+0.3 LW 0.80 G
+1.00 52.00 M 9.00 44.00 L
+stroke
+0.3 LW 0.80 G
+2.00 54.00 M 10.00 46.00 L
+stroke
+0.3 LW 0.80 G
+2.00 53.00 M 10.00 45.00 L
+stroke
+0.3 LW 0.80 G
+2.00 52.00 M 10.00 44.00 L
+stroke
+0.3 LW 0.80 G
+2.00 22.00 M 10.00 14.00 L
+stroke
+0.3 LW 0.80 G
+3.00 54.00 M 11.00 46.00 L
+stroke
+0.3 LW 0.80 G
+3.00 53.00 M 11.00 45.00 L
+stroke
+0.3 LW 0.80 G
+4.00 54.00 M 12.00 46.00 L
+stroke
+0.3 LW 0.80 G
+4.00 53.00 M 12.00 45.00 L
+stroke
+0.3 LW 0.80 G
+4.00 52.00 M 12.00 44.00 L
+stroke
+0.3 LW 0.80 G
+5.00 54.00 M 13.00 46.00 L
+stroke
+0.3 LW 0.80 G
+5.00 53.00 M 13.00 45.00 L
+stroke
+0.3 LW 0.80 G
+5.00 52.00 M 13.00 44.00 L
+stroke
+0.3 LW 0.80 G
+5.00 51.00 M 13.00 43.00 L
+stroke
+0.3 LW 0.80 G
+5.00 25.00 M 13.00 17.00 L
+stroke
+0.3 LW 0.80 G
+5.00 22.00 M 13.00 14.00 L
+stroke
+0.3 LW 0.80 G
+5.00 21.00 M 13.00 13.00 L
+stroke
+0.3 LW 0.80 G
+6.00 52.00 M 14.00 44.00 L
+stroke
+0.3 LW 0.80 G
+6.00 51.00 M 14.00 43.00 L
+stroke
+0.3 LW 0.80 G
+6.00 50.00 M 14.00 42.00 L
+stroke
+0.3 LW 0.80 G
+6.00 48.00 M 14.00 40.00 L
+stroke
+0.3 LW 0.80 G
+6.00 47.00 M 14.00 39.00 L
+stroke
+0.3 LW 0.80 G
+6.00 24.00 M 14.00 16.00 L
+stroke
+0.3 LW 0.80 G
+6.00 21.00 M 14.00 13.00 L
+stroke
+0.3 LW 0.80 G
+6.00 20.00 M 14.00 12.00 L
+stroke
+0.3 LW 0.80 G
+7.00 50.00 M 15.00 42.00 L
+stroke
+0.3 LW 0.80 G
+7.00 47.00 M 15.00 39.00 L
+stroke
+0.3 LW 0.80 G
+7.00 20.00 M 15.00 12.00 L
+stroke
+0.3 LW 0.80 G
+7.00 19.00 M 15.00 11.00 L
+stroke
+0.3 LW 0.80 G
+9.00 49.00 M 17.00 41.00 L
+stroke
+0.3 LW 0.80 G
+9.00 48.00 M 17.00 40.00 L
+stroke
+0.3 LW 0.80 G
+9.00 45.00 M 17.00 37.00 L
+stroke
+0.3 LW 0.80 G
+9.00 19.00 M 17.00 11.00 L
+stroke
+0.3 LW 0.80 G
+9.00 18.00 M 17.00 10.00 L
+stroke
+0.3 LW 0.80 G
+10.00 49.00 M 18.00 41.00 L
+stroke
+0.3 LW 0.80 G
+10.00 48.00 M 18.00 40.00 L
+stroke
+0.3 LW 0.80 G
+10.00 45.00 M 18.00 37.00 L
+stroke
+0.3 LW 0.80 G
+10.00 44.00 M 18.00 36.00 L
+stroke
+0.3 LW 0.80 G
+10.00 43.00 M 18.00 35.00 L
+stroke
+0.3 LW 0.80 G
+10.00 42.00 M 18.00 34.00 L
+stroke
+0.3 LW 0.80 G
+10.00 41.00 M 18.00 33.00 L
+stroke
+0.3 LW 0.80 G
+10.00 40.00 M 18.00 32.00 L
+stroke
+0.3 LW 0.80 G
+10.00 39.00 M 18.00 31.00 L
+stroke
+0.3 LW 0.80 G
+10.00 38.00 M 18.00 30.00 L
+stroke
+0.3 LW 0.80 G
+10.00 37.00 M 18.00 29.00 L
+stroke
+0.3 LW 0.80 G
+10.00 36.00 M 18.00 28.00 L
+stroke
+0.3 LW 0.80 G
+10.00 35.00 M 18.00 27.00 L
+stroke
+0.3 LW 0.80 G
+10.00 34.00 M 18.00 26.00 L
+stroke
+0.3 LW 0.80 G
+10.00 33.00 M 18.00 25.00 L
+stroke
+0.3 LW 0.80 G
+10.00 32.00 M 18.00 24.00 L
+stroke
+0.3 LW 0.80 G
+10.00 31.00 M 18.00 23.00 L
+stroke
+0.3 LW 0.80 G
+10.00 30.00 M 18.00 22.00 L
+stroke
+0.3 LW 0.80 G
+10.00 29.00 M 18.00 21.00 L
+stroke
+0.3 LW 0.80 G
+10.00 28.00 M 18.00 20.00 L
+stroke
+0.3 LW 0.80 G
+10.00 27.00 M 18.00 19.00 L
+stroke
+0.3 LW 0.80 G
+10.00 26.00 M 18.00 18.00 L
+stroke
+0.3 LW 0.80 G
+10.00 25.00 M 18.00 17.00 L
+stroke
+0.3 LW 0.80 G
+10.00 23.00 M 18.00 15.00 L
+stroke
+0.3 LW 0.80 G
+10.00 22.00 M 18.00 14.00 L
+stroke
+0.3 LW 0.80 G
+10.00 18.00 M 18.00 10.00 L
+stroke
+0.3 LW 0.80 G
+10.00 17.00 M 18.00 9.00 L
+stroke
+0.3 LW 0.80 G
+10.00 16.00 M 18.00 8.00 L
+stroke
+0.3 LW 0.80 G
+10.00 15.00 M 18.00 7.00 L
+stroke
+0.3 LW 0.80 G
+10.00 14.00 M 18.00 6.00 L
+stroke
+0.3 LW 0.80 G
+10.00 13.00 M 18.00 5.00 L
+stroke
+0.3 LW 0.80 G
+10.00 12.00 M 18.00 4.00 L
+stroke
+0.3 LW 0.80 G
+10.00 11.00 M 18.00 3.00 L
+stroke
+0.3 LW 0.80 G
+10.00 10.00 M 18.00 2.00 L
+stroke
+0.3 LW 0.80 G
+10.00 9.00 M 18.00 1.00 L
+stroke
+0.3 LW 0.80 G
+11.00 52.00 M 19.00 44.00 L
+stroke
+0.3 LW 0.80 G
+11.00 51.00 M 19.00 43.00 L
+stroke
+0.3 LW 0.80 G
+11.00 50.00 M 19.00 42.00 L
+stroke
+0.3 LW 0.80 G
+11.00 48.00 M 19.00 40.00 L
+stroke
+0.3 LW 0.80 G
+11.00 47.00 M 19.00 39.00 L
+stroke
+0.3 LW 0.80 G
+11.00 46.00 M 19.00 38.00 L
+stroke
+0.3 LW 0.80 G
+11.00 44.00 M 19.00 36.00 L
+stroke
+0.3 LW 0.80 G
+11.00 43.00 M 19.00 35.00 L
+stroke
+0.3 LW 0.80 G
+11.00 42.00 M 19.00 34.00 L
+stroke
+0.3 LW 0.80 G
+11.00 41.00 M 19.00 33.00 L
+stroke
+0.3 LW 0.80 G
+11.00 40.00 M 19.00 32.00 L
+stroke
+0.3 LW 0.80 G
+11.00 39.00 M 19.00 31.00 L
+stroke
+0.3 LW 0.80 G
+11.00 38.00 M 19.00 30.00 L
+stroke
+0.3 LW 0.80 G
+11.00 37.00 M 19.00 29.00 L
+stroke
+0.3 LW 0.80 G
+11.00 36.00 M 19.00 28.00 L
+stroke
+0.3 LW 0.80 G
+11.00 35.00 M 19.00 27.00 L
+stroke
+0.3 LW 0.80 G
+11.00 34.00 M 19.00 26.00 L
+stroke
+0.3 LW 0.80 G
+11.00 33.00 M 19.00 25.00 L
+stroke
+0.3 LW 0.80 G
+11.00 32.00 M 19.00 24.00 L
+stroke
+0.3 LW 0.80 G
+11.00 31.00 M 19.00 23.00 L
+stroke
+0.3 LW 0.80 G
+11.00 30.00 M 19.00 22.00 L
+stroke
+0.3 LW 0.80 G
+11.00 29.00 M 19.00 21.00 L
+stroke
+0.3 LW 0.80 G
+11.00 28.00 M 19.00 20.00 L
+stroke
+0.3 LW 0.80 G
+11.00 27.00 M 19.00 19.00 L
+stroke
+0.3 LW 0.80 G
+11.00 26.00 M 19.00 18.00 L
+stroke
+0.3 LW 0.80 G
+11.00 25.00 M 19.00 17.00 L
+stroke
+0.3 LW 0.80 G
+11.00 24.00 M 19.00 16.00 L
+stroke
+0.3 LW 0.80 G
+11.00 23.00 M 19.00 15.00 L
+stroke
+0.3 LW 0.80 G
+11.00 22.00 M 19.00 14.00 L
+stroke
+0.3 LW 0.80 G
+11.00 21.00 M 19.00 13.00 L
+stroke
+0.3 LW 0.80 G
+11.00 17.00 M 19.00 9.00 L
+stroke
+0.3 LW 0.80 G
+11.00 16.00 M 19.00 8.00 L
+stroke
+0.3 LW 0.80 G
+11.00 15.00 M 19.00 7.00 L
+stroke
+0.3 LW 0.80 G
+11.00 14.00 M 19.00 6.00 L
+stroke
+0.3 LW 0.80 G
+11.00 13.00 M 19.00 5.00 L
+stroke
+0.3 LW 0.80 G
+11.00 12.00 M 19.00 4.00 L
+stroke
+0.3 LW 0.80 G
+11.00 11.00 M 19.00 3.00 L
+stroke
+0.3 LW 0.80 G
+11.00 10.00 M 19.00 2.00 L
+stroke
+0.3 LW 0.80 G
+11.00 9.00 M 19.00 1.00 L
+stroke
+0.3 LW 0.80 G
+12.00 54.00 M 20.00 46.00 L
+stroke
+0.3 LW 0.80 G
+12.00 53.00 M 20.00 45.00 L
+stroke
+0.3 LW 0.80 G
+12.00 52.00 M 20.00 44.00 L
+stroke
+0.3 LW 0.80 G
+12.00 51.00 M 20.00 43.00 L
+stroke
+0.3 LW 0.80 G
+12.00 46.00 M 20.00 38.00 L
+stroke
+0.3 LW 0.80 G
+12.00 24.00 M 20.00 16.00 L
+stroke
+0.3 LW 0.80 G
+12.00 23.00 M 20.00 15.00 L
+stroke
+0.3 LW 0.80 G
+12.00 22.00 M 20.00 14.00 L
+stroke
+0.3 LW 0.80 G
+12.00 19.00 M 20.00 11.00 L
+stroke
+0.3 LW 0.80 G
+13.00 54.00 M 21.00 46.00 L
+stroke
+0.3 LW 0.80 G
+13.00 53.00 M 21.00 45.00 L
+stroke
+0.3 LW 0.80 G
+13.00 24.00 M 21.00 16.00 L
+stroke
+0.3 LW 0.80 G
+13.00 23.00 M 21.00 15.00 L
+stroke
+0.3 LW 0.80 G
+13.00 22.00 M 21.00 14.00 L
+stroke
+0.3 LW 0.80 G
+14.00 54.00 M 22.00 46.00 L
+stroke
+0.3 LW 0.80 G
+14.00 53.00 M 22.00 45.00 L
+stroke
+0.3 LW 0.80 G
+14.00 52.00 M 22.00 44.00 L
+stroke
+0.3 LW 0.80 G
+14.00 22.00 M 22.00 14.00 L
+stroke
+0.3 LW 0.80 G
+15.00 54.00 M 23.00 46.00 L
+stroke
+0.3 LW 0.80 G
+15.00 53.00 M 23.00 45.00 L
+stroke
+0.3 LW 0.80 G
+15.00 52.00 M 23.00 44.00 L
+stroke
+0.3 LW 0.80 G
+15.00 51.00 M 23.00 43.00 L
+stroke
+0.3 LW 0.80 G
+15.00 22.00 M 23.00 14.00 L
+stroke
+0.3 LW 0.80 G
+15.00 21.00 M 23.00 13.00 L
+stroke
+0.3 LW 0.80 G
+16.00 54.00 M 24.00 46.00 L
+stroke
+0.3 LW 0.80 G
+16.00 53.00 M 24.00 45.00 L
+stroke
+0.3 LW 0.80 G
+16.00 52.00 M 24.00 44.00 L
+stroke
+0.3 LW 0.80 G
+16.00 51.00 M 24.00 43.00 L
+stroke
+0.3 LW 0.80 G
+16.00 22.00 M 24.00 14.00 L
+stroke
+0.3 LW 0.80 G
+16.00 21.00 M 24.00 13.00 L
+stroke
+0.3 LW 0.80 G
+17.00 54.00 M 25.00 46.00 L
+stroke
+0.3 LW 0.80 G
+17.00 52.00 M 25.00 44.00 L
+stroke
+0.3 LW 0.80 G
+17.00 51.00 M 25.00 43.00 L
+stroke
+0.3 LW 0.80 G
+17.00 50.00 M 25.00 42.00 L
+stroke
+0.3 LW 0.80 G
+17.00 49.00 M 25.00 41.00 L
+stroke
+0.3 LW 0.80 G
+17.00 47.00 M 25.00 39.00 L
+stroke
+0.3 LW 0.80 G
+17.00 24.00 M 25.00 16.00 L
+stroke
+0.3 LW 0.80 G
+17.00 23.00 M 25.00 15.00 L
+stroke
+0.3 LW 0.80 G
+17.00 22.00 M 25.00 14.00 L
+stroke
+0.3 LW 0.80 G
+17.00 21.00 M 25.00 13.00 L
+stroke
+0.3 LW 0.80 G
+17.00 20.00 M 25.00 12.00 L
+stroke
+0.3 LW 0.80 G
+18.00 54.00 M 26.00 46.00 L
+stroke
+0.3 LW 0.80 G
+18.00 53.00 M 26.00 45.00 L
+stroke
+0.3 LW 0.80 G
+18.00 52.00 M 26.00 44.00 L
+stroke
+0.3 LW 0.80 G
+18.00 51.00 M 26.00 43.00 L
+stroke
+0.3 LW 0.80 G
+18.00 50.00 M 26.00 42.00 L
+stroke
+0.3 LW 0.80 G
+18.00 24.00 M 26.00 16.00 L
+stroke
+0.3 LW 0.80 G
+18.00 23.00 M 26.00 15.00 L
+stroke
+0.3 LW 0.80 G
+18.00 22.00 M 26.00 14.00 L
+stroke
+0.3 LW 0.80 G
+18.00 21.00 M 26.00 13.00 L
+stroke
+0.3 LW 0.80 G
+18.00 20.00 M 26.00 12.00 L
+stroke
+0.3 LW 0.80 G
+19.00 52.00 M 27.00 44.00 L
+stroke
+0.3 LW 0.80 G
+19.00 51.00 M 27.00 43.00 L
+stroke
+0.3 LW 0.80 G
+19.00 50.00 M 27.00 42.00 L
+stroke
+0.3 LW 0.80 G
+19.00 49.00 M 27.00 41.00 L
+stroke
+0.3 LW 0.80 G
+19.00 48.00 M 27.00 40.00 L
+stroke
+0.3 LW 0.80 G
+19.00 47.00 M 27.00 39.00 L
+stroke
+0.3 LW 0.80 G
+19.00 23.00 M 27.00 15.00 L
+stroke
+0.3 LW 0.80 G
+19.00 22.00 M 27.00 14.00 L
+stroke
+0.3 LW 0.80 G
+19.00 21.00 M 27.00 13.00 L
+stroke
+0.3 LW 0.80 G
+20.00 52.00 M 28.00 44.00 L
+stroke
+0.3 LW 0.80 G
+20.00 51.00 M 28.00 43.00 L
+stroke
+0.3 LW 0.80 G
+20.00 50.00 M 28.00 42.00 L
+stroke
+0.3 LW 0.80 G
+20.00 49.00 M 28.00 41.00 L
+stroke
+0.3 LW 0.80 G
+20.00 48.00 M 28.00 40.00 L
+stroke
+0.3 LW 0.80 G
+20.00 47.00 M 28.00 39.00 L
+stroke
+0.3 LW 0.80 G
+20.00 46.00 M 28.00 38.00 L
+stroke
+0.3 LW 0.80 G
+20.00 42.00 M 28.00 34.00 L
+stroke
+0.3 LW 0.80 G
+20.00 39.00 M 28.00 31.00 L
+stroke
+0.3 LW 0.80 G
+20.00 35.00 M 28.00 27.00 L
+stroke
+0.3 LW 0.80 G
+20.00 34.00 M 28.00 26.00 L
+stroke
+0.3 LW 0.80 G
+20.00 28.00 M 28.00 20.00 L
+stroke
+0.3 LW 0.80 G
+20.00 23.00 M 28.00 15.00 L
+stroke
+0.3 LW 0.80 G
+20.00 21.00 M 28.00 13.00 L
+stroke
+0.3 LW 0.80 G
+20.00 20.00 M 28.00 12.00 L
+stroke
+0.3 LW 0.80 G
+20.00 17.00 M 28.00 9.00 L
+stroke
+0.3 LW 0.80 G
+21.00 51.00 M 29.00 43.00 L
+stroke
+0.3 LW 0.80 G
+21.00 50.00 M 29.00 42.00 L
+stroke
+0.3 LW 0.80 G
+21.00 49.00 M 29.00 41.00 L
+stroke
+0.3 LW 0.80 G
+21.00 47.00 M 29.00 39.00 L
+stroke
+0.3 LW 0.80 G
+21.00 46.00 M 29.00 38.00 L
+stroke
+0.3 LW 0.80 G
+21.00 34.00 M 29.00 26.00 L
+stroke
+0.3 LW 0.80 G
+21.00 24.00 M 29.00 16.00 L
+stroke
+0.3 LW 0.80 G
+21.00 23.00 M 29.00 15.00 L
+stroke
+0.3 LW 0.80 G
+21.00 22.00 M 29.00 14.00 L
+stroke
+0.3 LW 0.80 G
+21.00 20.00 M 29.00 12.00 L
+stroke
+0.3 LW 0.80 G
+21.00 19.00 M 29.00 11.00 L
+stroke
+0.3 LW 0.80 G
+22.00 49.00 M 30.00 41.00 L
+stroke
+0.3 LW 0.80 G
+22.00 48.00 M 30.00 40.00 L
+stroke
+0.3 LW 0.80 G
+22.00 46.00 M 30.00 38.00 L
+stroke
+0.3 LW 0.80 G
+22.00 45.00 M 30.00 37.00 L
+stroke
+0.3 LW 0.80 G
+22.00 44.00 M 30.00 36.00 L
+stroke
+0.3 LW 0.80 G
+22.00 43.00 M 30.00 35.00 L
+stroke
+0.3 LW 0.80 G
+22.00 42.00 M 30.00 34.00 L
+stroke
+0.3 LW 0.80 G
+22.00 41.00 M 30.00 33.00 L
+stroke
+0.3 LW 0.80 G
+22.00 40.00 M 30.00 32.00 L
+stroke
+0.3 LW 0.80 G
+22.00 39.00 M 30.00 31.00 L
+stroke
+0.3 LW 0.80 G
+22.00 38.00 M 30.00 30.00 L
+stroke
+0.3 LW 0.80 G
+22.00 37.00 M 30.00 29.00 L
+stroke
+0.3 LW 0.80 G
+22.00 36.00 M 30.00 28.00 L
+stroke
+0.3 LW 0.80 G
+22.00 35.00 M 30.00 27.00 L
+stroke
+0.3 LW 0.80 G
+22.00 34.00 M 30.00 26.00 L
+stroke
+0.3 LW 0.80 G
+22.00 33.00 M 30.00 25.00 L
+stroke
+0.3 LW 0.80 G
+22.00 32.00 M 30.00 24.00 L
+stroke
+0.3 LW 0.80 G
+22.00 31.00 M 30.00 23.00 L
+stroke
+0.3 LW 0.80 G
+22.00 30.00 M 30.00 22.00 L
+stroke
+0.3 LW 0.80 G
+22.00 29.00 M 30.00 21.00 L
+stroke
+0.3 LW 0.80 G
+22.00 28.00 M 30.00 20.00 L
+stroke
+0.3 LW 0.80 G
+22.00 27.00 M 30.00 19.00 L
+stroke
+0.3 LW 0.80 G
+22.00 26.00 M 30.00 18.00 L
+stroke
+0.3 LW 0.80 G
+22.00 24.00 M 30.00 16.00 L
+stroke
+0.3 LW 0.80 G
+22.00 22.00 M 30.00 14.00 L
+stroke
+0.3 LW 0.80 G
+22.00 21.00 M 30.00 13.00 L
+stroke
+0.3 LW 0.80 G
+22.00 19.00 M 30.00 11.00 L
+stroke
+0.3 LW 0.80 G
+22.00 18.00 M 30.00 10.00 L
+stroke
+0.3 LW 0.80 G
+22.00 17.00 M 30.00 9.00 L
+stroke
+0.3 LW 0.80 G
+22.00 16.00 M 30.00 8.00 L
+stroke
+0.3 LW 0.80 G
+22.00 15.00 M 30.00 7.00 L
+stroke
+0.3 LW 0.80 G
+22.00 14.00 M 30.00 6.00 L
+stroke
+0.3 LW 0.80 G
+22.00 13.00 M 30.00 5.00 L
+stroke
+0.3 LW 0.80 G
+22.00 12.00 M 30.00 4.00 L
+stroke
+0.3 LW 0.80 G
+22.00 11.00 M 30.00 3.00 L
+stroke
+0.3 LW 0.80 G
+22.00 10.00 M 30.00 2.00 L
+stroke
+0.3 LW 0.80 G
+22.00 9.00 M 30.00 1.00 L
+stroke
+0.3 LW 0.80 G
+23.00 51.00 M 31.00 43.00 L
+stroke
+0.3 LW 0.80 G
+23.00 48.00 M 31.00 40.00 L
+stroke
+0.3 LW 0.80 G
+23.00 47.00 M 31.00 39.00 L
+stroke
+0.3 LW 0.80 G
+23.00 45.00 M 31.00 37.00 L
+stroke
+0.3 LW 0.80 G
+23.00 44.00 M 31.00 36.00 L
+stroke
+0.3 LW 0.80 G
+23.00 43.00 M 31.00 35.00 L
+stroke
+0.3 LW 0.80 G
+23.00 42.00 M 31.00 34.00 L
+stroke
+0.3 LW 0.80 G
+23.00 41.00 M 31.00 33.00 L
+stroke
+0.3 LW 0.80 G
+23.00 40.00 M 31.00 32.00 L
+stroke
+0.3 LW 0.80 G
+23.00 39.00 M 31.00 31.00 L
+stroke
+0.3 LW 0.80 G
+23.00 38.00 M 31.00 30.00 L
+stroke
+0.3 LW 0.80 G
+23.00 37.00 M 31.00 29.00 L
+stroke
+0.3 LW 0.80 G
+23.00 36.00 M 31.00 28.00 L
+stroke
+0.3 LW 0.80 G
+23.00 35.00 M 31.00 27.00 L
+stroke
+0.3 LW 0.80 G
+23.00 34.00 M 31.00 26.00 L
+stroke
+0.3 LW 0.80 G
+23.00 33.00 M 31.00 25.00 L
+stroke
+0.3 LW 0.80 G
+23.00 32.00 M 31.00 24.00 L
+stroke
+0.3 LW 0.80 G
+23.00 31.00 M 31.00 23.00 L
+stroke
+0.3 LW 0.80 G
+23.00 30.00 M 31.00 22.00 L
+stroke
+0.3 LW 0.80 G
+23.00 29.00 M 31.00 21.00 L
+stroke
+0.3 LW 0.80 G
+23.00 28.00 M 31.00 20.00 L
+stroke
+0.3 LW 0.80 G
+23.00 27.00 M 31.00 19.00 L
+stroke
+0.3 LW 0.80 G
+23.00 26.00 M 31.00 18.00 L
+stroke
+0.3 LW 0.80 G
+23.00 25.00 M 31.00 17.00 L
+stroke
+0.3 LW 0.80 G
+23.00 23.00 M 31.00 15.00 L
+stroke
+0.3 LW 0.80 G
+23.00 21.00 M 31.00 13.00 L
+stroke
+0.3 LW 0.80 G
+23.00 20.00 M 31.00 12.00 L
+stroke
+0.3 LW 0.80 G
+23.00 18.00 M 31.00 10.00 L
+stroke
+0.3 LW 0.80 G
+23.00 17.00 M 31.00 9.00 L
+stroke
+0.3 LW 0.80 G
+23.00 16.00 M 31.00 8.00 L
+stroke
+0.3 LW 0.80 G
+23.00 15.00 M 31.00 7.00 L
+stroke
+0.3 LW 0.80 G
+23.00 14.00 M 31.00 6.00 L
+stroke
+0.3 LW 0.80 G
+23.00 13.00 M 31.00 5.00 L
+stroke
+0.3 LW 0.80 G
+23.00 12.00 M 31.00 4.00 L
+stroke
+0.3 LW 0.80 G
+23.00 11.00 M 31.00 3.00 L
+stroke
+0.3 LW 0.80 G
+23.00 10.00 M 31.00 2.00 L
+stroke
+0.3 LW 0.80 G
+23.00 9.00 M 31.00 1.00 L
+stroke
+0.3 LW 0.80 G
+24.00 51.00 M 32.00 43.00 L
+stroke
+0.3 LW 0.80 G
+24.00 48.00 M 32.00 40.00 L
+stroke
+0.3 LW 0.80 G
+24.00 47.00 M 32.00 39.00 L
+stroke
+0.3 LW 0.80 G
+24.00 46.00 M 32.00 38.00 L
+stroke
+0.3 LW 0.80 G
+24.00 45.00 M 32.00 37.00 L
+stroke
+0.3 LW 0.80 G
+24.00 44.00 M 32.00 36.00 L
+stroke
+0.3 LW 0.80 G
+24.00 43.00 M 32.00 35.00 L
+stroke
+0.3 LW 0.80 G
+24.00 42.00 M 32.00 34.00 L
+stroke
+0.3 LW 0.80 G
+24.00 41.00 M 32.00 33.00 L
+stroke
+0.3 LW 0.80 G
+24.00 40.00 M 32.00 32.00 L
+stroke
+0.3 LW 0.80 G
+24.00 39.00 M 32.00 31.00 L
+stroke
+0.3 LW 0.80 G
+24.00 38.00 M 32.00 30.00 L
+stroke
+0.3 LW 0.80 G
+24.00 37.00 M 32.00 29.00 L
+stroke
+0.3 LW 0.80 G
+24.00 36.00 M 32.00 28.00 L
+stroke
+0.3 LW 0.80 G
+24.00 35.00 M 32.00 27.00 L
+stroke
+0.3 LW 0.80 G
+24.00 34.00 M 32.00 26.00 L
+stroke
+0.3 LW 0.80 G
+24.00 33.00 M 32.00 25.00 L
+stroke
+0.3 LW 0.80 G
+24.00 32.00 M 32.00 24.00 L
+stroke
+0.3 LW 0.80 G
+24.00 31.00 M 32.00 23.00 L
+stroke
+0.3 LW 0.80 G
+24.00 30.00 M 32.00 22.00 L
+stroke
+0.3 LW 0.80 G
+24.00 29.00 M 32.00 21.00 L
+stroke
+0.3 LW 0.80 G
+24.00 28.00 M 32.00 20.00 L
+stroke
+0.3 LW 0.80 G
+24.00 27.00 M 32.00 19.00 L
+stroke
+0.3 LW 0.80 G
+24.00 26.00 M 32.00 18.00 L
+stroke
+0.3 LW 0.80 G
+24.00 25.00 M 32.00 17.00 L
+stroke
+0.3 LW 0.80 G
+24.00 21.00 M 32.00 13.00 L
+stroke
+0.3 LW 0.80 G
+24.00 20.00 M 32.00 12.00 L
+stroke
+0.3 LW 0.80 G
+24.00 19.00 M 32.00 11.00 L
+stroke
+0.3 LW 0.80 G
+24.00 18.00 M 32.00 10.00 L
+stroke
+0.3 LW 0.80 G
+24.00 17.00 M 32.00 9.00 L
+stroke
+0.3 LW 0.80 G
+24.00 16.00 M 32.00 8.00 L
+stroke
+0.3 LW 0.80 G
+24.00 15.00 M 32.00 7.00 L
+stroke
+0.3 LW 0.80 G
+24.00 14.00 M 32.00 6.00 L
+stroke
+0.3 LW 0.80 G
+24.00 13.00 M 32.00 5.00 L
+stroke
+0.3 LW 0.80 G
+24.00 12.00 M 32.00 4.00 L
+stroke
+0.3 LW 0.80 G
+24.00 11.00 M 32.00 3.00 L
+stroke
+0.3 LW 0.80 G
+24.00 10.00 M 32.00 2.00 L
+stroke
+0.3 LW 0.80 G
+24.00 9.00 M 32.00 1.00 L
+stroke
+0.3 LW 0.80 G
+25.00 46.00 M 33.00 38.00 L
+stroke
+0.3 LW 0.80 G
+25.00 45.00 M 33.00 37.00 L
+stroke
+0.3 LW 0.80 G
+25.00 44.00 M 33.00 36.00 L
+stroke
+0.3 LW 0.80 G
+25.00 43.00 M 33.00 35.00 L
+stroke
+0.3 LW 0.80 G
+25.00 42.00 M 33.00 34.00 L
+stroke
+0.3 LW 0.80 G
+25.00 41.00 M 33.00 33.00 L
+stroke
+0.3 LW 0.80 G
+25.00 40.00 M 33.00 32.00 L
+stroke
+0.3 LW 0.80 G
+25.00 39.00 M 33.00 31.00 L
+stroke
+0.3 LW 0.80 G
+25.00 38.00 M 33.00 30.00 L
+stroke
+0.3 LW 0.80 G
+25.00 37.00 M 33.00 29.00 L
+stroke
+0.3 LW 0.80 G
+25.00 36.00 M 33.00 28.00 L
+stroke
+0.3 LW 0.80 G
+25.00 35.00 M 33.00 27.00 L
+stroke
+0.3 LW 0.80 G
+25.00 34.00 M 33.00 26.00 L
+stroke
+0.3 LW 0.80 G
+25.00 33.00 M 33.00 25.00 L
+stroke
+0.3 LW 0.80 G
+25.00 32.00 M 33.00 24.00 L
+stroke
+0.3 LW 0.80 G
+25.00 31.00 M 33.00 23.00 L
+stroke
+0.3 LW 0.80 G
+25.00 30.00 M 33.00 22.00 L
+stroke
+0.3 LW 0.80 G
+25.00 29.00 M 33.00 21.00 L
+stroke
+0.3 LW 0.80 G
+25.00 28.00 M 33.00 20.00 L
+stroke
+0.3 LW 0.80 G
+25.00 27.00 M 33.00 19.00 L
+stroke
+0.3 LW 0.80 G
+25.00 26.00 M 33.00 18.00 L
+stroke
+0.3 LW 0.80 G
+25.00 25.00 M 33.00 17.00 L
+stroke
+0.3 LW 0.80 G
+25.00 19.00 M 33.00 11.00 L
+stroke
+0.3 LW 0.80 G
+25.00 18.00 M 33.00 10.00 L
+stroke
+0.3 LW 0.80 G
+25.00 17.00 M 33.00 9.00 L
+stroke
+0.3 LW 0.80 G
+25.00 16.00 M 33.00 8.00 L
+stroke
+0.3 LW 0.80 G
+25.00 15.00 M 33.00 7.00 L
+stroke
+0.3 LW 0.80 G
+25.00 14.00 M 33.00 6.00 L
+stroke
+0.3 LW 0.80 G
+25.00 13.00 M 33.00 5.00 L
+stroke
+0.3 LW 0.80 G
+25.00 12.00 M 33.00 4.00 L
+stroke
+0.3 LW 0.80 G
+25.00 11.00 M 33.00 3.00 L
+stroke
+0.3 LW 0.80 G
+25.00 10.00 M 33.00 2.00 L
+stroke
+0.3 LW 0.80 G
+25.00 9.00 M 33.00 1.00 L
+stroke
+0.3 LW 0.80 G
+26.00 48.00 M 34.00 40.00 L
+stroke
+0.3 LW 0.80 G
+26.00 47.00 M 34.00 39.00 L
+stroke
+0.3 LW 0.80 G
+26.00 46.00 M 34.00 38.00 L
+stroke
+0.3 LW 0.80 G
+26.00 45.00 M 34.00 37.00 L
+stroke
+0.3 LW 0.80 G
+26.00 44.00 M 34.00 36.00 L
+stroke
+0.3 LW 0.80 G
+26.00 43.00 M 34.00 35.00 L
+stroke
+0.3 LW 0.80 G
+26.00 42.00 M 34.00 34.00 L
+stroke
+0.3 LW 0.80 G
+26.00 41.00 M 34.00 33.00 L
+stroke
+0.3 LW 0.80 G
+26.00 40.00 M 34.00 32.00 L
+stroke
+0.3 LW 0.80 G
+26.00 39.00 M 34.00 31.00 L
+stroke
+0.3 LW 0.80 G
+26.00 38.00 M 34.00 30.00 L
+stroke
+0.3 LW 0.80 G
+26.00 37.00 M 34.00 29.00 L
+stroke
+0.3 LW 0.80 G
+26.00 36.00 M 34.00 28.00 L
+stroke
+0.3 LW 0.80 G
+26.00 35.00 M 34.00 27.00 L
+stroke
+0.3 LW 0.80 G
+26.00 34.00 M 34.00 26.00 L
+stroke
+0.3 LW 0.80 G
+26.00 33.00 M 34.00 25.00 L
+stroke
+0.3 LW 0.80 G
+26.00 32.00 M 34.00 24.00 L
+stroke
+0.3 LW 0.80 G
+26.00 31.00 M 34.00 23.00 L
+stroke
+0.3 LW 0.80 G
+26.00 30.00 M 34.00 22.00 L
+stroke
+0.3 LW 0.80 G
+26.00 29.00 M 34.00 21.00 L
+stroke
+0.3 LW 0.80 G
+26.00 28.00 M 34.00 20.00 L
+stroke
+0.3 LW 0.80 G
+26.00 27.00 M 34.00 19.00 L
+stroke
+0.3 LW 0.80 G
+26.00 26.00 M 34.00 18.00 L
+stroke
+0.3 LW 0.80 G
+26.00 25.00 M 34.00 17.00 L
+stroke
+0.3 LW 0.80 G
+26.00 18.00 M 34.00 10.00 L
+stroke
+0.3 LW 0.80 G
+26.00 17.00 M 34.00 9.00 L
+stroke
+0.3 LW 0.80 G
+26.00 16.00 M 34.00 8.00 L
+stroke
+0.3 LW 0.80 G
+26.00 15.00 M 34.00 7.00 L
+stroke
+0.3 LW 0.80 G
+26.00 14.00 M 34.00 6.00 L
+stroke
+0.3 LW 0.80 G
+26.00 13.00 M 34.00 5.00 L
+stroke
+0.3 LW 0.80 G
+26.00 12.00 M 34.00 4.00 L
+stroke
+0.3 LW 0.80 G
+26.00 11.00 M 34.00 3.00 L
+stroke
+0.3 LW 0.80 G
+26.00 10.00 M 34.00 2.00 L
+stroke
+0.3 LW 0.80 G
+26.00 9.00 M 34.00 1.00 L
+stroke
+0.3 LW 0.80 G
+27.00 48.00 M 35.00 40.00 L
+stroke
+0.3 LW 0.80 G
+27.00 47.00 M 35.00 39.00 L
+stroke
+0.3 LW 0.80 G
+27.00 46.00 M 35.00 38.00 L
+stroke
+0.3 LW 0.80 G
+27.00 45.00 M 35.00 37.00 L
+stroke
+0.3 LW 0.80 G
+27.00 44.00 M 35.00 36.00 L
+stroke
+0.3 LW 0.80 G
+27.00 43.00 M 35.00 35.00 L
+stroke
+0.3 LW 0.80 G
+27.00 42.00 M 35.00 34.00 L
+stroke
+0.3 LW 0.80 G
+27.00 41.00 M 35.00 33.00 L
+stroke
+0.3 LW 0.80 G
+27.00 40.00 M 35.00 32.00 L
+stroke
+0.3 LW 0.80 G
+27.00 39.00 M 35.00 31.00 L
+stroke
+0.3 LW 0.80 G
+27.00 38.00 M 35.00 30.00 L
+stroke
+0.3 LW 0.80 G
+27.00 37.00 M 35.00 29.00 L
+stroke
+0.3 LW 0.80 G
+27.00 36.00 M 35.00 28.00 L
+stroke
+0.3 LW 0.80 G
+27.00 35.00 M 35.00 27.00 L
+stroke
+0.3 LW 0.80 G
+27.00 34.00 M 35.00 26.00 L
+stroke
+0.3 LW 0.80 G
+27.00 33.00 M 35.00 25.00 L
+stroke
+0.3 LW 0.80 G
+27.00 32.00 M 35.00 24.00 L
+stroke
+0.3 LW 0.80 G
+27.00 31.00 M 35.00 23.00 L
+stroke
+0.3 LW 0.80 G
+27.00 30.00 M 35.00 22.00 L
+stroke
+0.3 LW 0.80 G
+27.00 29.00 M 35.00 21.00 L
+stroke
+0.3 LW 0.80 G
+27.00 28.00 M 35.00 20.00 L
+stroke
+0.3 LW 0.80 G
+27.00 27.00 M 35.00 19.00 L
+stroke
+0.3 LW 0.80 G
+27.00 26.00 M 35.00 18.00 L
+stroke
+0.3 LW 0.80 G
+27.00 25.00 M 35.00 17.00 L
+stroke
+0.3 LW 0.80 G
+27.00 19.00 M 35.00 11.00 L
+stroke
+0.3 LW 0.80 G
+27.00 18.00 M 35.00 10.00 L
+stroke
+0.3 LW 0.80 G
+27.00 17.00 M 35.00 9.00 L
+stroke
+0.3 LW 0.80 G
+27.00 16.00 M 35.00 8.00 L
+stroke
+0.3 LW 0.80 G
+27.00 15.00 M 35.00 7.00 L
+stroke
+0.3 LW 0.80 G
+27.00 14.00 M 35.00 6.00 L
+stroke
+0.3 LW 0.80 G
+27.00 13.00 M 35.00 5.00 L
+stroke
+0.3 LW 0.80 G
+27.00 12.00 M 35.00 4.00 L
+stroke
+0.3 LW 0.80 G
+27.00 11.00 M 35.00 3.00 L
+stroke
+0.3 LW 0.80 G
+27.00 10.00 M 35.00 2.00 L
+stroke
+0.3 LW 0.80 G
+27.00 9.00 M 35.00 1.00 L
+stroke
+0.3 LW 0.80 G
+28.00 48.00 M 36.00 40.00 L
+stroke
+0.3 LW 0.80 G
+28.00 47.00 M 36.00 39.00 L
+stroke
+0.3 LW 0.80 G
+28.00 46.00 M 36.00 38.00 L
+stroke
+0.3 LW 0.80 G
+28.00 45.00 M 36.00 37.00 L
+stroke
+0.3 LW 0.80 G
+28.00 44.00 M 36.00 36.00 L
+stroke
+0.3 LW 0.80 G
+28.00 43.00 M 36.00 35.00 L
+stroke
+0.3 LW 0.80 G
+28.00 42.00 M 36.00 34.00 L
+stroke
+0.3 LW 0.80 G
+28.00 41.00 M 36.00 33.00 L
+stroke
+0.3 LW 0.80 G
+28.00 40.00 M 36.00 32.00 L
+stroke
+0.3 LW 0.80 G
+28.00 39.00 M 36.00 31.00 L
+stroke
+0.3 LW 0.80 G
+28.00 38.00 M 36.00 30.00 L
+stroke
+0.3 LW 0.80 G
+28.00 37.00 M 36.00 29.00 L
+stroke
+0.3 LW 0.80 G
+28.00 36.00 M 36.00 28.00 L
+stroke
+0.3 LW 0.80 G
+28.00 35.00 M 36.00 27.00 L
+stroke
+0.3 LW 0.80 G
+28.00 34.00 M 36.00 26.00 L
+stroke
+0.3 LW 0.80 G
+28.00 33.00 M 36.00 25.00 L
+stroke
+0.3 LW 0.80 G
+28.00 32.00 M 36.00 24.00 L
+stroke
+0.3 LW 0.80 G
+28.00 31.00 M 36.00 23.00 L
+stroke
+0.3 LW 0.80 G
+28.00 30.00 M 36.00 22.00 L
+stroke
+0.3 LW 0.80 G
+28.00 29.00 M 36.00 21.00 L
+stroke
+0.3 LW 0.80 G
+28.00 28.00 M 36.00 20.00 L
+stroke
+0.3 LW 0.80 G
+28.00 27.00 M 36.00 19.00 L
+stroke
+0.3 LW 0.80 G
+28.00 26.00 M 36.00 18.00 L
+stroke
+0.3 LW 0.80 G
+28.00 25.00 M 36.00 17.00 L
+stroke
+0.3 LW 0.80 G
+28.00 19.00 M 36.00 11.00 L
+stroke
+0.3 LW 0.80 G
+28.00 18.00 M 36.00 10.00 L
+stroke
+0.3 LW 0.80 G
+28.00 17.00 M 36.00 9.00 L
+stroke
+0.3 LW 0.80 G
+28.00 16.00 M 36.00 8.00 L
+stroke
+0.3 LW 0.80 G
+28.00 15.00 M 36.00 7.00 L
+stroke
+0.3 LW 0.80 G
+28.00 14.00 M 36.00 6.00 L
+stroke
+0.3 LW 0.80 G
+28.00 13.00 M 36.00 5.00 L
+stroke
+0.3 LW 0.80 G
+28.00 12.00 M 36.00 4.00 L
+stroke
+0.3 LW 0.80 G
+28.00 11.00 M 36.00 3.00 L
+stroke
+0.3 LW 0.80 G
+28.00 10.00 M 36.00 2.00 L
+stroke
+0.3 LW 0.80 G
+28.00 9.00 M 36.00 1.00 L
+stroke
+0.3 LW 0.80 G
+29.00 48.00 M 37.00 40.00 L
+stroke
+0.3 LW 0.80 G
+29.00 47.00 M 37.00 39.00 L
+stroke
+0.3 LW 0.80 G
+29.00 46.00 M 37.00 38.00 L
+stroke
+0.3 LW 0.80 G
+29.00 45.00 M 37.00 37.00 L
+stroke
+0.3 LW 0.80 G
+29.00 44.00 M 37.00 36.00 L
+stroke
+0.3 LW 0.80 G
+29.00 43.00 M 37.00 35.00 L
+stroke
+0.3 LW 0.80 G
+29.00 42.00 M 37.00 34.00 L
+stroke
+0.3 LW 0.80 G
+29.00 41.00 M 37.00 33.00 L
+stroke
+0.3 LW 0.80 G
+29.00 40.00 M 37.00 32.00 L
+stroke
+0.3 LW 0.80 G
+29.00 39.00 M 37.00 31.00 L
+stroke
+0.3 LW 0.80 G
+29.00 38.00 M 37.00 30.00 L
+stroke
+0.3 LW 0.80 G
+29.00 37.00 M 37.00 29.00 L
+stroke
+0.3 LW 0.80 G
+29.00 36.00 M 37.00 28.00 L
+stroke
+0.3 LW 0.80 G
+29.00 35.00 M 37.00 27.00 L
+stroke
+0.3 LW 0.80 G
+29.00 34.00 M 37.00 26.00 L
+stroke
+0.3 LW 0.80 G
+29.00 33.00 M 37.00 25.00 L
+stroke
+0.3 LW 0.80 G
+29.00 32.00 M 37.00 24.00 L
+stroke
+0.3 LW 0.80 G
+29.00 31.00 M 37.00 23.00 L
+stroke
+0.3 LW 0.80 G
+29.00 30.00 M 37.00 22.00 L
+stroke
+0.3 LW 0.80 G
+29.00 29.00 M 37.00 21.00 L
+stroke
+0.3 LW 0.80 G
+29.00 28.00 M 37.00 20.00 L
+stroke
+0.3 LW 0.80 G
+29.00 27.00 M 37.00 19.00 L
+stroke
+0.3 LW 0.80 G
+29.00 26.00 M 37.00 18.00 L
+stroke
+0.3 LW 0.80 G
+29.00 25.00 M 37.00 17.00 L
+stroke
+0.3 LW 0.80 G
+29.00 18.00 M 37.00 10.00 L
+stroke
+0.3 LW 0.80 G
+29.00 17.00 M 37.00 9.00 L
+stroke
+0.3 LW 0.80 G
+29.00 16.00 M 37.00 8.00 L
+stroke
+0.3 LW 0.80 G
+29.00 15.00 M 37.00 7.00 L
+stroke
+0.3 LW 0.80 G
+29.00 14.00 M 37.00 6.00 L
+stroke
+0.3 LW 0.80 G
+29.00 13.00 M 37.00 5.00 L
+stroke
+0.3 LW 0.80 G
+29.00 12.00 M 37.00 4.00 L
+stroke
+0.3 LW 0.80 G
+29.00 11.00 M 37.00 3.00 L
+stroke
+0.3 LW 0.80 G
+29.00 10.00 M 37.00 2.00 L
+stroke
+0.3 LW 0.80 G
+29.00 9.00 M 37.00 1.00 L
+stroke
+0.3 LW 0.80 G
+30.00 48.00 M 38.00 40.00 L
+stroke
+0.3 LW 0.80 G
+30.00 47.00 M 38.00 39.00 L
+stroke
+0.3 LW 0.80 G
+30.00 46.00 M 38.00 38.00 L
+stroke
+0.3 LW 0.80 G
+30.00 45.00 M 38.00 37.00 L
+stroke
+0.3 LW 0.80 G
+30.00 44.00 M 38.00 36.00 L
+stroke
+0.3 LW 0.80 G
+30.00 43.00 M 38.00 35.00 L
+stroke
+0.3 LW 0.80 G
+30.00 42.00 M 38.00 34.00 L
+stroke
+0.3 LW 0.80 G
+30.00 41.00 M 38.00 33.00 L
+stroke
+0.3 LW 0.80 G
+30.00 40.00 M 38.00 32.00 L
+stroke
+0.3 LW 0.80 G
+30.00 39.00 M 38.00 31.00 L
+stroke
+0.3 LW 0.80 G
+30.00 38.00 M 38.00 30.00 L
+stroke
+0.3 LW 0.80 G
+30.00 37.00 M 38.00 29.00 L
+stroke
+0.3 LW 0.80 G
+30.00 36.00 M 38.00 28.00 L
+stroke
+0.3 LW 0.80 G
+30.00 35.00 M 38.00 27.00 L
+stroke
+0.3 LW 0.80 G
+30.00 34.00 M 38.00 26.00 L
+stroke
+0.3 LW 0.80 G
+30.00 33.00 M 38.00 25.00 L
+stroke
+0.3 LW 0.80 G
+30.00 32.00 M 38.00 24.00 L
+stroke
+0.3 LW 0.80 G
+30.00 31.00 M 38.00 23.00 L
+stroke
+0.3 LW 0.80 G
+30.00 30.00 M 38.00 22.00 L
+stroke
+0.3 LW 0.80 G
+30.00 29.00 M 38.00 21.00 L
+stroke
+0.3 LW 0.80 G
+30.00 28.00 M 38.00 20.00 L
+stroke
+0.3 LW 0.80 G
+30.00 27.00 M 38.00 19.00 L
+stroke
+0.3 LW 0.80 G
+30.00 26.00 M 38.00 18.00 L
+stroke
+0.3 LW 0.80 G
+30.00 25.00 M 38.00 17.00 L
+stroke
+0.3 LW 0.80 G
+30.00 18.00 M 38.00 10.00 L
+stroke
+0.3 LW 0.80 G
+30.00 17.00 M 38.00 9.00 L
+stroke
+0.3 LW 0.80 G
+30.00 16.00 M 38.00 8.00 L
+stroke
+0.3 LW 0.80 G
+30.00 15.00 M 38.00 7.00 L
+stroke
+0.3 LW 0.80 G
+30.00 14.00 M 38.00 6.00 L
+stroke
+0.3 LW 0.80 G
+30.00 13.00 M 38.00 5.00 L
+stroke
+0.3 LW 0.80 G
+30.00 12.00 M 38.00 4.00 L
+stroke
+0.3 LW 0.80 G
+30.00 11.00 M 38.00 3.00 L
+stroke
+0.3 LW 0.80 G
+30.00 10.00 M 38.00 2.00 L
+stroke
+0.3 LW 0.80 G
+30.00 9.00 M 38.00 1.00 L
+stroke
+0.3 LW 0.80 G
+31.00 48.00 M 39.00 40.00 L
+stroke
+0.3 LW 0.80 G
+31.00 47.00 M 39.00 39.00 L
+stroke
+0.3 LW 0.80 G
+31.00 46.00 M 39.00 38.00 L
+stroke
+0.3 LW 0.80 G
+31.00 45.00 M 39.00 37.00 L
+stroke
+0.3 LW 0.80 G
+31.00 44.00 M 39.00 36.00 L
+stroke
+0.3 LW 0.80 G
+31.00 43.00 M 39.00 35.00 L
+stroke
+0.3 LW 0.80 G
+31.00 42.00 M 39.00 34.00 L
+stroke
+0.3 LW 0.80 G
+31.00 41.00 M 39.00 33.00 L
+stroke
+0.3 LW 0.80 G
+31.00 40.00 M 39.00 32.00 L
+stroke
+0.3 LW 0.80 G
+31.00 39.00 M 39.00 31.00 L
+stroke
+0.3 LW 0.80 G
+31.00 38.00 M 39.00 30.00 L
+stroke
+0.3 LW 0.80 G
+31.00 37.00 M 39.00 29.00 L
+stroke
+0.3 LW 0.80 G
+31.00 36.00 M 39.00 28.00 L
+stroke
+0.3 LW 0.80 G
+31.00 35.00 M 39.00 27.00 L
+stroke
+0.3 LW 0.80 G
+31.00 34.00 M 39.00 26.00 L
+stroke
+0.3 LW 0.80 G
+31.00 33.00 M 39.00 25.00 L
+stroke
+0.3 LW 0.80 G
+31.00 32.00 M 39.00 24.00 L
+stroke
+0.3 LW 0.80 G
+31.00 31.00 M 39.00 23.00 L
+stroke
+0.3 LW 0.80 G
+31.00 30.00 M 39.00 22.00 L
+stroke
+0.3 LW 0.80 G
+31.00 29.00 M 39.00 21.00 L
+stroke
+0.3 LW 0.80 G
+31.00 28.00 M 39.00 20.00 L
+stroke
+0.3 LW 0.80 G
+31.00 27.00 M 39.00 19.00 L
+stroke
+0.3 LW 0.80 G
+31.00 26.00 M 39.00 18.00 L
+stroke
+0.3 LW 0.80 G
+31.00 25.00 M 39.00 17.00 L
+stroke
+0.3 LW 0.80 G
+31.00 19.00 M 39.00 11.00 L
+stroke
+0.3 LW 0.80 G
+31.00 18.00 M 39.00 10.00 L
+stroke
+0.3 LW 0.80 G
+31.00 17.00 M 39.00 9.00 L
+stroke
+0.3 LW 0.80 G
+31.00 16.00 M 39.00 8.00 L
+stroke
+0.3 LW 0.80 G
+31.00 15.00 M 39.00 7.00 L
+stroke
+0.3 LW 0.80 G
+31.00 14.00 M 39.00 6.00 L
+stroke
+0.3 LW 0.80 G
+31.00 13.00 M 39.00 5.00 L
+stroke
+0.3 LW 0.80 G
+31.00 12.00 M 39.00 4.00 L
+stroke
+0.3 LW 0.80 G
+31.00 11.00 M 39.00 3.00 L
+stroke
+0.3 LW 0.80 G
+31.00 10.00 M 39.00 2.00 L
+stroke
+0.3 LW 0.80 G
+31.00 9.00 M 39.00 1.00 L
+stroke
+0.3 LW 0.80 G
+32.00 48.00 M 40.00 40.00 L
+stroke
+0.3 LW 0.80 G
+32.00 47.00 M 40.00 39.00 L
+stroke
+0.3 LW 0.80 G
+32.00 46.00 M 40.00 38.00 L
+stroke
+0.3 LW 0.80 G
+32.00 45.00 M 40.00 37.00 L
+stroke
+0.3 LW 0.80 G
+32.00 44.00 M 40.00 36.00 L
+stroke
+0.3 LW 0.80 G
+32.00 43.00 M 40.00 35.00 L
+stroke
+0.3 LW 0.80 G
+32.00 42.00 M 40.00 34.00 L
+stroke
+0.3 LW 0.80 G
+32.00 41.00 M 40.00 33.00 L
+stroke
+0.3 LW 0.80 G
+32.00 40.00 M 40.00 32.00 L
+stroke
+0.3 LW 0.80 G
+32.00 39.00 M 40.00 31.00 L
+stroke
+0.3 LW 0.80 G
+32.00 38.00 M 40.00 30.00 L
+stroke
+0.3 LW 0.80 G
+32.00 37.00 M 40.00 29.00 L
+stroke
+0.3 LW 0.80 G
+32.00 36.00 M 40.00 28.00 L
+stroke
+0.3 LW 0.80 G
+32.00 35.00 M 40.00 27.00 L
+stroke
+0.3 LW 0.80 G
+32.00 34.00 M 40.00 26.00 L
+stroke
+0.3 LW 0.80 G
+32.00 33.00 M 40.00 25.00 L
+stroke
+0.3 LW 0.80 G
+32.00 32.00 M 40.00 24.00 L
+stroke
+0.3 LW 0.80 G
+32.00 31.00 M 40.00 23.00 L
+stroke
+0.3 LW 0.80 G
+32.00 30.00 M 40.00 22.00 L
+stroke
+0.3 LW 0.80 G
+32.00 29.00 M 40.00 21.00 L
+stroke
+0.3 LW 0.80 G
+32.00 28.00 M 40.00 20.00 L
+stroke
+0.3 LW 0.80 G
+32.00 27.00 M 40.00 19.00 L
+stroke
+0.3 LW 0.80 G
+32.00 26.00 M 40.00 18.00 L
+stroke
+0.3 LW 0.80 G
+32.00 25.00 M 40.00 17.00 L
+stroke
+0.3 LW 0.80 G
+32.00 18.00 M 40.00 10.00 L
+stroke
+0.3 LW 0.80 G
+32.00 17.00 M 40.00 9.00 L
+stroke
+0.3 LW 0.80 G
+32.00 16.00 M 40.00 8.00 L
+stroke
+0.3 LW 0.80 G
+32.00 15.00 M 40.00 7.00 L
+stroke
+0.3 LW 0.80 G
+32.00 14.00 M 40.00 6.00 L
+stroke
+0.3 LW 0.80 G
+32.00 13.00 M 40.00 5.00 L
+stroke
+0.3 LW 0.80 G
+32.00 12.00 M 40.00 4.00 L
+stroke
+0.3 LW 0.80 G
+32.00 11.00 M 40.00 3.00 L
+stroke
+0.3 LW 0.80 G
+32.00 10.00 M 40.00 2.00 L
+stroke
+0.3 LW 0.80 G
+32.00 9.00 M 40.00 1.00 L
+stroke
+0.3 LW 0.80 G
+33.00 48.00 M 41.00 40.00 L
+stroke
+0.3 LW 0.80 G
+33.00 47.00 M 41.00 39.00 L
+stroke
+0.3 LW 0.80 G
+33.00 46.00 M 41.00 38.00 L
+stroke
+0.3 LW 0.80 G
+33.00 45.00 M 41.00 37.00 L
+stroke
+0.3 LW 0.80 G
+33.00 44.00 M 41.00 36.00 L
+stroke
+0.3 LW 0.80 G
+33.00 43.00 M 41.00 35.00 L
+stroke
+0.3 LW 0.80 G
+33.00 42.00 M 41.00 34.00 L
+stroke
+0.3 LW 0.80 G
+33.00 41.00 M 41.00 33.00 L
+stroke
+0.3 LW 0.80 G
+33.00 40.00 M 41.00 32.00 L
+stroke
+0.3 LW 0.80 G
+33.00 39.00 M 41.00 31.00 L
+stroke
+0.3 LW 0.80 G
+33.00 38.00 M 41.00 30.00 L
+stroke
+0.3 LW 0.80 G
+33.00 37.00 M 41.00 29.00 L
+stroke
+0.3 LW 0.80 G
+33.00 36.00 M 41.00 28.00 L
+stroke
+0.3 LW 0.80 G
+33.00 35.00 M 41.00 27.00 L
+stroke
+0.3 LW 0.80 G
+33.00 34.00 M 41.00 26.00 L
+stroke
+0.3 LW 0.80 G
+33.00 33.00 M 41.00 25.00 L
+stroke
+0.3 LW 0.80 G
+33.00 32.00 M 41.00 24.00 L
+stroke
+0.3 LW 0.80 G
+33.00 31.00 M 41.00 23.00 L
+stroke
+0.3 LW 0.80 G
+33.00 30.00 M 41.00 22.00 L
+stroke
+0.3 LW 0.80 G
+33.00 29.00 M 41.00 21.00 L
+stroke
+0.3 LW 0.80 G
+33.00 28.00 M 41.00 20.00 L
+stroke
+0.3 LW 0.80 G
+33.00 27.00 M 41.00 19.00 L
+stroke
+0.3 LW 0.80 G
+33.00 26.00 M 41.00 18.00 L
+stroke
+0.3 LW 0.80 G
+33.00 25.00 M 41.00 17.00 L
+stroke
+0.3 LW 0.80 G
+33.00 18.00 M 41.00 10.00 L
+stroke
+0.3 LW 0.80 G
+33.00 17.00 M 41.00 9.00 L
+stroke
+0.3 LW 0.80 G
+33.00 16.00 M 41.00 8.00 L
+stroke
+0.3 LW 0.80 G
+33.00 15.00 M 41.00 7.00 L
+stroke
+0.3 LW 0.80 G
+33.00 14.00 M 41.00 6.00 L
+stroke
+0.3 LW 0.80 G
+33.00 13.00 M 41.00 5.00 L
+stroke
+0.3 LW 0.80 G
+33.00 12.00 M 41.00 4.00 L
+stroke
+0.3 LW 0.80 G
+33.00 11.00 M 41.00 3.00 L
+stroke
+0.3 LW 0.80 G
+33.00 10.00 M 41.00 2.00 L
+stroke
+0.3 LW 0.80 G
+33.00 9.00 M 41.00 1.00 L
+stroke
+0.3 LW 0.80 G
+34.00 48.00 M 42.00 40.00 L
+stroke
+0.3 LW 0.80 G
+34.00 47.00 M 42.00 39.00 L
+stroke
+0.3 LW 0.80 G
+34.00 46.00 M 42.00 38.00 L
+stroke
+0.3 LW 0.80 G
+34.00 45.00 M 42.00 37.00 L
+stroke
+0.3 LW 0.80 G
+34.00 44.00 M 42.00 36.00 L
+stroke
+0.3 LW 0.80 G
+34.00 43.00 M 42.00 35.00 L
+stroke
+0.3 LW 0.80 G
+34.00 42.00 M 42.00 34.00 L
+stroke
+0.3 LW 0.80 G
+34.00 41.00 M 42.00 33.00 L
+stroke
+0.3 LW 0.80 G
+34.00 40.00 M 42.00 32.00 L
+stroke
+0.3 LW 0.80 G
+34.00 39.00 M 42.00 31.00 L
+stroke
+0.3 LW 0.80 G
+34.00 38.00 M 42.00 30.00 L
+stroke
+0.3 LW 0.80 G
+34.00 37.00 M 42.00 29.00 L
+stroke
+0.3 LW 0.80 G
+34.00 36.00 M 42.00 28.00 L
+stroke
+0.3 LW 0.80 G
+34.00 35.00 M 42.00 27.00 L
+stroke
+0.3 LW 0.80 G
+34.00 34.00 M 42.00 26.00 L
+stroke
+0.3 LW 0.80 G
+34.00 33.00 M 42.00 25.00 L
+stroke
+0.3 LW 0.80 G
+34.00 32.00 M 42.00 24.00 L
+stroke
+0.3 LW 0.80 G
+34.00 31.00 M 42.00 23.00 L
+stroke
+0.3 LW 0.80 G
+34.00 30.00 M 42.00 22.00 L
+stroke
+0.3 LW 0.80 G
+34.00 29.00 M 42.00 21.00 L
+stroke
+0.3 LW 0.80 G
+34.00 28.00 M 42.00 20.00 L
+stroke
+0.3 LW 0.80 G
+34.00 27.00 M 42.00 19.00 L
+stroke
+0.3 LW 0.80 G
+34.00 26.00 M 42.00 18.00 L
+stroke
+0.3 LW 0.80 G
+34.00 25.00 M 42.00 17.00 L
+stroke
+0.3 LW 0.80 G
+34.00 19.00 M 42.00 11.00 L
+stroke
+0.3 LW 0.80 G
+34.00 18.00 M 42.00 10.00 L
+stroke
+0.3 LW 0.80 G
+34.00 17.00 M 42.00 9.00 L
+stroke
+0.3 LW 0.80 G
+34.00 16.00 M 42.00 8.00 L
+stroke
+0.3 LW 0.80 G
+34.00 15.00 M 42.00 7.00 L
+stroke
+0.3 LW 0.80 G
+34.00 14.00 M 42.00 6.00 L
+stroke
+0.3 LW 0.80 G
+34.00 13.00 M 42.00 5.00 L
+stroke
+0.3 LW 0.80 G
+34.00 12.00 M 42.00 4.00 L
+stroke
+0.3 LW 0.80 G
+34.00 11.00 M 42.00 3.00 L
+stroke
+0.3 LW 0.80 G
+34.00 10.00 M 42.00 2.00 L
+stroke
+0.3 LW 0.80 G
+34.00 9.00 M 42.00 1.00 L
+stroke
+0.3 LW 0.80 G
+35.00 48.00 M 43.00 40.00 L
+stroke
+0.3 LW 0.80 G
+35.00 47.00 M 43.00 39.00 L
+stroke
+0.3 LW 0.80 G
+35.00 46.00 M 43.00 38.00 L
+stroke
+0.3 LW 0.80 G
+35.00 45.00 M 43.00 37.00 L
+stroke
+0.3 LW 0.80 G
+35.00 44.00 M 43.00 36.00 L
+stroke
+0.3 LW 0.80 G
+35.00 43.00 M 43.00 35.00 L
+stroke
+0.3 LW 0.80 G
+35.00 42.00 M 43.00 34.00 L
+stroke
+0.3 LW 0.80 G
+35.00 41.00 M 43.00 33.00 L
+stroke
+0.3 LW 0.80 G
+35.00 40.00 M 43.00 32.00 L
+stroke
+0.3 LW 0.80 G
+35.00 39.00 M 43.00 31.00 L
+stroke
+0.3 LW 0.80 G
+35.00 38.00 M 43.00 30.00 L
+stroke
+0.3 LW 0.80 G
+35.00 37.00 M 43.00 29.00 L
+stroke
+0.3 LW 0.80 G
+35.00 36.00 M 43.00 28.00 L
+stroke
+0.3 LW 0.80 G
+35.00 35.00 M 43.00 27.00 L
+stroke
+0.3 LW 0.80 G
+35.00 34.00 M 43.00 26.00 L
+stroke
+0.3 LW 0.80 G
+35.00 33.00 M 43.00 25.00 L
+stroke
+0.3 LW 0.80 G
+35.00 32.00 M 43.00 24.00 L
+stroke
+0.3 LW 0.80 G
+35.00 31.00 M 43.00 23.00 L
+stroke
+0.3 LW 0.80 G
+35.00 30.00 M 43.00 22.00 L
+stroke
+0.3 LW 0.80 G
+35.00 29.00 M 43.00 21.00 L
+stroke
+0.3 LW 0.80 G
+35.00 28.00 M 43.00 20.00 L
+stroke
+0.3 LW 0.80 G
+35.00 27.00 M 43.00 19.00 L
+stroke
+0.3 LW 0.80 G
+35.00 26.00 M 43.00 18.00 L
+stroke
+0.3 LW 0.80 G
+35.00 25.00 M 43.00 17.00 L
+stroke
+0.3 LW 0.80 G
+35.00 19.00 M 43.00 11.00 L
+stroke
+0.3 LW 0.80 G
+35.00 18.00 M 43.00 10.00 L
+stroke
+0.3 LW 0.80 G
+35.00 17.00 M 43.00 9.00 L
+stroke
+0.3 LW 0.80 G
+35.00 16.00 M 43.00 8.00 L
+stroke
+0.3 LW 0.80 G
+35.00 15.00 M 43.00 7.00 L
+stroke
+0.3 LW 0.80 G
+35.00 14.00 M 43.00 6.00 L
+stroke
+0.3 LW 0.80 G
+35.00 13.00 M 43.00 5.00 L
+stroke
+0.3 LW 0.80 G
+35.00 12.00 M 43.00 4.00 L
+stroke
+0.3 LW 0.80 G
+35.00 11.00 M 43.00 3.00 L
+stroke
+0.3 LW 0.80 G
+35.00 10.00 M 43.00 2.00 L
+stroke
+0.3 LW 0.80 G
+35.00 9.00 M 43.00 1.00 L
+stroke
+0.3 LW 0.80 G
+36.00 48.00 M 44.00 40.00 L
+stroke
+0.3 LW 0.80 G
+36.00 47.00 M 44.00 39.00 L
+stroke
+0.3 LW 0.80 G
+36.00 46.00 M 44.00 38.00 L
+stroke
+0.3 LW 0.80 G
+36.00 45.00 M 44.00 37.00 L
+stroke
+0.3 LW 0.80 G
+36.00 44.00 M 44.00 36.00 L
+stroke
+0.3 LW 0.80 G
+36.00 43.00 M 44.00 35.00 L
+stroke
+0.3 LW 0.80 G
+36.00 42.00 M 44.00 34.00 L
+stroke
+0.3 LW 0.80 G
+36.00 41.00 M 44.00 33.00 L
+stroke
+0.3 LW 0.80 G
+36.00 40.00 M 44.00 32.00 L
+stroke
+0.3 LW 0.80 G
+36.00 39.00 M 44.00 31.00 L
+stroke
+0.3 LW 0.80 G
+36.00 38.00 M 44.00 30.00 L
+stroke
+0.3 LW 0.80 G
+36.00 37.00 M 44.00 29.00 L
+stroke
+0.3 LW 0.80 G
+36.00 36.00 M 44.00 28.00 L
+stroke
+0.3 LW 0.80 G
+36.00 35.00 M 44.00 27.00 L
+stroke
+0.3 LW 0.80 G
+36.00 34.00 M 44.00 26.00 L
+stroke
+0.3 LW 0.80 G
+36.00 33.00 M 44.00 25.00 L
+stroke
+0.3 LW 0.80 G
+36.00 32.00 M 44.00 24.00 L
+stroke
+0.3 LW 0.80 G
+36.00 31.00 M 44.00 23.00 L
+stroke
+0.3 LW 0.80 G
+36.00 30.00 M 44.00 22.00 L
+stroke
+0.3 LW 0.80 G
+36.00 29.00 M 44.00 21.00 L
+stroke
+0.3 LW 0.80 G
+36.00 28.00 M 44.00 20.00 L
+stroke
+0.3 LW 0.80 G
+36.00 27.00 M 44.00 19.00 L
+stroke
+0.3 LW 0.80 G
+36.00 26.00 M 44.00 18.00 L
+stroke
+0.3 LW 0.80 G
+36.00 25.00 M 44.00 17.00 L
+stroke
+0.3 LW 0.80 G
+36.00 19.00 M 44.00 11.00 L
+stroke
+0.3 LW 0.80 G
+36.00 18.00 M 44.00 10.00 L
+stroke
+0.3 LW 0.80 G
+36.00 17.00 M 44.00 9.00 L
+stroke
+0.3 LW 0.80 G
+36.00 16.00 M 44.00 8.00 L
+stroke
+0.3 LW 0.80 G
+36.00 15.00 M 44.00 7.00 L
+stroke
+0.3 LW 0.80 G
+36.00 14.00 M 44.00 6.00 L
+stroke
+0.3 LW 0.80 G
+36.00 13.00 M 44.00 5.00 L
+stroke
+0.3 LW 0.80 G
+36.00 12.00 M 44.00 4.00 L
+stroke
+0.3 LW 0.80 G
+36.00 11.00 M 44.00 3.00 L
+stroke
+0.3 LW 0.80 G
+36.00 10.00 M 44.00 2.00 L
+stroke
+0.3 LW 0.80 G
+36.00 9.00 M 44.00 1.00 L
+stroke
+0.3 LW 0.80 G
+37.00 48.00 M 45.00 40.00 L
+stroke
+0.3 LW 0.80 G
+37.00 47.00 M 45.00 39.00 L
+stroke
+0.3 LW 0.80 G
+37.00 45.00 M 45.00 37.00 L
+stroke
+0.3 LW 0.80 G
+37.00 44.00 M 45.00 36.00 L
+stroke
+0.3 LW 0.80 G
+37.00 43.00 M 45.00 35.00 L
+stroke
+0.3 LW 0.80 G
+37.00 42.00 M 45.00 34.00 L
+stroke
+0.3 LW 0.80 G
+37.00 41.00 M 45.00 33.00 L
+stroke
+0.3 LW 0.80 G
+37.00 40.00 M 45.00 32.00 L
+stroke
+0.3 LW 0.80 G
+37.00 39.00 M 45.00 31.00 L
+stroke
+0.3 LW 0.80 G
+37.00 38.00 M 45.00 30.00 L
+stroke
+0.3 LW 0.80 G
+37.00 37.00 M 45.00 29.00 L
+stroke
+0.3 LW 0.80 G
+37.00 36.00 M 45.00 28.00 L
+stroke
+0.3 LW 0.80 G
+37.00 35.00 M 45.00 27.00 L
+stroke
+0.3 LW 0.80 G
+37.00 34.00 M 45.00 26.00 L
+stroke
+0.3 LW 0.80 G
+37.00 33.00 M 45.00 25.00 L
+stroke
+0.3 LW 0.80 G
+37.00 32.00 M 45.00 24.00 L
+stroke
+0.3 LW 0.80 G
+37.00 31.00 M 45.00 23.00 L
+stroke
+0.3 LW 0.80 G
+37.00 30.00 M 45.00 22.00 L
+stroke
+0.3 LW 0.80 G
+37.00 29.00 M 45.00 21.00 L
+stroke
+0.3 LW 0.80 G
+37.00 28.00 M 45.00 20.00 L
+stroke
+0.3 LW 0.80 G
+37.00 27.00 M 45.00 19.00 L
+stroke
+0.3 LW 0.80 G
+37.00 26.00 M 45.00 18.00 L
+stroke
+0.3 LW 0.80 G
+37.00 25.00 M 45.00 17.00 L
+stroke
+0.3 LW 0.80 G
+37.00 24.00 M 45.00 16.00 L
+stroke
+0.3 LW 0.80 G
+37.00 18.00 M 45.00 10.00 L
+stroke
+0.3 LW 0.80 G
+37.00 17.00 M 45.00 9.00 L
+stroke
+0.3 LW 0.80 G
+37.00 16.00 M 45.00 8.00 L
+stroke
+0.3 LW 0.80 G
+37.00 15.00 M 45.00 7.00 L
+stroke
+0.3 LW 0.80 G
+37.00 14.00 M 45.00 6.00 L
+stroke
+0.3 LW 0.80 G
+37.00 13.00 M 45.00 5.00 L
+stroke
+0.3 LW 0.80 G
+37.00 12.00 M 45.00 4.00 L
+stroke
+0.3 LW 0.80 G
+37.00 11.00 M 45.00 3.00 L
+stroke
+0.3 LW 0.80 G
+37.00 10.00 M 45.00 2.00 L
+stroke
+0.3 LW 0.80 G
+37.00 9.00 M 45.00 1.00 L
+stroke
+0.3 LW 0.80 G
+38.00 48.00 M 46.00 40.00 L
+stroke
+0.3 LW 0.80 G
+38.00 47.00 M 46.00 39.00 L
+stroke
+0.3 LW 0.80 G
+38.00 45.00 M 46.00 37.00 L
+stroke
+0.3 LW 0.80 G
+38.00 44.00 M 46.00 36.00 L
+stroke
+0.3 LW 0.80 G
+38.00 43.00 M 46.00 35.00 L
+stroke
+0.3 LW 0.80 G
+38.00 42.00 M 46.00 34.00 L
+stroke
+0.3 LW 0.80 G
+38.00 41.00 M 46.00 33.00 L
+stroke
+0.3 LW 0.80 G
+38.00 40.00 M 46.00 32.00 L
+stroke
+0.3 LW 0.80 G
+38.00 39.00 M 46.00 31.00 L
+stroke
+0.3 LW 0.80 G
+38.00 38.00 M 46.00 30.00 L
+stroke
+0.3 LW 0.80 G
+38.00 37.00 M 46.00 29.00 L
+stroke
+0.3 LW 0.80 G
+38.00 36.00 M 46.00 28.00 L
+stroke
+0.3 LW 0.80 G
+38.00 35.00 M 46.00 27.00 L
+stroke
+0.3 LW 0.80 G
+38.00 34.00 M 46.00 26.00 L
+stroke
+0.3 LW 0.80 G
+38.00 33.00 M 46.00 25.00 L
+stroke
+0.3 LW 0.80 G
+38.00 32.00 M 46.00 24.00 L
+stroke
+0.3 LW 0.80 G
+38.00 31.00 M 46.00 23.00 L
+stroke
+0.3 LW 0.80 G
+38.00 30.00 M 46.00 22.00 L
+stroke
+0.3 LW 0.80 G
+38.00 29.00 M 46.00 21.00 L
+stroke
+0.3 LW 0.80 G
+38.00 28.00 M 46.00 20.00 L
+stroke
+0.3 LW 0.80 G
+38.00 27.00 M 46.00 19.00 L
+stroke
+0.3 LW 0.80 G
+38.00 26.00 M 46.00 18.00 L
+stroke
+0.3 LW 0.80 G
+38.00 25.00 M 46.00 17.00 L
+stroke
+0.3 LW 0.80 G
+38.00 20.00 M 46.00 12.00 L
+stroke
+0.3 LW 0.80 G
+38.00 18.00 M 46.00 10.00 L
+stroke
+0.3 LW 0.80 G
+38.00 17.00 M 46.00 9.00 L
+stroke
+0.3 LW 0.80 G
+38.00 16.00 M 46.00 8.00 L
+stroke
+0.3 LW 0.80 G
+38.00 15.00 M 46.00 7.00 L
+stroke
+0.3 LW 0.80 G
+38.00 14.00 M 46.00 6.00 L
+stroke
+0.3 LW 0.80 G
+38.00 13.00 M 46.00 5.00 L
+stroke
+0.3 LW 0.80 G
+38.00 12.00 M 46.00 4.00 L
+stroke
+0.3 LW 0.80 G
+38.00 11.00 M 46.00 3.00 L
+stroke
+0.3 LW 0.80 G
+38.00 10.00 M 46.00 2.00 L
+stroke
+0.3 LW 0.80 G
+38.00 9.00 M 46.00 1.00 L
+stroke
+0.3 LW 0.80 G
+39.00 51.00 M 47.00 43.00 L
+stroke
+0.3 LW 0.80 G
+39.00 48.00 M 47.00 40.00 L
+stroke
+0.3 LW 0.80 G
+39.00 47.00 M 47.00 39.00 L
+stroke
+0.3 LW 0.80 G
+39.00 46.00 M 47.00 38.00 L
+stroke
+0.3 LW 0.80 G
+39.00 45.00 M 47.00 37.00 L
+stroke
+0.3 LW 0.80 G
+39.00 44.00 M 47.00 36.00 L
+stroke
+0.3 LW 0.80 G
+39.00 43.00 M 47.00 35.00 L
+stroke
+0.3 LW 0.80 G
+39.00 42.00 M 47.00 34.00 L
+stroke
+0.3 LW 0.80 G
+39.00 41.00 M 47.00 33.00 L
+stroke
+0.3 LW 0.80 G
+39.00 40.00 M 47.00 32.00 L
+stroke
+0.3 LW 0.80 G
+39.00 39.00 M 47.00 31.00 L
+stroke
+0.3 LW 0.80 G
+39.00 38.00 M 47.00 30.00 L
+stroke
+0.3 LW 0.80 G
+39.00 37.00 M 47.00 29.00 L
+stroke
+0.3 LW 0.80 G
+39.00 36.00 M 47.00 28.00 L
+stroke
+0.3 LW 0.80 G
+39.00 35.00 M 47.00 27.00 L
+stroke
+0.3 LW 0.80 G
+39.00 34.00 M 47.00 26.00 L
+stroke
+0.3 LW 0.80 G
+39.00 33.00 M 47.00 25.00 L
+stroke
+0.3 LW 0.80 G
+39.00 32.00 M 47.00 24.00 L
+stroke
+0.3 LW 0.80 G
+39.00 31.00 M 47.00 23.00 L
+stroke
+0.3 LW 0.80 G
+39.00 30.00 M 47.00 22.00 L
+stroke
+0.3 LW 0.80 G
+39.00 29.00 M 47.00 21.00 L
+stroke
+0.3 LW 0.80 G
+39.00 28.00 M 47.00 20.00 L
+stroke
+0.3 LW 0.80 G
+39.00 27.00 M 47.00 19.00 L
+stroke
+0.3 LW 0.80 G
+39.00 26.00 M 47.00 18.00 L
+stroke
+0.3 LW 0.80 G
+39.00 25.00 M 47.00 17.00 L
+stroke
+0.3 LW 0.80 G
+39.00 20.00 M 47.00 12.00 L
+stroke
+0.3 LW 0.80 G
+39.00 19.00 M 47.00 11.00 L
+stroke
+0.3 LW 0.80 G
+39.00 18.00 M 47.00 10.00 L
+stroke
+0.3 LW 0.80 G
+39.00 17.00 M 47.00 9.00 L
+stroke
+0.3 LW 0.80 G
+39.00 16.00 M 47.00 8.00 L
+stroke
+0.3 LW 0.80 G
+39.00 15.00 M 47.00 7.00 L
+stroke
+0.3 LW 0.80 G
+39.00 14.00 M 47.00 6.00 L
+stroke
+0.3 LW 0.80 G
+39.00 13.00 M 47.00 5.00 L
+stroke
+0.3 LW 0.80 G
+39.00 12.00 M 47.00 4.00 L
+stroke
+0.3 LW 0.80 G
+39.00 11.00 M 47.00 3.00 L
+stroke
+0.3 LW 0.80 G
+39.00 10.00 M 47.00 2.00 L
+stroke
+0.3 LW 0.80 G
+39.00 9.00 M 47.00 1.00 L
+stroke
+0.3 LW 0.80 G
+40.00 50.00 M 48.00 42.00 L
+stroke
+0.3 LW 0.80 G
+40.00 49.00 M 48.00 41.00 L
+stroke
+0.3 LW 0.80 G
+40.00 46.00 M 48.00 38.00 L
+stroke
+0.3 LW 0.80 G
+40.00 44.00 M 48.00 36.00 L
+stroke
+0.3 LW 0.80 G
+40.00 41.00 M 48.00 33.00 L
+stroke
+0.3 LW 0.80 G
+40.00 40.00 M 48.00 32.00 L
+stroke
+0.3 LW 0.80 G
+40.00 38.00 M 48.00 30.00 L
+stroke
+0.3 LW 0.80 G
+40.00 37.00 M 48.00 29.00 L
+stroke
+0.3 LW 0.80 G
+40.00 36.00 M 48.00 28.00 L
+stroke
+0.3 LW 0.80 G
+40.00 34.00 M 48.00 26.00 L
+stroke
+0.3 LW 0.80 G
+40.00 33.00 M 48.00 25.00 L
+stroke
+0.3 LW 0.80 G
+40.00 31.00 M 48.00 23.00 L
+stroke
+0.3 LW 0.80 G
+40.00 30.00 M 48.00 22.00 L
+stroke
+0.3 LW 0.80 G
+40.00 27.00 M 48.00 19.00 L
+stroke
+0.3 LW 0.80 G
+40.00 25.00 M 48.00 17.00 L
+stroke
+0.3 LW 0.80 G
+40.00 24.00 M 48.00 16.00 L
+stroke
+0.3 LW 0.80 G
+40.00 19.00 M 48.00 11.00 L
+stroke
+0.3 LW 0.80 G
+40.00 15.00 M 48.00 7.00 L
+stroke
+0.3 LW 0.80 G
+40.00 12.00 M 48.00 4.00 L
+stroke
+0.3 LW 0.80 G
+40.00 10.00 M 48.00 2.00 L
+stroke
+0.3 LW 0.80 G
+40.00 9.00 M 48.00 1.00 L
+stroke
+0.3 LW 0.80 G
+41.00 49.00 M 49.00 41.00 L
+stroke
+0.3 LW 0.80 G
+41.00 36.00 M 49.00 28.00 L
+stroke
+0.3 LW 0.80 G
+41.00 27.00 M 49.00 19.00 L
+stroke
+0.3 LW 0.80 G
+41.00 26.00 M 49.00 18.00 L
+stroke
+0.3 LW 0.80 G
+41.00 24.00 M 49.00 16.00 L
+stroke
+0.3 LW 0.80 G
+41.00 23.00 M 49.00 15.00 L
+stroke
+0.3 LW 0.80 G
+41.00 9.00 M 49.00 1.00 L
+stroke
+0.3 LW 0.80 G
+42.00 49.00 M 50.00 41.00 L
+stroke
+0.3 LW 0.80 G
+42.00 48.00 M 50.00 40.00 L
+stroke
+0.3 LW 0.80 G
+42.00 23.00 M 50.00 15.00 L
+stroke
+0.3 LW 0.80 G
+42.00 22.00 M 50.00 14.00 L
+stroke
+0.3 LW 0.80 G
+43.00 52.00 M 51.00 44.00 L
+stroke
+0.3 LW 0.80 G
+43.00 51.00 M 51.00 43.00 L
+stroke
+0.3 LW 0.80 G
+43.00 47.00 M 51.00 39.00 L
+stroke
+0.3 LW 0.80 G
+43.00 25.00 M 51.00 17.00 L
+stroke
+0.3 LW 0.80 G
+43.00 22.00 M 51.00 14.00 L
+stroke
+0.3 LW 0.80 G
+43.00 21.00 M 51.00 13.00 L
+stroke
+0.3 LW 0.80 G
+43.00 20.00 M 51.00 12.00 L
+stroke
+0.3 LW 0.80 G
+44.00 52.00 M 52.00 44.00 L
+stroke
+0.3 LW 0.80 G
+44.00 51.00 M 52.00 43.00 L
+stroke
+0.3 LW 0.80 G
+44.00 50.00 M 52.00 42.00 L
+stroke
+0.3 LW 0.80 G
+44.00 47.00 M 52.00 39.00 L
+stroke
+0.3 LW 0.80 G
+44.00 46.00 M 52.00 38.00 L
+stroke
+0.3 LW 0.80 G
+44.00 25.00 M 52.00 17.00 L
+stroke
+0.3 LW 0.80 G
+44.00 24.00 M 52.00 16.00 L
+stroke
+0.3 LW 0.80 G
+44.00 23.00 M 52.00 15.00 L
+stroke
+0.3 LW 0.80 G
+44.00 21.00 M 52.00 13.00 L
+stroke
+0.3 LW 0.80 G
+44.00 20.00 M 52.00 12.00 L
+stroke
+0.3 LW 0.80 G
+44.00 19.00 M 52.00 11.00 L
+stroke
+0.3 LW 0.80 G
+45.00 51.00 M 53.00 43.00 L
+stroke
+0.3 LW 0.80 G
+45.00 50.00 M 53.00 42.00 L
+stroke
+0.3 LW 0.80 G
+45.00 49.00 M 53.00 41.00 L
+stroke
+0.3 LW 0.80 G
+45.00 47.00 M 53.00 39.00 L
+stroke
+0.3 LW 0.80 G
+45.00 46.00 M 53.00 38.00 L
+stroke
+0.3 LW 0.80 G
+45.00 25.00 M 53.00 17.00 L
+stroke
+0.3 LW 0.80 G
+45.00 24.00 M 53.00 16.00 L
+stroke
+0.3 LW 0.80 G
+45.00 23.00 M 53.00 15.00 L
+stroke
+0.3 LW 0.80 G
+45.00 20.00 M 53.00 12.00 L
+stroke
+0.3 LW 0.80 G
+45.00 19.00 M 53.00 11.00 L
+stroke
+0.3 LW 0.80 G
+46.00 51.00 M 54.00 43.00 L
+stroke
+0.3 LW 0.80 G
+46.00 50.00 M 54.00 42.00 L
+stroke
+0.3 LW 0.80 G
+46.00 49.00 M 54.00 41.00 L
+stroke
+0.3 LW 0.80 G
+46.00 24.00 M 54.00 16.00 L
+stroke
+0.3 LW 0.80 G
+46.00 23.00 M 54.00 15.00 L
+stroke
+0.3 LW 0.80 G
+46.00 22.00 M 54.00 14.00 L
+stroke
+0.3 LW 0.80 G
+47.00 49.00 M 55.00 41.00 L
+stroke
+0.3 LW 0.80 G
+47.00 48.00 M 55.00 40.00 L
+stroke
+0.3 LW 0.80 G
+47.00 24.00 M 55.00 16.00 L
+stroke
+0.3 LW 0.80 G
+47.00 23.00 M 55.00 15.00 L
+stroke
+0.3 LW 0.80 G
+47.00 22.00 M 55.00 14.00 L
+stroke
+0.3 LW 0.80 G
+48.00 54.00 M 56.00 46.00 L
+stroke
+0.3 LW 0.80 G
+48.00 53.00 M 56.00 45.00 L
+stroke
+0.3 LW 0.80 G
+48.00 22.00 M 56.00 14.00 L
+stroke
+0.3 LW 0.80 G
+49.00 54.00 M 57.00 46.00 L
+stroke
+0.3 LW 0.80 G
+49.00 53.00 M 57.00 45.00 L
+stroke
+0.3 LW 0.80 G
+50.00 54.00 M 58.00 46.00 L
+stroke
+0.3 LW 0.80 G
+50.00 53.00 M 58.00 45.00 L
+stroke
+0.3 LW 0.80 G
+50.00 52.00 M 58.00 44.00 L
+stroke
+0.3 LW 0.80 G
+50.00 51.00 M 58.00 43.00 L
+stroke
+0.3 LW 0.80 G
+50.00 22.00 M 58.00 14.00 L
+stroke
+0.3 LW 0.80 G
+50.00 21.00 M 58.00 13.00 L
+stroke
+0.3 LW 0.80 G
+51.00 54.00 M 59.00 46.00 L
+stroke
+0.3 LW 0.80 G
+51.00 53.00 M 59.00 45.00 L
+stroke
+0.3 LW 0.80 G
+51.00 52.00 M 59.00 44.00 L
+stroke
+0.3 LW 0.80 G
+51.00 51.00 M 59.00 43.00 L
+stroke
+0.3 LW 0.80 G
+51.00 46.00 M 59.00 38.00 L
+stroke
+0.3 LW 0.80 G
+51.00 24.00 M 59.00 16.00 L
+stroke
+0.3 LW 0.80 G
+51.00 22.00 M 59.00 14.00 L
+stroke
+0.3 LW 0.80 G
+51.00 21.00 M 59.00 13.00 L
+stroke
+0.3 LW 0.80 G
+52.00 52.00 M 60.00 44.00 L
+stroke
+0.3 LW 0.80 G
+52.00 51.00 M 60.00 43.00 L
+stroke
+0.3 LW 0.80 G
+52.00 50.00 M 60.00 42.00 L
+stroke
+0.3 LW 0.80 G
+52.00 49.00 M 60.00 41.00 L
+stroke
+0.3 LW 0.80 G
+52.00 48.00 M 60.00 40.00 L
+stroke
+0.3 LW 0.80 G
+52.00 47.00 M 60.00 39.00 L
+stroke
+0.3 LW 0.80 G
+52.00 46.00 M 60.00 38.00 L
+stroke
+0.3 LW 0.80 G
+52.00 24.00 M 60.00 16.00 L
+stroke
+0.3 LW 0.80 G
+52.00 23.00 M 60.00 15.00 L
+stroke
+0.3 LW 0.80 G
+52.00 22.00 M 60.00 14.00 L
+stroke
+0.3 LW 0.80 G
+52.00 21.00 M 60.00 13.00 L
+stroke
+0.3 LW 0.80 G
+52.00 20.00 M 60.00 12.00 L
+stroke
+0.3 LW 0.80 G
+52.00 19.00 M 60.00 11.00 L
+stroke
+0.3 LW 0.80 G
+53.00 52.00 M 61.00 44.00 L
+stroke
+0.3 LW 0.80 G
+53.00 51.00 M 61.00 43.00 L
+stroke
+0.3 LW 0.80 G
+53.00 50.00 M 61.00 42.00 L
+stroke
+0.3 LW 0.80 G
+53.00 49.00 M 61.00 41.00 L
+stroke
+0.3 LW 0.80 G
+53.00 48.00 M 61.00 40.00 L
+stroke
+0.3 LW 0.80 G
+53.00 47.00 M 61.00 39.00 L
+stroke
+0.3 LW 0.80 G
+53.00 36.00 M 61.00 28.00 L
+stroke
+0.3 LW 0.80 G
+53.00 35.00 M 61.00 27.00 L
+stroke
+0.3 LW 0.80 G
+53.00 24.00 M 61.00 16.00 L
+stroke
+0.3 LW 0.80 G
+53.00 23.00 M 61.00 15.00 L
+stroke
+0.3 LW 0.80 G
+53.00 22.00 M 61.00 14.00 L
+stroke
+0.3 LW 0.80 G
+53.00 21.00 M 61.00 13.00 L
+stroke
+0.3 LW 0.80 G
+53.00 20.00 M 61.00 12.00 L
+stroke
+0.3 LW 0.80 G
+54.00 51.00 M 62.00 43.00 L
+stroke
+0.3 LW 0.80 G
+54.00 50.00 M 62.00 42.00 L
+stroke
+0.3 LW 0.80 G
+54.00 49.00 M 62.00 41.00 L
+stroke
+0.3 LW 0.80 G
+54.00 48.00 M 62.00 40.00 L
+stroke
+0.3 LW 0.80 G
+54.00 47.00 M 62.00 39.00 L
+stroke
+0.3 LW 0.80 G
+54.00 46.00 M 62.00 38.00 L
+stroke
+0.3 LW 0.80 G
+54.00 35.00 M 62.00 27.00 L
+stroke
+0.3 LW 0.80 G
+54.00 25.00 M 62.00 17.00 L
+stroke
+0.3 LW 0.80 G
+54.00 23.00 M 62.00 15.00 L
+stroke
+0.3 LW 0.80 G
+54.00 22.00 M 62.00 14.00 L
+stroke
+0.3 LW 0.80 G
+54.00 21.00 M 62.00 13.00 L
+stroke
+0.3 LW 0.80 G
+54.00 20.00 M 62.00 12.00 L
+stroke
+0.3 LW 0.80 G
+54.00 19.00 M 62.00 11.00 L
+stroke
+0.3 LW 0.80 G
+55.00 51.00 M 63.00 43.00 L
+stroke
+0.3 LW 0.80 G
+55.00 50.00 M 63.00 42.00 L
+stroke
+0.3 LW 0.80 G
+55.00 49.00 M 63.00 41.00 L
+stroke
+0.3 LW 0.80 G
+55.00 48.00 M 63.00 40.00 L
+stroke
+0.3 LW 0.80 G
+55.00 47.00 M 63.00 39.00 L
+stroke
+0.3 LW 0.80 G
+55.00 24.00 M 63.00 16.00 L
+stroke
+0.3 LW 0.80 G
+55.00 21.00 M 63.00 13.00 L
+stroke
+0.3 LW 0.80 G
+55.00 20.00 M 63.00 12.00 L
+stroke
+0.3 LW 0.80 G
+56.00 51.00 M 64.00 43.00 L
+stroke
+0.3 LW 0.80 G
+56.00 50.00 M 64.00 42.00 L
+stroke
+0.3 LW 0.80 G
+56.00 49.00 M 64.00 41.00 L
+stroke
+0.3 LW 0.80 G
+56.00 47.00 M 64.00 39.00 L
+stroke
+0.3 LW 0.80 G
+56.00 46.00 M 64.00 38.00 L
+stroke
+0.3 LW 0.80 G
+56.00 35.00 M 64.00 27.00 L
+stroke
+0.3 LW 0.80 G
+56.00 24.00 M 64.00 16.00 L
+stroke
+0.3 LW 0.80 G
+56.00 23.00 M 64.00 15.00 L
+stroke
+0.3 LW 0.80 G
+56.00 20.00 M 64.00 12.00 L
+stroke
+0.3 LW 0.80 G
+56.00 19.00 M 64.00 11.00 L
+stroke
+0.3 LW 0.80 G
+57.00 49.00 M 65.00 41.00 L
+stroke
+0.3 LW 0.80 G
+57.00 46.00 M 65.00 38.00 L
+stroke
+0.3 LW 0.80 G
+57.00 45.00 M 65.00 37.00 L
+stroke
+0.3 LW 0.80 G
+57.00 44.00 M 65.00 36.00 L
+stroke
+0.3 LW 0.80 G
+57.00 43.00 M 65.00 35.00 L
+stroke
+0.3 LW 0.80 G
+57.00 42.00 M 65.00 34.00 L
+stroke
+0.3 LW 0.80 G
+57.00 41.00 M 65.00 33.00 L
+stroke
+0.3 LW 0.80 G
+57.00 40.00 M 65.00 32.00 L
+stroke
+0.3 LW 0.80 G
+57.00 39.00 M 65.00 31.00 L
+stroke
+0.3 LW 0.80 G
+57.00 38.00 M 65.00 30.00 L
+stroke
+0.3 LW 0.80 G
+57.00 37.00 M 65.00 29.00 L
+stroke
+0.3 LW 0.80 G
+57.00 35.00 M 65.00 27.00 L
+stroke
+0.3 LW 0.80 G
+57.00 34.00 M 65.00 26.00 L
+stroke
+0.3 LW 0.80 G
+57.00 33.00 M 65.00 25.00 L
+stroke
+0.3 LW 0.80 G
+57.00 32.00 M 65.00 24.00 L
+stroke
+0.3 LW 0.80 G
+57.00 31.00 M 65.00 23.00 L
+stroke
+0.3 LW 0.80 G
+57.00 30.00 M 65.00 22.00 L
+stroke
+0.3 LW 0.80 G
+57.00 29.00 M 65.00 21.00 L
+stroke
+0.3 LW 0.80 G
+57.00 28.00 M 65.00 20.00 L
+stroke
+0.3 LW 0.80 G
+57.00 27.00 M 65.00 19.00 L
+stroke
+0.3 LW 0.80 G
+57.00 20.00 M 65.00 12.00 L
+stroke
+0.3 LW 0.80 G
+57.00 19.00 M 65.00 11.00 L
+stroke
+0.3 LW 0.80 G
+57.00 18.00 M 65.00 10.00 L
+stroke
+0.3 LW 0.80 G
+57.00 17.00 M 65.00 9.00 L
+stroke
+0.3 LW 0.80 G
+57.00 16.00 M 65.00 8.00 L
+stroke
+0.3 LW 0.80 G
+57.00 15.00 M 65.00 7.00 L
+stroke
+0.3 LW 0.80 G
+57.00 14.00 M 65.00 6.00 L
+stroke
+0.3 LW 0.80 G
+57.00 13.00 M 65.00 5.00 L
+stroke
+0.3 LW 0.80 G
+57.00 12.00 M 65.00 4.00 L
+stroke
+0.3 LW 0.80 G
+57.00 11.00 M 65.00 3.00 L
+stroke
+0.3 LW 0.80 G
+57.00 10.00 M 65.00 2.00 L
+stroke
+0.3 LW 0.80 G
+57.00 9.00 M 65.00 1.00 L
+stroke
+0.3 LW 0.80 G
+58.00 47.00 M 66.00 39.00 L
+stroke
+0.3 LW 0.80 G
+58.00 46.00 M 66.00 38.00 L
+stroke
+0.3 LW 0.80 G
+58.00 45.00 M 66.00 37.00 L
+stroke
+0.3 LW 0.80 G
+58.00 44.00 M 66.00 36.00 L
+stroke
+0.3 LW 0.80 G
+58.00 43.00 M 66.00 35.00 L
+stroke
+0.3 LW 0.80 G
+58.00 42.00 M 66.00 34.00 L
+stroke
+0.3 LW 0.80 G
+58.00 41.00 M 66.00 33.00 L
+stroke
+0.3 LW 0.80 G
+58.00 40.00 M 66.00 32.00 L
+stroke
+0.3 LW 0.80 G
+58.00 39.00 M 66.00 31.00 L
+stroke
+0.3 LW 0.80 G
+58.00 38.00 M 66.00 30.00 L
+stroke
+0.3 LW 0.80 G
+58.00 37.00 M 66.00 29.00 L
+stroke
+0.3 LW 0.80 G
+58.00 36.00 M 66.00 28.00 L
+stroke
+0.3 LW 0.80 G
+58.00 35.00 M 66.00 27.00 L
+stroke
+0.3 LW 0.80 G
+58.00 34.00 M 66.00 26.00 L
+stroke
+0.3 LW 0.80 G
+58.00 33.00 M 66.00 25.00 L
+stroke
+0.3 LW 0.80 G
+58.00 32.00 M 66.00 24.00 L
+stroke
+0.3 LW 0.80 G
+58.00 31.00 M 66.00 23.00 L
+stroke
+0.3 LW 0.80 G
+58.00 30.00 M 66.00 22.00 L
+stroke
+0.3 LW 0.80 G
+58.00 29.00 M 66.00 21.00 L
+stroke
+0.3 LW 0.80 G
+58.00 28.00 M 66.00 20.00 L
+stroke
+0.3 LW 0.80 G
+58.00 27.00 M 66.00 19.00 L
+stroke
+0.3 LW 0.80 G
+58.00 26.00 M 66.00 18.00 L
+stroke
+0.3 LW 0.80 G
+58.00 25.00 M 66.00 17.00 L
+stroke
+0.3 LW 0.80 G
+58.00 20.00 M 66.00 12.00 L
+stroke
+0.3 LW 0.80 G
+58.00 19.00 M 66.00 11.00 L
+stroke
+0.3 LW 0.80 G
+58.00 18.00 M 66.00 10.00 L
+stroke
+0.3 LW 0.80 G
+58.00 17.00 M 66.00 9.00 L
+stroke
+0.3 LW 0.80 G
+58.00 16.00 M 66.00 8.00 L
+stroke
+0.3 LW 0.80 G
+58.00 15.00 M 66.00 7.00 L
+stroke
+0.3 LW 0.80 G
+58.00 14.00 M 66.00 6.00 L
+stroke
+0.3 LW 0.80 G
+58.00 13.00 M 66.00 5.00 L
+stroke
+0.3 LW 0.80 G
+58.00 12.00 M 66.00 4.00 L
+stroke
+0.3 LW 0.80 G
+58.00 11.00 M 66.00 3.00 L
+stroke
+0.3 LW 0.80 G
+58.00 10.00 M 66.00 2.00 L
+stroke
+0.3 LW 0.80 G
+58.00 9.00 M 66.00 1.00 L
+stroke
+0.3 LW 0.80 G
+59.00 46.00 M 67.00 38.00 L
+stroke
+0.3 LW 0.80 G
+59.00 45.00 M 67.00 37.00 L
+stroke
+0.3 LW 0.80 G
+59.00 44.00 M 67.00 36.00 L
+stroke
+0.3 LW 0.80 G
+59.00 43.00 M 67.00 35.00 L
+stroke
+0.3 LW 0.80 G
+59.00 42.00 M 67.00 34.00 L
+stroke
+0.3 LW 0.80 G
+59.00 41.00 M 67.00 33.00 L
+stroke
+0.3 LW 0.80 G
+59.00 40.00 M 67.00 32.00 L
+stroke
+0.3 LW 0.80 G
+59.00 39.00 M 67.00 31.00 L
+stroke
+0.3 LW 0.80 G
+59.00 38.00 M 67.00 30.00 L
+stroke
+0.3 LW 0.80 G
+59.00 37.00 M 67.00 29.00 L
+stroke
+0.3 LW 0.80 G
+59.00 36.00 M 67.00 28.00 L
+stroke
+0.3 LW 0.80 G
+59.00 35.00 M 67.00 27.00 L
+stroke
+0.3 LW 0.80 G
+59.00 34.00 M 67.00 26.00 L
+stroke
+0.3 LW 0.80 G
+59.00 33.00 M 67.00 25.00 L
+stroke
+0.3 LW 0.80 G
+59.00 32.00 M 67.00 24.00 L
+stroke
+0.3 LW 0.80 G
+59.00 31.00 M 67.00 23.00 L
+stroke
+0.3 LW 0.80 G
+59.00 30.00 M 67.00 22.00 L
+stroke
+0.3 LW 0.80 G
+59.00 29.00 M 67.00 21.00 L
+stroke
+0.3 LW 0.80 G
+59.00 28.00 M 67.00 20.00 L
+stroke
+0.3 LW 0.80 G
+59.00 27.00 M 67.00 19.00 L
+stroke
+0.3 LW 0.80 G
+59.00 26.00 M 67.00 18.00 L
+stroke
+0.3 LW 0.80 G
+59.00 25.00 M 67.00 17.00 L
+stroke
+0.3 LW 0.80 G
+59.00 19.00 M 67.00 11.00 L
+stroke
+0.3 LW 0.80 G
+59.00 18.00 M 67.00 10.00 L
+stroke
+0.3 LW 0.80 G
+59.00 17.00 M 67.00 9.00 L
+stroke
+0.3 LW 0.80 G
+59.00 16.00 M 67.00 8.00 L
+stroke
+0.3 LW 0.80 G
+59.00 15.00 M 67.00 7.00 L
+stroke
+0.3 LW 0.80 G
+59.00 14.00 M 67.00 6.00 L
+stroke
+0.3 LW 0.80 G
+59.00 13.00 M 67.00 5.00 L
+stroke
+0.3 LW 0.80 G
+59.00 12.00 M 67.00 4.00 L
+stroke
+0.3 LW 0.80 G
+59.00 11.00 M 67.00 3.00 L
+stroke
+0.3 LW 0.80 G
+59.00 10.00 M 67.00 2.00 L
+stroke
+0.3 LW 0.80 G
+59.00 9.00 M 67.00 1.00 L
+stroke
+0.3 LW 0.80 G
+60.00 48.00 M 68.00 40.00 L
+stroke
+0.3 LW 0.80 G
+60.00 47.00 M 68.00 39.00 L
+stroke
+0.3 LW 0.80 G
+60.00 46.00 M 68.00 38.00 L
+stroke
+0.3 LW 0.80 G
+60.00 45.00 M 68.00 37.00 L
+stroke
+0.3 LW 0.80 G
+60.00 44.00 M 68.00 36.00 L
+stroke
+0.3 LW 0.80 G
+60.00 43.00 M 68.00 35.00 L
+stroke
+0.3 LW 0.80 G
+60.00 42.00 M 68.00 34.00 L
+stroke
+0.3 LW 0.80 G
+60.00 41.00 M 68.00 33.00 L
+stroke
+0.3 LW 0.80 G
+60.00 40.00 M 68.00 32.00 L
+stroke
+0.3 LW 0.80 G
+60.00 39.00 M 68.00 31.00 L
+stroke
+0.3 LW 0.80 G
+60.00 38.00 M 68.00 30.00 L
+stroke
+0.3 LW 0.80 G
+60.00 37.00 M 68.00 29.00 L
+stroke
+0.3 LW 0.80 G
+60.00 36.00 M 68.00 28.00 L
+stroke
+0.3 LW 0.80 G
+60.00 35.00 M 68.00 27.00 L
+stroke
+0.3 LW 0.80 G
+60.00 34.00 M 68.00 26.00 L
+stroke
+0.3 LW 0.80 G
+60.00 33.00 M 68.00 25.00 L
+stroke
+0.3 LW 0.80 G
+60.00 32.00 M 68.00 24.00 L
+stroke
+0.3 LW 0.80 G
+60.00 31.00 M 68.00 23.00 L
+stroke
+0.3 LW 0.80 G
+60.00 30.00 M 68.00 22.00 L
+stroke
+0.3 LW 0.80 G
+60.00 29.00 M 68.00 21.00 L
+stroke
+0.3 LW 0.80 G
+60.00 28.00 M 68.00 20.00 L
+stroke
+0.3 LW 0.80 G
+60.00 27.00 M 68.00 19.00 L
+stroke
+0.3 LW 0.80 G
+60.00 26.00 M 68.00 18.00 L
+stroke
+0.3 LW 0.80 G
+60.00 25.00 M 68.00 17.00 L
+stroke
+0.3 LW 0.80 G
+60.00 18.00 M 68.00 10.00 L
+stroke
+0.3 LW 0.80 G
+60.00 17.00 M 68.00 9.00 L
+stroke
+0.3 LW 0.80 G
+60.00 16.00 M 68.00 8.00 L
+stroke
+0.3 LW 0.80 G
+60.00 15.00 M 68.00 7.00 L
+stroke
+0.3 LW 0.80 G
+60.00 14.00 M 68.00 6.00 L
+stroke
+0.3 LW 0.80 G
+60.00 13.00 M 68.00 5.00 L
+stroke
+0.3 LW 0.80 G
+60.00 12.00 M 68.00 4.00 L
+stroke
+0.3 LW 0.80 G
+60.00 11.00 M 68.00 3.00 L
+stroke
+0.3 LW 0.80 G
+60.00 10.00 M 68.00 2.00 L
+stroke
+0.3 LW 0.80 G
+60.00 9.00 M 68.00 1.00 L
+stroke
+0.3 LW 0.80 G
+61.00 48.00 M 69.00 40.00 L
+stroke
+0.3 LW 0.80 G
+61.00 47.00 M 69.00 39.00 L
+stroke
+0.3 LW 0.80 G
+61.00 46.00 M 69.00 38.00 L
+stroke
+0.3 LW 0.80 G
+61.00 45.00 M 69.00 37.00 L
+stroke
+0.3 LW 0.80 G
+61.00 44.00 M 69.00 36.00 L
+stroke
+0.3 LW 0.80 G
+61.00 43.00 M 69.00 35.00 L
+stroke
+0.3 LW 0.80 G
+61.00 42.00 M 69.00 34.00 L
+stroke
+0.3 LW 0.80 G
+61.00 41.00 M 69.00 33.00 L
+stroke
+0.3 LW 0.80 G
+61.00 40.00 M 69.00 32.00 L
+stroke
+0.3 LW 0.80 G
+61.00 39.00 M 69.00 31.00 L
+stroke
+0.3 LW 0.80 G
+61.00 38.00 M 69.00 30.00 L
+stroke
+0.3 LW 0.80 G
+61.00 37.00 M 69.00 29.00 L
+stroke
+0.3 LW 0.80 G
+61.00 36.00 M 69.00 28.00 L
+stroke
+0.3 LW 0.80 G
+61.00 35.00 M 69.00 27.00 L
+stroke
+0.3 LW 0.80 G
+61.00 34.00 M 69.00 26.00 L
+stroke
+0.3 LW 0.80 G
+61.00 33.00 M 69.00 25.00 L
+stroke
+0.3 LW 0.80 G
+61.00 32.00 M 69.00 24.00 L
+stroke
+0.3 LW 0.80 G
+61.00 31.00 M 69.00 23.00 L
+stroke
+0.3 LW 0.80 G
+61.00 30.00 M 69.00 22.00 L
+stroke
+0.3 LW 0.80 G
+61.00 29.00 M 69.00 21.00 L
+stroke
+0.3 LW 0.80 G
+61.00 28.00 M 69.00 20.00 L
+stroke
+0.3 LW 0.80 G
+61.00 27.00 M 69.00 19.00 L
+stroke
+0.3 LW 0.80 G
+61.00 26.00 M 69.00 18.00 L
+stroke
+0.3 LW 0.80 G
+61.00 25.00 M 69.00 17.00 L
+stroke
+0.3 LW 0.80 G
+61.00 18.00 M 69.00 10.00 L
+stroke
+0.3 LW 0.80 G
+61.00 17.00 M 69.00 9.00 L
+stroke
+0.3 LW 0.80 G
+61.00 16.00 M 69.00 8.00 L
+stroke
+0.3 LW 0.80 G
+61.00 15.00 M 69.00 7.00 L
+stroke
+0.3 LW 0.80 G
+61.00 14.00 M 69.00 6.00 L
+stroke
+0.3 LW 0.80 G
+61.00 13.00 M 69.00 5.00 L
+stroke
+0.3 LW 0.80 G
+61.00 12.00 M 69.00 4.00 L
+stroke
+0.3 LW 0.80 G
+61.00 11.00 M 69.00 3.00 L
+stroke
+0.3 LW 0.80 G
+61.00 10.00 M 69.00 2.00 L
+stroke
+0.3 LW 0.80 G
+61.00 9.00 M 69.00 1.00 L
+stroke
+0.3 LW 0.80 G
+62.00 48.00 M 70.00 40.00 L
+stroke
+0.3 LW 0.80 G
+62.00 47.00 M 70.00 39.00 L
+stroke
+0.3 LW 0.80 G
+62.00 46.00 M 70.00 38.00 L
+stroke
+0.3 LW 0.80 G
+62.00 45.00 M 70.00 37.00 L
+stroke
+0.3 LW 0.80 G
+62.00 44.00 M 70.00 36.00 L
+stroke
+0.3 LW 0.80 G
+62.00 43.00 M 70.00 35.00 L
+stroke
+0.3 LW 0.80 G
+62.00 42.00 M 70.00 34.00 L
+stroke
+0.3 LW 0.80 G
+62.00 41.00 M 70.00 33.00 L
+stroke
+0.3 LW 0.80 G
+62.00 40.00 M 70.00 32.00 L
+stroke
+0.3 LW 0.80 G
+62.00 39.00 M 70.00 31.00 L
+stroke
+0.3 LW 0.80 G
+62.00 38.00 M 70.00 30.00 L
+stroke
+0.3 LW 0.80 G
+62.00 37.00 M 70.00 29.00 L
+stroke
+0.3 LW 0.80 G
+62.00 36.00 M 70.00 28.00 L
+stroke
+0.3 LW 0.80 G
+62.00 35.00 M 70.00 27.00 L
+stroke
+0.3 LW 0.80 G
+62.00 34.00 M 70.00 26.00 L
+stroke
+0.3 LW 0.80 G
+62.00 33.00 M 70.00 25.00 L
+stroke
+0.3 LW 0.80 G
+62.00 32.00 M 70.00 24.00 L
+stroke
+0.3 LW 0.80 G
+62.00 31.00 M 70.00 23.00 L
+stroke
+0.3 LW 0.80 G
+62.00 30.00 M 70.00 22.00 L
+stroke
+0.3 LW 0.80 G
+62.00 29.00 M 70.00 21.00 L
+stroke
+0.3 LW 0.80 G
+62.00 28.00 M 70.00 20.00 L
+stroke
+0.3 LW 0.80 G
+62.00 27.00 M 70.00 19.00 L
+stroke
+0.3 LW 0.80 G
+62.00 26.00 M 70.00 18.00 L
+stroke
+0.3 LW 0.80 G
+62.00 25.00 M 70.00 17.00 L
+stroke
+0.3 LW 0.80 G
+62.00 18.00 M 70.00 10.00 L
+stroke
+0.3 LW 0.80 G
+62.00 17.00 M 70.00 9.00 L
+stroke
+0.3 LW 0.80 G
+62.00 16.00 M 70.00 8.00 L
+stroke
+0.3 LW 0.80 G
+62.00 15.00 M 70.00 7.00 L
+stroke
+0.3 LW 0.80 G
+62.00 14.00 M 70.00 6.00 L
+stroke
+0.3 LW 0.80 G
+62.00 13.00 M 70.00 5.00 L
+stroke
+0.3 LW 0.80 G
+62.00 12.00 M 70.00 4.00 L
+stroke
+0.3 LW 0.80 G
+62.00 11.00 M 70.00 3.00 L
+stroke
+0.3 LW 0.80 G
+62.00 10.00 M 70.00 2.00 L
+stroke
+0.3 LW 0.80 G
+62.00 9.00 M 70.00 1.00 L
+stroke
+0.3 LW 0.80 G
+63.00 48.00 M 71.00 40.00 L
+stroke
+0.3 LW 0.80 G
+63.00 47.00 M 71.00 39.00 L
+stroke
+0.3 LW 0.80 G
+63.00 46.00 M 71.00 38.00 L
+stroke
+0.3 LW 0.80 G
+63.00 45.00 M 71.00 37.00 L
+stroke
+0.3 LW 0.80 G
+63.00 44.00 M 71.00 36.00 L
+stroke
+0.3 LW 0.80 G
+63.00 43.00 M 71.00 35.00 L
+stroke
+0.3 LW 0.80 G
+63.00 42.00 M 71.00 34.00 L
+stroke
+0.3 LW 0.80 G
+63.00 41.00 M 71.00 33.00 L
+stroke
+0.3 LW 0.80 G
+63.00 40.00 M 71.00 32.00 L
+stroke
+0.3 LW 0.80 G
+63.00 39.00 M 71.00 31.00 L
+stroke
+0.3 LW 0.80 G
+63.00 38.00 M 71.00 30.00 L
+stroke
+0.3 LW 0.80 G
+63.00 37.00 M 71.00 29.00 L
+stroke
+0.3 LW 0.80 G
+63.00 36.00 M 71.00 28.00 L
+stroke
+0.3 LW 0.80 G
+63.00 35.00 M 71.00 27.00 L
+stroke
+0.3 LW 0.80 G
+63.00 34.00 M 71.00 26.00 L
+stroke
+0.3 LW 0.80 G
+63.00 33.00 M 71.00 25.00 L
+stroke
+0.3 LW 0.80 G
+63.00 32.00 M 71.00 24.00 L
+stroke
+0.3 LW 0.80 G
+63.00 31.00 M 71.00 23.00 L
+stroke
+0.3 LW 0.80 G
+63.00 30.00 M 71.00 22.00 L
+stroke
+0.3 LW 0.80 G
+63.00 29.00 M 71.00 21.00 L
+stroke
+0.3 LW 0.80 G
+63.00 28.00 M 71.00 20.00 L
+stroke
+0.3 LW 0.80 G
+63.00 27.00 M 71.00 19.00 L
+stroke
+0.3 LW 0.80 G
+63.00 26.00 M 71.00 18.00 L
+stroke
+0.3 LW 0.80 G
+63.00 25.00 M 71.00 17.00 L
+stroke
+0.3 LW 0.80 G
+63.00 18.00 M 71.00 10.00 L
+stroke
+0.3 LW 0.80 G
+63.00 17.00 M 71.00 9.00 L
+stroke
+0.3 LW 0.80 G
+63.00 16.00 M 71.00 8.00 L
+stroke
+0.3 LW 0.80 G
+63.00 15.00 M 71.00 7.00 L
+stroke
+0.3 LW 0.80 G
+63.00 14.00 M 71.00 6.00 L
+stroke
+0.3 LW 0.80 G
+63.00 13.00 M 71.00 5.00 L
+stroke
+0.3 LW 0.80 G
+63.00 12.00 M 71.00 4.00 L
+stroke
+0.3 LW 0.80 G
+63.00 11.00 M 71.00 3.00 L
+stroke
+0.3 LW 0.80 G
+63.00 10.00 M 71.00 2.00 L
+stroke
+0.3 LW 0.80 G
+63.00 9.00 M 71.00 1.00 L
+stroke
+0.3 LW 0.80 G
+64.00 47.00 M 72.00 39.00 L
+stroke
+0.3 LW 0.80 G
+64.00 45.00 M 72.00 37.00 L
+stroke
+0.3 LW 0.80 G
+64.00 44.00 M 72.00 36.00 L
+stroke
+0.3 LW 0.80 G
+64.00 43.00 M 72.00 35.00 L
+stroke
+0.3 LW 0.80 G
+64.00 42.00 M 72.00 34.00 L
+stroke
+0.3 LW 0.80 G
+64.00 41.00 M 72.00 33.00 L
+stroke
+0.3 LW 0.80 G
+64.00 40.00 M 72.00 32.00 L
+stroke
+0.3 LW 0.80 G
+64.00 39.00 M 72.00 31.00 L
+stroke
+0.3 LW 0.80 G
+64.00 38.00 M 72.00 30.00 L
+stroke
+0.3 LW 0.80 G
+64.00 37.00 M 72.00 29.00 L
+stroke
+0.3 LW 0.80 G
+64.00 36.00 M 72.00 28.00 L
+stroke
+0.3 LW 0.80 G
+64.00 35.00 M 72.00 27.00 L
+stroke
+0.3 LW 0.80 G
+64.00 34.00 M 72.00 26.00 L
+stroke
+0.3 LW 0.80 G
+64.00 33.00 M 72.00 25.00 L
+stroke
+0.3 LW 0.80 G
+64.00 32.00 M 72.00 24.00 L
+stroke
+0.3 LW 0.80 G
+64.00 31.00 M 72.00 23.00 L
+stroke
+0.3 LW 0.80 G
+64.00 30.00 M 72.00 22.00 L
+stroke
+0.3 LW 0.80 G
+64.00 29.00 M 72.00 21.00 L
+stroke
+0.3 LW 0.80 G
+64.00 28.00 M 72.00 20.00 L
+stroke
+0.3 LW 0.80 G
+64.00 27.00 M 72.00 19.00 L
+stroke
+0.3 LW 0.80 G
+64.00 26.00 M 72.00 18.00 L
+stroke
+0.3 LW 0.80 G
+64.00 25.00 M 72.00 17.00 L
+stroke
+0.3 LW 0.80 G
+64.00 18.00 M 72.00 10.00 L
+stroke
+0.3 LW 0.80 G
+64.00 17.00 M 72.00 9.00 L
+stroke
+0.3 LW 0.80 G
+64.00 16.00 M 72.00 8.00 L
+stroke
+0.3 LW 0.80 G
+64.00 15.00 M 72.00 7.00 L
+stroke
+0.3 LW 0.80 G
+64.00 14.00 M 72.00 6.00 L
+stroke
+0.3 LW 0.80 G
+64.00 13.00 M 72.00 5.00 L
+stroke
+0.3 LW 0.80 G
+64.00 12.00 M 72.00 4.00 L
+stroke
+0.3 LW 0.80 G
+64.00 11.00 M 72.00 3.00 L
+stroke
+0.3 LW 0.80 G
+64.00 10.00 M 72.00 2.00 L
+stroke
+0.3 LW 0.80 G
+64.00 9.00 M 72.00 1.00 L
+stroke
+0.3 LW 0.80 G
+65.00 50.00 M 73.00 42.00 L
+stroke
+0.3 LW 0.80 G
+65.00 46.00 M 73.00 38.00 L
+stroke
+0.3 LW 0.80 G
+65.00 44.00 M 73.00 36.00 L
+stroke
+0.3 LW 0.80 G
+65.00 42.00 M 73.00 34.00 L
+stroke
+0.3 LW 0.80 G
+65.00 41.00 M 73.00 33.00 L
+stroke
+0.3 LW 0.80 G
+65.00 40.00 M 73.00 32.00 L
+stroke
+0.3 LW 0.80 G
+65.00 39.00 M 73.00 31.00 L
+stroke
+0.3 LW 0.80 G
+65.00 38.00 M 73.00 30.00 L
+stroke
+0.3 LW 0.80 G
+65.00 37.00 M 73.00 29.00 L
+stroke
+0.3 LW 0.80 G
+65.00 34.00 M 73.00 26.00 L
+stroke
+0.3 LW 0.80 G
+65.00 33.00 M 73.00 25.00 L
+stroke
+0.3 LW 0.80 G
+65.00 32.00 M 73.00 24.00 L
+stroke
+0.3 LW 0.80 G
+65.00 31.00 M 73.00 23.00 L
+stroke
+0.3 LW 0.80 G
+65.00 30.00 M 73.00 22.00 L
+stroke
+0.3 LW 0.80 G
+65.00 29.00 M 73.00 21.00 L
+stroke
+0.3 LW 0.80 G
+65.00 27.00 M 73.00 19.00 L
+stroke
+0.3 LW 0.80 G
+65.00 25.00 M 73.00 17.00 L
+stroke
+0.3 LW 0.80 G
+65.00 24.00 M 73.00 16.00 L
+stroke
+0.3 LW 0.80 G
+65.00 19.00 M 73.00 11.00 L
+stroke
+0.3 LW 0.80 G
+65.00 17.00 M 73.00 9.00 L
+stroke
+0.3 LW 0.80 G
+65.00 16.00 M 73.00 8.00 L
+stroke
+0.3 LW 0.80 G
+65.00 15.00 M 73.00 7.00 L
+stroke
+0.3 LW 0.80 G
+65.00 14.00 M 73.00 6.00 L
+stroke
+0.3 LW 0.80 G
+65.00 13.00 M 73.00 5.00 L
+stroke
+0.3 LW 0.80 G
+65.00 12.00 M 73.00 4.00 L
+stroke
+0.3 LW 0.80 G
+65.00 11.00 M 73.00 3.00 L
+stroke
+0.3 LW 0.80 G
+65.00 10.00 M 73.00 2.00 L
+stroke
+0.3 LW 0.80 G
+65.00 9.00 M 73.00 1.00 L
+stroke
+0.3 LW 0.80 G
+66.00 50.00 M 74.00 42.00 L
+stroke
+0.3 LW 0.80 G
+66.00 49.00 M 74.00 41.00 L
+stroke
+0.3 LW 0.80 G
+66.00 24.00 M 74.00 16.00 L
+stroke
+0.3 LW 0.80 G
+66.00 23.00 M 74.00 15.00 L
+stroke
+0.3 LW 0.80 G
+67.00 49.00 M 75.00 41.00 L
+stroke
+0.3 LW 0.80 G
+67.00 48.00 M 75.00 40.00 L
+stroke
+0.3 LW 0.80 G
+67.00 23.00 M 75.00 15.00 L
+stroke
+0.3 LW 0.80 G
+68.00 52.00 M 76.00 44.00 L
+stroke
+0.3 LW 0.80 G
+68.00 51.00 M 76.00 43.00 L
+stroke
+0.3 LW 0.80 G
+68.00 50.00 M 76.00 42.00 L
+stroke
+0.3 LW 0.80 G
+68.00 49.00 M 76.00 41.00 L
+stroke
+0.3 LW 0.80 G
+68.00 48.00 M 76.00 40.00 L
+stroke
+0.3 LW 0.80 G
+68.00 47.00 M 76.00 39.00 L
+stroke
+0.3 LW 0.80 G
+68.00 24.00 M 76.00 16.00 L
+stroke
+0.3 LW 0.80 G
+68.00 23.00 M 76.00 15.00 L
+stroke
+0.3 LW 0.80 G
+68.00 22.00 M 76.00 14.00 L
+stroke
+0.3 LW 0.80 G
+68.00 21.00 M 76.00 13.00 L
+stroke
+0.3 LW 0.80 G
+69.00 54.00 M 77.00 46.00 L
+stroke
+0.3 LW 0.80 G
+69.00 53.00 M 77.00 45.00 L
+stroke
+0.3 LW 0.80 G
+69.00 52.00 M 77.00 44.00 L
+stroke
+0.3 LW 0.80 G
+69.00 51.00 M 77.00 43.00 L
+stroke
+0.3 LW 0.80 G
+69.00 50.00 M 77.00 42.00 L
+stroke
+0.3 LW 0.80 G
+69.00 49.00 M 77.00 41.00 L
+stroke
+0.3 LW 0.80 G
+69.00 47.00 M 77.00 39.00 L
+stroke
+0.3 LW 0.80 G
+69.00 24.00 M 77.00 16.00 L
+stroke
+0.3 LW 0.80 G
+69.00 23.00 M 77.00 15.00 L
+stroke
+0.3 LW 0.80 G
+69.00 22.00 M 77.00 14.00 L
+stroke
+0.3 LW 0.80 G
+69.00 21.00 M 77.00 13.00 L
+stroke
+0.3 LW 0.80 G
+69.00 20.00 M 77.00 12.00 L
+stroke
+0.3 LW 0.80 G
+70.00 54.00 M 78.00 46.00 L
+stroke
+0.3 LW 0.80 G
+70.00 53.00 M 78.00 45.00 L
+stroke
+0.3 LW 0.80 G
+70.00 52.00 M 78.00 44.00 L
+stroke
+0.3 LW 0.80 G
+70.00 24.00 M 78.00 16.00 L
+stroke
+0.3 LW 0.80 G
+70.00 22.00 M 78.00 14.00 L
+stroke
+0.3 LW 0.80 G
+70.00 21.00 M 78.00 13.00 L
+stroke
+0.3 LW 0.80 G
+71.00 54.00 M 79.00 46.00 L
+stroke
+0.3 LW 0.80 G
+71.00 53.00 M 79.00 45.00 L
+stroke
+0.3 LW 0.80 G
+71.00 52.00 M 79.00 44.00 L
+stroke
+0.3 LW 0.80 G
+71.00 22.00 M 79.00 14.00 L
+stroke
+0.3 LW 0.80 G
+72.00 54.00 M 80.00 46.00 L
+stroke
+0.3 LW 0.80 G
+72.00 53.00 M 80.00 45.00 L
+stroke
+0.3 LW 0.80 G
+73.00 54.00 M 81.00 46.00 L
+stroke
+0.3 LW 0.80 G
+73.00 53.00 M 81.00 45.00 L
+stroke
+0.3 LW 0.80 G
+73.00 52.00 M 81.00 44.00 L
+stroke
+0.3 LW 0.80 G
+74.00 54.00 M 82.00 46.00 L
+stroke
+0.3 LW 0.80 G
+74.00 53.00 M 82.00 45.00 L
+stroke
+0.3 LW 0.80 G
+74.00 52.00 M 82.00 44.00 L
+stroke
+0.3 LW 0.80 G
+74.00 51.00 M 82.00 43.00 L
+stroke
+0.3 LW 0.80 G
+74.00 22.00 M 82.00 14.00 L
+stroke
+0.3 LW 0.80 G
+74.00 21.00 M 82.00 13.00 L
+stroke
+0.3 LW 0.80 G
+75.00 54.00 M 83.00 46.00 L
+stroke
+0.3 LW 0.80 G
+75.00 53.00 M 83.00 45.00 L
+stroke
+0.3 LW 0.80 G
+75.00 52.00 M 83.00 44.00 L
+stroke
+0.3 LW 0.80 G
+75.00 51.00 M 83.00 43.00 L
+stroke
+0.3 LW 0.80 G
+75.00 50.00 M 83.00 42.00 L
+stroke
+0.3 LW 0.80 G
+75.00 24.00 M 83.00 16.00 L
+stroke
+0.3 LW 0.80 G
+75.00 22.00 M 83.00 14.00 L
+stroke
+0.3 LW 0.80 G
+75.00 21.00 M 83.00 13.00 L
+stroke
+0.3 LW 0.80 G
+76.00 52.00 M 84.00 44.00 L
+stroke
+0.3 LW 0.80 G
+76.00 51.00 M 84.00 43.00 L
+stroke
+0.3 LW 0.80 G
+76.00 50.00 M 84.00 42.00 L
+stroke
+0.3 LW 0.80 G
+76.00 49.00 M 84.00 41.00 L
+stroke
+0.3 LW 0.80 G
+76.00 48.00 M 84.00 40.00 L
+stroke
+0.3 LW 0.80 G
+76.00 47.00 M 84.00 39.00 L
+stroke
+0.3 LW 0.80 G
+76.00 22.00 M 84.00 14.00 L
+stroke
+0.3 LW 0.80 G
+76.00 21.00 M 84.00 13.00 L
+stroke
+0.3 LW 0.80 G
+76.00 20.00 M 84.00 12.00 L
+stroke
+0.3 LW 0.80 G
+77.00 51.00 M 85.00 43.00 L
+stroke
+0.3 LW 0.80 G
+77.00 50.00 M 85.00 42.00 L
+stroke
+0.3 LW 0.80 G
+77.00 47.00 M 85.00 39.00 L
+stroke
+0.3 LW 0.80 G
+77.00 20.00 M 85.00 12.00 L
+stroke
+0.3 LW 0.80 G
+77.00 19.00 M 85.00 11.00 L
+stroke
+0.3 LW 0.80 G
+78.00 50.00 M 86.00 42.00 L
+stroke
+0.3 LW 0.80 G
+78.00 49.00 M 86.00 41.00 L
+stroke
+0.3 LW 0.80 G
+78.00 46.00 M 86.00 38.00 L
+stroke
+0.3 LW 0.80 G
+78.00 45.00 M 86.00 37.00 L
+stroke
+0.3 LW 0.80 G
+78.00 34.00 M 86.00 26.00 L
+stroke
+0.3 LW 0.80 G
+78.00 20.00 M 86.00 12.00 L
+stroke
+0.3 LW 0.80 G
+78.00 19.00 M 86.00 11.00 L
+stroke
+0.3 LW 0.80 G
+78.00 18.00 M 86.00 10.00 L
+stroke
+0.3 LW 0.80 G
+79.00 49.00 M 87.00 41.00 L
+stroke
+0.3 LW 0.80 G
+79.00 48.00 M 87.00 40.00 L
+stroke
+0.3 LW 0.80 G
+79.00 46.00 M 87.00 38.00 L
+stroke
+0.3 LW 0.80 G
+79.00 45.00 M 87.00 37.00 L
+stroke
+0.3 LW 0.80 G
+79.00 44.00 M 87.00 36.00 L
+stroke
+0.3 LW 0.80 G
+79.00 43.00 M 87.00 35.00 L
+stroke
+0.3 LW 0.80 G
+79.00 42.00 M 87.00 34.00 L
+stroke
+0.3 LW 0.80 G
+79.00 41.00 M 87.00 33.00 L
+stroke
+0.3 LW 0.80 G
+79.00 40.00 M 87.00 32.00 L
+stroke
+0.3 LW 0.80 G
+79.00 39.00 M 87.00 31.00 L
+stroke
+0.3 LW 0.80 G
+79.00 38.00 M 87.00 30.00 L
+stroke
+0.3 LW 0.80 G
+79.00 37.00 M 87.00 29.00 L
+stroke
+0.3 LW 0.80 G
+79.00 36.00 M 87.00 28.00 L
+stroke
+0.3 LW 0.80 G
+79.00 35.00 M 87.00 27.00 L
+stroke
+0.3 LW 0.80 G
+79.00 34.00 M 87.00 26.00 L
+stroke
+0.3 LW 0.80 G
+79.00 33.00 M 87.00 25.00 L
+stroke
+0.3 LW 0.80 G
+79.00 32.00 M 87.00 24.00 L
+stroke
+0.3 LW 0.80 G
+79.00 31.00 M 87.00 23.00 L
+stroke
+0.3 LW 0.80 G
+79.00 30.00 M 87.00 22.00 L
+stroke
+0.3 LW 0.80 G
+79.00 29.00 M 87.00 21.00 L
+stroke
+0.3 LW 0.80 G
+79.00 28.00 M 87.00 20.00 L
+stroke
+0.3 LW 0.80 G
+79.00 27.00 M 87.00 19.00 L
+stroke
+0.3 LW 0.80 G
+79.00 26.00 M 87.00 18.00 L
+stroke
+0.3 LW 0.80 G
+79.00 19.00 M 87.00 11.00 L
+stroke
+0.3 LW 0.80 G
+79.00 18.00 M 87.00 10.00 L
+stroke
+0.3 LW 0.80 G
+79.00 17.00 M 87.00 9.00 L
+stroke
+0.3 LW 0.80 G
+79.00 16.00 M 87.00 8.00 L
+stroke
+0.3 LW 0.80 G
+79.00 15.00 M 87.00 7.00 L
+stroke
+0.3 LW 0.80 G
+79.00 14.00 M 87.00 6.00 L
+stroke
+0.3 LW 0.80 G
+79.00 13.00 M 87.00 5.00 L
+stroke
+0.3 LW 0.80 G
+79.00 12.00 M 87.00 4.00 L
+stroke
+0.3 LW 0.80 G
+79.00 11.00 M 87.00 3.00 L
+stroke
+0.3 LW 0.80 G
+79.00 10.00 M 87.00 2.00 L
+stroke
+0.3 LW 0.80 G
+79.00 9.00 M 87.00 1.00 L
+stroke
+0.3 LW 0.80 G
+80.00 48.00 M 88.00 40.00 L
+stroke
+0.3 LW 0.80 G
+80.00 47.00 M 88.00 39.00 L
+stroke
+0.3 LW 0.80 G
+80.00 46.00 M 88.00 38.00 L
+stroke
+0.3 LW 0.80 G
+80.00 45.00 M 88.00 37.00 L
+stroke
+0.3 LW 0.80 G
+80.00 44.00 M 88.00 36.00 L
+stroke
+0.3 LW 0.80 G
+80.00 43.00 M 88.00 35.00 L
+stroke
+0.3 LW 0.80 G
+80.00 42.00 M 88.00 34.00 L
+stroke
+0.3 LW 0.80 G
+80.00 41.00 M 88.00 33.00 L
+stroke
+0.3 LW 0.80 G
+80.00 40.00 M 88.00 32.00 L
+stroke
+0.3 LW 0.80 G
+80.00 39.00 M 88.00 31.00 L
+stroke
+0.3 LW 0.80 G
+80.00 38.00 M 88.00 30.00 L
+stroke
+0.3 LW 0.80 G
+80.00 37.00 M 88.00 29.00 L
+stroke
+0.3 LW 0.80 G
+80.00 36.00 M 88.00 28.00 L
+stroke
+0.3 LW 0.80 G
+80.00 35.00 M 88.00 27.00 L
+stroke
+0.3 LW 0.80 G
+80.00 34.00 M 88.00 26.00 L
+stroke
+0.3 LW 0.80 G
+80.00 33.00 M 88.00 25.00 L
+stroke
+0.3 LW 0.80 G
+80.00 32.00 M 88.00 24.00 L
+stroke
+0.3 LW 0.80 G
+80.00 31.00 M 88.00 23.00 L
+stroke
+0.3 LW 0.80 G
+80.00 30.00 M 88.00 22.00 L
+stroke
+0.3 LW 0.80 G
+80.00 29.00 M 88.00 21.00 L
+stroke
+0.3 LW 0.80 G
+80.00 28.00 M 88.00 20.00 L
+stroke
+0.3 LW 0.80 G
+80.00 27.00 M 88.00 19.00 L
+stroke
+0.3 LW 0.80 G
+80.00 26.00 M 88.00 18.00 L
+stroke
+0.3 LW 0.80 G
+80.00 25.00 M 88.00 17.00 L
+stroke
+0.3 LW 0.80 G
+80.00 18.00 M 88.00 10.00 L
+stroke
+0.3 LW 0.80 G
+80.00 17.00 M 88.00 9.00 L
+stroke
+0.3 LW 0.80 G
+80.00 16.00 M 88.00 8.00 L
+stroke
+0.3 LW 0.80 G
+80.00 15.00 M 88.00 7.00 L
+stroke
+0.3 LW 0.80 G
+80.00 14.00 M 88.00 6.00 L
+stroke
+0.3 LW 0.80 G
+80.00 13.00 M 88.00 5.00 L
+stroke
+0.3 LW 0.80 G
+80.00 12.00 M 88.00 4.00 L
+stroke
+0.3 LW 0.80 G
+80.00 11.00 M 88.00 3.00 L
+stroke
+0.3 LW 0.80 G
+80.00 10.00 M 88.00 2.00 L
+stroke
+0.3 LW 0.80 G
+80.00 9.00 M 88.00 1.00 L
+stroke
+0.3 LW 0.80 G
+81.00 48.00 M 89.00 40.00 L
+stroke
+0.3 LW 0.80 G
+81.00 47.00 M 89.00 39.00 L
+stroke
+0.3 LW 0.80 G
+81.00 46.00 M 89.00 38.00 L
+stroke
+0.3 LW 0.80 G
+81.00 45.00 M 89.00 37.00 L
+stroke
+0.3 LW 0.80 G
+81.00 44.00 M 89.00 36.00 L
+stroke
+0.3 LW 0.80 G
+81.00 43.00 M 89.00 35.00 L
+stroke
+0.3 LW 0.80 G
+81.00 42.00 M 89.00 34.00 L
+stroke
+0.3 LW 0.80 G
+81.00 41.00 M 89.00 33.00 L
+stroke
+0.3 LW 0.80 G
+81.00 40.00 M 89.00 32.00 L
+stroke
+0.3 LW 0.80 G
+81.00 39.00 M 89.00 31.00 L
+stroke
+0.3 LW 0.80 G
+81.00 38.00 M 89.00 30.00 L
+stroke
+0.3 LW 0.80 G
+81.00 37.00 M 89.00 29.00 L
+stroke
+0.3 LW 0.80 G
+81.00 36.00 M 89.00 28.00 L
+stroke
+0.3 LW 0.80 G
+81.00 35.00 M 89.00 27.00 L
+stroke
+0.3 LW 0.80 G
+81.00 34.00 M 89.00 26.00 L
+stroke
+0.3 LW 0.80 G
+81.00 33.00 M 89.00 25.00 L
+stroke
+0.3 LW 0.80 G
+81.00 32.00 M 89.00 24.00 L
+stroke
+0.3 LW 0.80 G
+81.00 31.00 M 89.00 23.00 L
+stroke
+0.3 LW 0.80 G
+81.00 30.00 M 89.00 22.00 L
+stroke
+0.3 LW 0.80 G
+81.00 29.00 M 89.00 21.00 L
+stroke
+0.3 LW 0.80 G
+81.00 28.00 M 89.00 20.00 L
+stroke
+0.3 LW 0.80 G
+81.00 27.00 M 89.00 19.00 L
+stroke
+0.3 LW 0.80 G
+81.00 26.00 M 89.00 18.00 L
+stroke
+0.3 LW 0.80 G
+81.00 25.00 M 89.00 17.00 L
+stroke
+0.3 LW 0.80 G
+81.00 19.00 M 89.00 11.00 L
+stroke
+0.3 LW 0.80 G
+81.00 18.00 M 89.00 10.00 L
+stroke
+0.3 LW 0.80 G
+81.00 17.00 M 89.00 9.00 L
+stroke
+0.3 LW 0.80 G
+81.00 16.00 M 89.00 8.00 L
+stroke
+0.3 LW 0.80 G
+81.00 15.00 M 89.00 7.00 L
+stroke
+0.3 LW 0.80 G
+81.00 14.00 M 89.00 6.00 L
+stroke
+0.3 LW 0.80 G
+81.00 13.00 M 89.00 5.00 L
+stroke
+0.3 LW 0.80 G
+81.00 12.00 M 89.00 4.00 L
+stroke
+0.3 LW 0.80 G
+81.00 11.00 M 89.00 3.00 L
+stroke
+0.3 LW 0.80 G
+81.00 10.00 M 89.00 2.00 L
+stroke
+0.3 LW 0.80 G
+81.00 9.00 M 89.00 1.00 L
+stroke
+0.3 LW 0.80 G
+82.00 48.00 M 90.00 40.00 L
+stroke
+0.3 LW 0.80 G
+82.00 47.00 M 90.00 39.00 L
+stroke
+0.3 LW 0.80 G
+82.00 46.00 M 90.00 38.00 L
+stroke
+0.3 LW 0.80 G
+82.00 45.00 M 90.00 37.00 L
+stroke
+0.3 LW 0.80 G
+82.00 44.00 M 90.00 36.00 L
+stroke
+0.3 LW 0.80 G
+82.00 43.00 M 90.00 35.00 L
+stroke
+0.3 LW 0.80 G
+82.00 42.00 M 90.00 34.00 L
+stroke
+0.3 LW 0.80 G
+82.00 41.00 M 90.00 33.00 L
+stroke
+0.3 LW 0.80 G
+82.00 40.00 M 90.00 32.00 L
+stroke
+0.3 LW 0.80 G
+82.00 39.00 M 90.00 31.00 L
+stroke
+0.3 LW 0.80 G
+82.00 38.00 M 90.00 30.00 L
+stroke
+0.3 LW 0.80 G
+82.00 37.00 M 90.00 29.00 L
+stroke
+0.3 LW 0.80 G
+82.00 36.00 M 90.00 28.00 L
+stroke
+0.3 LW 0.80 G
+82.00 35.00 M 90.00 27.00 L
+stroke
+0.3 LW 0.80 G
+82.00 34.00 M 90.00 26.00 L
+stroke
+0.3 LW 0.80 G
+82.00 33.00 M 90.00 25.00 L
+stroke
+0.3 LW 0.80 G
+82.00 32.00 M 90.00 24.00 L
+stroke
+0.3 LW 0.80 G
+82.00 31.00 M 90.00 23.00 L
+stroke
+0.3 LW 0.80 G
+82.00 30.00 M 90.00 22.00 L
+stroke
+0.3 LW 0.80 G
+82.00 29.00 M 90.00 21.00 L
+stroke
+0.3 LW 0.80 G
+82.00 28.00 M 90.00 20.00 L
+stroke
+0.3 LW 0.80 G
+82.00 27.00 M 90.00 19.00 L
+stroke
+0.3 LW 0.80 G
+82.00 26.00 M 90.00 18.00 L
+stroke
+0.3 LW 0.80 G
+82.00 25.00 M 90.00 17.00 L
+stroke
+0.3 LW 0.80 G
+82.00 19.00 M 90.00 11.00 L
+stroke
+0.3 LW 0.80 G
+82.00 18.00 M 90.00 10.00 L
+stroke
+0.3 LW 0.80 G
+82.00 17.00 M 90.00 9.00 L
+stroke
+0.3 LW 0.80 G
+82.00 16.00 M 90.00 8.00 L
+stroke
+0.3 LW 0.80 G
+82.00 15.00 M 90.00 7.00 L
+stroke
+0.3 LW 0.80 G
+82.00 14.00 M 90.00 6.00 L
+stroke
+0.3 LW 0.80 G
+82.00 13.00 M 90.00 5.00 L
+stroke
+0.3 LW 0.80 G
+82.00 12.00 M 90.00 4.00 L
+stroke
+0.3 LW 0.80 G
+82.00 11.00 M 90.00 3.00 L
+stroke
+0.3 LW 0.80 G
+82.00 10.00 M 90.00 2.00 L
+stroke
+0.3 LW 0.80 G
+82.00 9.00 M 90.00 1.00 L
+stroke
+0.3 LW 0.80 G
+83.00 48.00 M 91.00 40.00 L
+stroke
+0.3 LW 0.80 G
+83.00 47.00 M 91.00 39.00 L
+stroke
+0.3 LW 0.80 G
+83.00 46.00 M 91.00 38.00 L
+stroke
+0.3 LW 0.80 G
+83.00 45.00 M 91.00 37.00 L
+stroke
+0.3 LW 0.80 G
+83.00 44.00 M 91.00 36.00 L
+stroke
+0.3 LW 0.80 G
+83.00 43.00 M 91.00 35.00 L
+stroke
+0.3 LW 0.80 G
+83.00 42.00 M 91.00 34.00 L
+stroke
+0.3 LW 0.80 G
+83.00 41.00 M 91.00 33.00 L
+stroke
+0.3 LW 0.80 G
+83.00 40.00 M 91.00 32.00 L
+stroke
+0.3 LW 0.80 G
+83.00 39.00 M 91.00 31.00 L
+stroke
+0.3 LW 0.80 G
+83.00 38.00 M 91.00 30.00 L
+stroke
+0.3 LW 0.80 G
+83.00 37.00 M 91.00 29.00 L
+stroke
+0.3 LW 0.80 G
+83.00 36.00 M 91.00 28.00 L
+stroke
+0.3 LW 0.80 G
+83.00 35.00 M 91.00 27.00 L
+stroke
+0.3 LW 0.80 G
+83.00 34.00 M 91.00 26.00 L
+stroke
+0.3 LW 0.80 G
+83.00 33.00 M 91.00 25.00 L
+stroke
+0.3 LW 0.80 G
+83.00 32.00 M 91.00 24.00 L
+stroke
+0.3 LW 0.80 G
+83.00 31.00 M 91.00 23.00 L
+stroke
+0.3 LW 0.80 G
+83.00 30.00 M 91.00 22.00 L
+stroke
+0.3 LW 0.80 G
+83.00 29.00 M 91.00 21.00 L
+stroke
+0.3 LW 0.80 G
+83.00 28.00 M 91.00 20.00 L
+stroke
+0.3 LW 0.80 G
+83.00 27.00 M 91.00 19.00 L
+stroke
+0.3 LW 0.80 G
+83.00 26.00 M 91.00 18.00 L
+stroke
+0.3 LW 0.80 G
+83.00 25.00 M 91.00 17.00 L
+stroke
+0.3 LW 0.80 G
+83.00 18.00 M 91.00 10.00 L
+stroke
+0.3 LW 0.80 G
+83.00 17.00 M 91.00 9.00 L
+stroke
+0.3 LW 0.80 G
+83.00 16.00 M 91.00 8.00 L
+stroke
+0.3 LW 0.80 G
+83.00 15.00 M 91.00 7.00 L
+stroke
+0.3 LW 0.80 G
+83.00 14.00 M 91.00 6.00 L
+stroke
+0.3 LW 0.80 G
+83.00 13.00 M 91.00 5.00 L
+stroke
+0.3 LW 0.80 G
+83.00 12.00 M 91.00 4.00 L
+stroke
+0.3 LW 0.80 G
+83.00 11.00 M 91.00 3.00 L
+stroke
+0.3 LW 0.80 G
+83.00 10.00 M 91.00 2.00 L
+stroke
+0.3 LW 0.80 G
+83.00 9.00 M 91.00 1.00 L
+stroke
+0.3 LW 0.80 G
+84.00 48.00 M 92.00 40.00 L
+stroke
+0.3 LW 0.80 G
+84.00 47.00 M 92.00 39.00 L
+stroke
+0.3 LW 0.80 G
+84.00 46.00 M 92.00 38.00 L
+stroke
+0.3 LW 0.80 G
+84.00 45.00 M 92.00 37.00 L
+stroke
+0.3 LW 0.80 G
+84.00 44.00 M 92.00 36.00 L
+stroke
+0.3 LW 0.80 G
+84.00 43.00 M 92.00 35.00 L
+stroke
+0.3 LW 0.80 G
+84.00 42.00 M 92.00 34.00 L
+stroke
+0.3 LW 0.80 G
+84.00 41.00 M 92.00 33.00 L
+stroke
+0.3 LW 0.80 G
+84.00 40.00 M 92.00 32.00 L
+stroke
+0.3 LW 0.80 G
+84.00 39.00 M 92.00 31.00 L
+stroke
+0.3 LW 0.80 G
+84.00 38.00 M 92.00 30.00 L
+stroke
+0.3 LW 0.80 G
+84.00 37.00 M 92.00 29.00 L
+stroke
+0.3 LW 0.80 G
+84.00 36.00 M 92.00 28.00 L
+stroke
+0.3 LW 0.80 G
+84.00 35.00 M 92.00 27.00 L
+stroke
+0.3 LW 0.80 G
+84.00 34.00 M 92.00 26.00 L
+stroke
+0.3 LW 0.80 G
+84.00 33.00 M 92.00 25.00 L
+stroke
+0.3 LW 0.80 G
+84.00 32.00 M 92.00 24.00 L
+stroke
+0.3 LW 0.80 G
+84.00 31.00 M 92.00 23.00 L
+stroke
+0.3 LW 0.80 G
+84.00 30.00 M 92.00 22.00 L
+stroke
+0.3 LW 0.80 G
+84.00 29.00 M 92.00 21.00 L
+stroke
+0.3 LW 0.80 G
+84.00 28.00 M 92.00 20.00 L
+stroke
+0.3 LW 0.80 G
+84.00 27.00 M 92.00 19.00 L
+stroke
+0.3 LW 0.80 G
+84.00 26.00 M 92.00 18.00 L
+stroke
+0.3 LW 0.80 G
+84.00 25.00 M 92.00 17.00 L
+stroke
+0.3 LW 0.80 G
+84.00 18.00 M 92.00 10.00 L
+stroke
+0.3 LW 0.80 G
+84.00 17.00 M 92.00 9.00 L
+stroke
+0.3 LW 0.80 G
+84.00 16.00 M 92.00 8.00 L
+stroke
+0.3 LW 0.80 G
+84.00 15.00 M 92.00 7.00 L
+stroke
+0.3 LW 0.80 G
+84.00 14.00 M 92.00 6.00 L
+stroke
+0.3 LW 0.80 G
+84.00 13.00 M 92.00 5.00 L
+stroke
+0.3 LW 0.80 G
+84.00 12.00 M 92.00 4.00 L
+stroke
+0.3 LW 0.80 G
+84.00 11.00 M 92.00 3.00 L
+stroke
+0.3 LW 0.80 G
+84.00 10.00 M 92.00 2.00 L
+stroke
+0.3 LW 0.80 G
+84.00 9.00 M 92.00 1.00 L
+stroke
+0.3 LW 0.80 G
+85.00 48.00 M 93.00 40.00 L
+stroke
+0.3 LW 0.80 G
+85.00 47.00 M 93.00 39.00 L
+stroke
+0.3 LW 0.80 G
+85.00 46.00 M 93.00 38.00 L
+stroke
+0.3 LW 0.80 G
+85.00 45.00 M 93.00 37.00 L
+stroke
+0.3 LW 0.80 G
+85.00 44.00 M 93.00 36.00 L
+stroke
+0.3 LW 0.80 G
+85.00 43.00 M 93.00 35.00 L
+stroke
+0.3 LW 0.80 G
+85.00 42.00 M 93.00 34.00 L
+stroke
+0.3 LW 0.80 G
+85.00 41.00 M 93.00 33.00 L
+stroke
+0.3 LW 0.80 G
+85.00 40.00 M 93.00 32.00 L
+stroke
+0.3 LW 0.80 G
+85.00 39.00 M 93.00 31.00 L
+stroke
+0.3 LW 0.80 G
+85.00 38.00 M 93.00 30.00 L
+stroke
+0.3 LW 0.80 G
+85.00 37.00 M 93.00 29.00 L
+stroke
+0.3 LW 0.80 G
+85.00 36.00 M 93.00 28.00 L
+stroke
+0.3 LW 0.80 G
+85.00 35.00 M 93.00 27.00 L
+stroke
+0.3 LW 0.80 G
+85.00 34.00 M 93.00 26.00 L
+stroke
+0.3 LW 0.80 G
+85.00 33.00 M 93.00 25.00 L
+stroke
+0.3 LW 0.80 G
+85.00 32.00 M 93.00 24.00 L
+stroke
+0.3 LW 0.80 G
+85.00 31.00 M 93.00 23.00 L
+stroke
+0.3 LW 0.80 G
+85.00 30.00 M 93.00 22.00 L
+stroke
+0.3 LW 0.80 G
+85.00 29.00 M 93.00 21.00 L
+stroke
+0.3 LW 0.80 G
+85.00 28.00 M 93.00 20.00 L
+stroke
+0.3 LW 0.80 G
+85.00 27.00 M 93.00 19.00 L
+stroke
+0.3 LW 0.80 G
+85.00 26.00 M 93.00 18.00 L
+stroke
+0.3 LW 0.80 G
+85.00 25.00 M 93.00 17.00 L
+stroke
+0.3 LW 0.80 G
+85.00 18.00 M 93.00 10.00 L
+stroke
+0.3 LW 0.80 G
+85.00 17.00 M 93.00 9.00 L
+stroke
+0.3 LW 0.80 G
+85.00 16.00 M 93.00 8.00 L
+stroke
+0.3 LW 0.80 G
+85.00 15.00 M 93.00 7.00 L
+stroke
+0.3 LW 0.80 G
+85.00 14.00 M 93.00 6.00 L
+stroke
+0.3 LW 0.80 G
+85.00 13.00 M 93.00 5.00 L
+stroke
+0.3 LW 0.80 G
+85.00 12.00 M 93.00 4.00 L
+stroke
+0.3 LW 0.80 G
+85.00 11.00 M 93.00 3.00 L
+stroke
+0.3 LW 0.80 G
+85.00 10.00 M 93.00 2.00 L
+stroke
+0.3 LW 0.80 G
+85.00 9.00 M 93.00 1.00 L
+stroke
+0.3 LW 0.80 G
+86.00 46.00 M 94.00 38.00 L
+stroke
+0.3 LW 0.80 G
+86.00 45.00 M 94.00 37.00 L
+stroke
+0.3 LW 0.80 G
+86.00 44.00 M 94.00 36.00 L
+stroke
+0.3 LW 0.80 G
+86.00 43.00 M 94.00 35.00 L
+stroke
+0.3 LW 0.80 G
+86.00 42.00 M 94.00 34.00 L
+stroke
+0.3 LW 0.80 G
+86.00 41.00 M 94.00 33.00 L
+stroke
+0.3 LW 0.80 G
+86.00 40.00 M 94.00 32.00 L
+stroke
+0.3 LW 0.80 G
+86.00 39.00 M 94.00 31.00 L
+stroke
+0.3 LW 0.80 G
+86.00 38.00 M 94.00 30.00 L
+stroke
+0.3 LW 0.80 G
+86.00 37.00 M 94.00 29.00 L
+stroke
+0.3 LW 0.80 G
+86.00 36.00 M 94.00 28.00 L
+stroke
+0.3 LW 0.80 G
+86.00 35.00 M 94.00 27.00 L
+stroke
+0.3 LW 0.80 G
+86.00 34.00 M 94.00 26.00 L
+stroke
+0.3 LW 0.80 G
+86.00 33.00 M 94.00 25.00 L
+stroke
+0.3 LW 0.80 G
+86.00 32.00 M 94.00 24.00 L
+stroke
+0.3 LW 0.80 G
+86.00 31.00 M 94.00 23.00 L
+stroke
+0.3 LW 0.80 G
+86.00 30.00 M 94.00 22.00 L
+stroke
+0.3 LW 0.80 G
+86.00 29.00 M 94.00 21.00 L
+stroke
+0.3 LW 0.80 G
+86.00 28.00 M 94.00 20.00 L
+stroke
+0.3 LW 0.80 G
+86.00 27.00 M 94.00 19.00 L
+stroke
+0.3 LW 0.80 G
+86.00 26.00 M 94.00 18.00 L
+stroke
+0.3 LW 0.80 G
+86.00 25.00 M 94.00 17.00 L
+stroke
+0.3 LW 0.80 G
+86.00 24.00 M 94.00 16.00 L
+stroke
+0.3 LW 0.80 G
+86.00 19.00 M 94.00 11.00 L
+stroke
+0.3 LW 0.80 G
+86.00 18.00 M 94.00 10.00 L
+stroke
+0.3 LW 0.80 G
+86.00 17.00 M 94.00 9.00 L
+stroke
+0.3 LW 0.80 G
+86.00 16.00 M 94.00 8.00 L
+stroke
+0.3 LW 0.80 G
+86.00 15.00 M 94.00 7.00 L
+stroke
+0.3 LW 0.80 G
+86.00 14.00 M 94.00 6.00 L
+stroke
+0.3 LW 0.80 G
+86.00 13.00 M 94.00 5.00 L
+stroke
+0.3 LW 0.80 G
+86.00 12.00 M 94.00 4.00 L
+stroke
+0.3 LW 0.80 G
+86.00 11.00 M 94.00 3.00 L
+stroke
+0.3 LW 0.80 G
+86.00 10.00 M 94.00 2.00 L
+stroke
+0.3 LW 0.80 G
+86.00 9.00 M 94.00 1.00 L
+stroke
+0.3 LW 0.80 G
+87.00 48.00 M 95.00 40.00 L
+stroke
+0.3 LW 0.80 G
+87.00 45.00 M 95.00 37.00 L
+stroke
+0.3 LW 0.80 G
+87.00 44.00 M 95.00 36.00 L
+stroke
+0.3 LW 0.80 G
+87.00 43.00 M 95.00 35.00 L
+stroke
+0.3 LW 0.80 G
+87.00 42.00 M 95.00 34.00 L
+stroke
+0.3 LW 0.80 G
+87.00 41.00 M 95.00 33.00 L
+stroke
+0.3 LW 0.80 G
+87.00 40.00 M 95.00 32.00 L
+stroke
+0.3 LW 0.80 G
+87.00 39.00 M 95.00 31.00 L
+stroke
+0.3 LW 0.80 G
+87.00 38.00 M 95.00 30.00 L
+stroke
+0.3 LW 0.80 G
+87.00 37.00 M 95.00 29.00 L
+stroke
+0.3 LW 0.80 G
+87.00 36.00 M 95.00 28.00 L
+stroke
+0.3 LW 0.80 G
+87.00 35.00 M 95.00 27.00 L
+stroke
+0.3 LW 0.80 G
+87.00 34.00 M 95.00 26.00 L
+stroke
+0.3 LW 0.80 G
+87.00 33.00 M 95.00 25.00 L
+stroke
+0.3 LW 0.80 G
+87.00 32.00 M 95.00 24.00 L
+stroke
+0.3 LW 0.80 G
+87.00 31.00 M 95.00 23.00 L
+stroke
+0.3 LW 0.80 G
+87.00 30.00 M 95.00 22.00 L
+stroke
+0.3 LW 0.80 G
+87.00 29.00 M 95.00 21.00 L
+stroke
+0.3 LW 0.80 G
+87.00 28.00 M 95.00 20.00 L
+stroke
+0.3 LW 0.80 G
+87.00 27.00 M 95.00 19.00 L
+stroke
+0.3 LW 0.80 G
+87.00 26.00 M 95.00 18.00 L
+stroke
+0.3 LW 0.80 G
+87.00 25.00 M 95.00 17.00 L
+stroke
+0.3 LW 0.80 G
+87.00 24.00 M 95.00 16.00 L
+stroke
+0.3 LW 0.80 G
+87.00 23.00 M 95.00 15.00 L
+stroke
+0.3 LW 0.80 G
+87.00 18.00 M 95.00 10.00 L
+stroke
+0.3 LW 0.80 G
+87.00 17.00 M 95.00 9.00 L
+stroke
+0.3 LW 0.80 G
+87.00 16.00 M 95.00 8.00 L
+stroke
+0.3 LW 0.80 G
+87.00 15.00 M 95.00 7.00 L
+stroke
+0.3 LW 0.80 G
+87.00 14.00 M 95.00 6.00 L
+stroke
+0.3 LW 0.80 G
+87.00 13.00 M 95.00 5.00 L
+stroke
+0.3 LW 0.80 G
+87.00 12.00 M 95.00 4.00 L
+stroke
+0.3 LW 0.80 G
+87.00 11.00 M 95.00 3.00 L
+stroke
+0.3 LW 0.80 G
+87.00 10.00 M 95.00 2.00 L
+stroke
+0.3 LW 0.80 G
+87.00 9.00 M 95.00 1.00 L
+stroke
+0.3 LW 0.80 G
+88.00 51.00 M 96.00 43.00 L
+stroke
+0.3 LW 0.80 G
+88.00 48.00 M 96.00 40.00 L
+stroke
+0.3 LW 0.80 G
+88.00 47.00 M 96.00 39.00 L
+stroke
+0.3 LW 0.80 G
+88.00 45.00 M 96.00 37.00 L
+stroke
+0.3 LW 0.80 G
+88.00 44.00 M 96.00 36.00 L
+stroke
+0.3 LW 0.80 G
+88.00 43.00 M 96.00 35.00 L
+stroke
+0.3 LW 0.80 G
+88.00 42.00 M 96.00 34.00 L
+stroke
+0.3 LW 0.80 G
+88.00 41.00 M 96.00 33.00 L
+stroke
+0.3 LW 0.80 G
+88.00 40.00 M 96.00 32.00 L
+stroke
+0.3 LW 0.80 G
+88.00 39.00 M 96.00 31.00 L
+stroke
+0.3 LW 0.80 G
+88.00 38.00 M 96.00 30.00 L
+stroke
+0.3 LW 0.80 G
+88.00 37.00 M 96.00 29.00 L
+stroke
+0.3 LW 0.80 G
+88.00 36.00 M 96.00 28.00 L
+stroke
+0.3 LW 0.80 G
+88.00 35.00 M 96.00 27.00 L
+stroke
+0.3 LW 0.80 G
+88.00 34.00 M 96.00 26.00 L
+stroke
+0.3 LW 0.80 G
+88.00 33.00 M 96.00 25.00 L
+stroke
+0.3 LW 0.80 G
+88.00 32.00 M 96.00 24.00 L
+stroke
+0.3 LW 0.80 G
+88.00 31.00 M 96.00 23.00 L
+stroke
+0.3 LW 0.80 G
+88.00 30.00 M 96.00 22.00 L
+stroke
+0.3 LW 0.80 G
+88.00 29.00 M 96.00 21.00 L
+stroke
+0.3 LW 0.80 G
+88.00 28.00 M 96.00 20.00 L
+stroke
+0.3 LW 0.80 G
+88.00 27.00 M 96.00 19.00 L
+stroke
+0.3 LW 0.80 G
+88.00 26.00 M 96.00 18.00 L
+stroke
+0.3 LW 0.80 G
+88.00 25.00 M 96.00 17.00 L
+stroke
+0.3 LW 0.80 G
+88.00 23.00 M 96.00 15.00 L
+stroke
+0.3 LW 0.80 G
+88.00 20.00 M 96.00 12.00 L
+stroke
+0.3 LW 0.80 G
+88.00 18.00 M 96.00 10.00 L
+stroke
+0.3 LW 0.80 G
+88.00 17.00 M 96.00 9.00 L
+stroke
+0.3 LW 0.80 G
+88.00 16.00 M 96.00 8.00 L
+stroke
+0.3 LW 0.80 G
+88.00 15.00 M 96.00 7.00 L
+stroke
+0.3 LW 0.80 G
+88.00 14.00 M 96.00 6.00 L
+stroke
+0.3 LW 0.80 G
+88.00 13.00 M 96.00 5.00 L
+stroke
+0.3 LW 0.80 G
+88.00 12.00 M 96.00 4.00 L
+stroke
+0.3 LW 0.80 G
+88.00 11.00 M 96.00 3.00 L
+stroke
+0.3 LW 0.80 G
+88.00 10.00 M 96.00 2.00 L
+stroke
+0.3 LW 0.80 G
+88.00 9.00 M 96.00 1.00 L
+stroke
+0.3 LW 0.80 G
+89.00 52.00 M 97.00 44.00 L
+stroke
+0.3 LW 0.80 G
+89.00 51.00 M 97.00 43.00 L
+stroke
+0.3 LW 0.80 G
+89.00 50.00 M 97.00 42.00 L
+stroke
+0.3 LW 0.80 G
+89.00 48.00 M 97.00 40.00 L
+stroke
+0.3 LW 0.80 G
+89.00 47.00 M 97.00 39.00 L
+stroke
+0.3 LW 0.80 G
+89.00 46.00 M 97.00 38.00 L
+stroke
+0.3 LW 0.80 G
+89.00 44.00 M 97.00 36.00 L
+stroke
+0.3 LW 0.80 G
+89.00 43.00 M 97.00 35.00 L
+stroke
+0.3 LW 0.80 G
+89.00 42.00 M 97.00 34.00 L
+stroke
+0.3 LW 0.80 G
+89.00 41.00 M 97.00 33.00 L
+stroke
+0.3 LW 0.80 G
+89.00 40.00 M 97.00 32.00 L
+stroke
+0.3 LW 0.80 G
+89.00 39.00 M 97.00 31.00 L
+stroke
+0.3 LW 0.80 G
+89.00 38.00 M 97.00 30.00 L
+stroke
+0.3 LW 0.80 G
+89.00 37.00 M 97.00 29.00 L
+stroke
+0.3 LW 0.80 G
+89.00 36.00 M 97.00 28.00 L
+stroke
+0.3 LW 0.80 G
+89.00 35.00 M 97.00 27.00 L
+stroke
+0.3 LW 0.80 G
+89.00 34.00 M 97.00 26.00 L
+stroke
+0.3 LW 0.80 G
+89.00 33.00 M 97.00 25.00 L
+stroke
+0.3 LW 0.80 G
+89.00 32.00 M 97.00 24.00 L
+stroke
+0.3 LW 0.80 G
+89.00 31.00 M 97.00 23.00 L
+stroke
+0.3 LW 0.80 G
+89.00 30.00 M 97.00 22.00 L
+stroke
+0.3 LW 0.80 G
+89.00 29.00 M 97.00 21.00 L
+stroke
+0.3 LW 0.80 G
+89.00 28.00 M 97.00 20.00 L
+stroke
+0.3 LW 0.80 G
+89.00 27.00 M 97.00 19.00 L
+stroke
+0.3 LW 0.80 G
+89.00 26.00 M 97.00 18.00 L
+stroke
+0.3 LW 0.80 G
+89.00 25.00 M 97.00 17.00 L
+stroke
+0.3 LW 0.80 G
+89.00 21.00 M 97.00 13.00 L
+stroke
+0.3 LW 0.80 G
+89.00 20.00 M 97.00 12.00 L
+stroke
+0.3 LW 0.80 G
+89.00 19.00 M 97.00 11.00 L
+stroke
+0.3 LW 0.80 G
+89.00 17.00 M 97.00 9.00 L
+stroke
+0.3 LW 0.80 G
+89.00 16.00 M 97.00 8.00 L
+stroke
+0.3 LW 0.80 G
+89.00 15.00 M 97.00 7.00 L
+stroke
+0.3 LW 0.80 G
+89.00 14.00 M 97.00 6.00 L
+stroke
+0.3 LW 0.80 G
+89.00 13.00 M 97.00 5.00 L
+stroke
+0.3 LW 0.80 G
+89.00 12.00 M 97.00 4.00 L
+stroke
+0.3 LW 0.80 G
+89.00 11.00 M 97.00 3.00 L
+stroke
+0.3 LW 0.80 G
+89.00 10.00 M 97.00 2.00 L
+stroke
+0.3 LW 0.80 G
+89.00 9.00 M 97.00 1.00 L
+stroke
+0.3 LW 0.80 G
+90.00 51.00 M 98.00 43.00 L
+stroke
+0.3 LW 0.80 G
+90.00 50.00 M 98.00 42.00 L
+stroke
+0.3 LW 0.80 G
+90.00 49.00 M 98.00 41.00 L
+stroke
+0.3 LW 0.80 G
+90.00 46.00 M 98.00 38.00 L
+stroke
+0.3 LW 0.80 G
+90.00 45.00 M 98.00 37.00 L
+stroke
+0.3 LW 0.80 G
+90.00 44.00 M 98.00 36.00 L
+stroke
+0.3 LW 0.80 G
+90.00 43.00 M 98.00 35.00 L
+stroke
+0.3 LW 0.80 G
+90.00 41.00 M 98.00 33.00 L
+stroke
+0.3 LW 0.80 G
+90.00 40.00 M 98.00 32.00 L
+stroke
+0.3 LW 0.80 G
+90.00 37.00 M 98.00 29.00 L
+stroke
+0.3 LW 0.80 G
+90.00 36.00 M 98.00 28.00 L
+stroke
+0.3 LW 0.80 G
+90.00 33.00 M 98.00 25.00 L
+stroke
+0.3 LW 0.80 G
+90.00 32.00 M 98.00 24.00 L
+stroke
+0.3 LW 0.80 G
+90.00 31.00 M 98.00 23.00 L
+stroke
+0.3 LW 0.80 G
+90.00 30.00 M 98.00 22.00 L
+stroke
+0.3 LW 0.80 G
+90.00 29.00 M 98.00 21.00 L
+stroke
+0.3 LW 0.80 G
+90.00 27.00 M 98.00 19.00 L
+stroke
+0.3 LW 0.80 G
+90.00 26.00 M 98.00 18.00 L
+stroke
+0.3 LW 0.80 G
+90.00 25.00 M 98.00 17.00 L
+stroke
+0.3 LW 0.80 G
+90.00 24.00 M 98.00 16.00 L
+stroke
+0.3 LW 0.80 G
+90.00 23.00 M 98.00 15.00 L
+stroke
+0.3 LW 0.80 G
+90.00 22.00 M 98.00 14.00 L
+stroke
+0.3 LW 0.80 G
+90.00 19.00 M 98.00 11.00 L
+stroke
+0.3 LW 0.80 G
+90.00 18.00 M 98.00 10.00 L
+stroke
+0.3 LW 0.80 G
+90.00 17.00 M 98.00 9.00 L
+stroke
+0.3 LW 0.80 G
+90.00 15.00 M 98.00 7.00 L
+stroke
+0.3 LW 0.80 G
+90.00 14.00 M 98.00 6.00 L
+stroke
+0.3 LW 0.80 G
+90.00 13.00 M 98.00 5.00 L
+stroke
+0.3 LW 0.80 G
+90.00 12.00 M 98.00 4.00 L
+stroke
+0.3 LW 0.80 G
+90.00 11.00 M 98.00 3.00 L
+stroke
+0.3 LW 0.80 G
+90.00 10.00 M 98.00 2.00 L
+stroke
+0.3 LW 0.80 G
+90.00 9.00 M 98.00 1.00 L
+stroke
+0.3 LW 0.80 G
+91.00 49.00 M 99.00 41.00 L
+stroke
+0.3 LW 0.80 G
+91.00 48.00 M 99.00 40.00 L
+stroke
+0.3 LW 0.80 G
+91.00 45.00 M 99.00 37.00 L
+stroke
+0.3 LW 0.80 G
+91.00 44.00 M 99.00 36.00 L
+stroke
+0.3 LW 0.80 G
+91.00 43.00 M 99.00 35.00 L
+stroke
+0.3 LW 0.80 G
+91.00 42.00 M 99.00 34.00 L
+stroke
+0.3 LW 0.80 G
+91.00 41.00 M 99.00 33.00 L
+stroke
+0.3 LW 0.80 G
+91.00 40.00 M 99.00 32.00 L
+stroke
+0.3 LW 0.80 G
+91.00 39.00 M 99.00 31.00 L
+stroke
+0.3 LW 0.80 G
+91.00 38.00 M 99.00 30.00 L
+stroke
+0.3 LW 0.80 G
+91.00 37.00 M 99.00 29.00 L
+stroke
+0.3 LW 0.80 G
+91.00 36.00 M 99.00 28.00 L
+stroke
+0.3 LW 0.80 G
+91.00 35.00 M 99.00 27.00 L
+stroke
+0.3 LW 0.80 G
+91.00 34.00 M 99.00 26.00 L
+stroke
+0.3 LW 0.80 G
+91.00 33.00 M 99.00 25.00 L
+stroke
+0.3 LW 0.80 G
+91.00 32.00 M 99.00 24.00 L
+stroke
+0.3 LW 0.80 G
+91.00 31.00 M 99.00 23.00 L
+stroke
+0.3 LW 0.80 G
+91.00 30.00 M 99.00 22.00 L
+stroke
+0.3 LW 0.80 G
+91.00 29.00 M 99.00 21.00 L
+stroke
+0.3 LW 0.80 G
+91.00 28.00 M 99.00 20.00 L
+stroke
+0.3 LW 0.80 G
+91.00 27.00 M 99.00 19.00 L
+stroke
+0.3 LW 0.80 G
+91.00 26.00 M 99.00 18.00 L
+stroke
+0.3 LW 0.80 G
+91.00 25.00 M 99.00 17.00 L
+stroke
+0.3 LW 0.80 G
+91.00 23.00 M 99.00 15.00 L
+stroke
+0.3 LW 0.80 G
+91.00 22.00 M 99.00 14.00 L
+stroke
+0.3 LW 0.80 G
+91.00 21.00 M 99.00 13.00 L
+stroke
+0.3 LW 0.80 G
+91.00 18.00 M 99.00 10.00 L
+stroke
+0.3 LW 0.80 G
+91.00 17.00 M 99.00 9.00 L
+stroke
+0.3 LW 0.80 G
+91.00 16.00 M 99.00 8.00 L
+stroke
+0.3 LW 0.80 G
+91.00 15.00 M 99.00 7.00 L
+stroke
+0.3 LW 0.80 G
+91.00 14.00 M 99.00 6.00 L
+stroke
+0.3 LW 0.80 G
+91.00 13.00 M 99.00 5.00 L
+stroke
+0.3 LW 0.80 G
+91.00 12.00 M 99.00 4.00 L
+stroke
+0.3 LW 0.80 G
+91.00 11.00 M 99.00 3.00 L
+stroke
+0.3 LW 0.80 G
+91.00 10.00 M 99.00 2.00 L
+stroke
+0.3 LW 0.80 G
+91.00 9.00 M 99.00 1.00 L
+stroke
+0.3 LW 0.80 G
+92.00 52.00 M 100.00 44.00 L
+stroke
+0.3 LW 0.80 G
+92.00 51.00 M 100.00 43.00 L
+stroke
+0.3 LW 0.80 G
+92.00 48.00 M 100.00 40.00 L
+stroke
+0.3 LW 0.80 G
+92.00 47.00 M 100.00 39.00 L
+stroke
+0.3 LW 0.80 G
+92.00 45.00 M 100.00 37.00 L
+stroke
+0.3 LW 0.80 G
+92.00 44.00 M 100.00 36.00 L
+stroke
+0.3 LW 0.80 G
+92.00 43.00 M 100.00 35.00 L
+stroke
+0.3 LW 0.80 G
+92.00 42.00 M 100.00 34.00 L
+stroke
+0.3 LW 0.80 G
+92.00 41.00 M 100.00 33.00 L
+stroke
+0.3 LW 0.80 G
+92.00 40.00 M 100.00 32.00 L
+stroke
+0.3 LW 0.80 G
+92.00 39.00 M 100.00 31.00 L
+stroke
+0.3 LW 0.80 G
+92.00 38.00 M 100.00 30.00 L
+stroke
+0.3 LW 0.80 G
+92.00 37.00 M 100.00 29.00 L
+stroke
+0.3 LW 0.80 G
+92.00 36.00 M 100.00 28.00 L
+stroke
+0.3 LW 0.80 G
+92.00 35.00 M 100.00 27.00 L
+stroke
+0.3 LW 0.80 G
+92.00 34.00 M 100.00 26.00 L
+stroke
+0.3 LW 0.80 G
+92.00 33.00 M 100.00 25.00 L
+stroke
+0.3 LW 0.80 G
+92.00 32.00 M 100.00 24.00 L
+stroke
+0.3 LW 0.80 G
+92.00 31.00 M 100.00 23.00 L
+stroke
+0.3 LW 0.80 G
+92.00 30.00 M 100.00 22.00 L
+stroke
+0.3 LW 0.80 G
+92.00 29.00 M 100.00 21.00 L
+stroke
+0.3 LW 0.80 G
+92.00 28.00 M 100.00 20.00 L
+stroke
+0.3 LW 0.80 G
+92.00 27.00 M 100.00 19.00 L
+stroke
+0.3 LW 0.80 G
+92.00 26.00 M 100.00 18.00 L
+stroke
+0.3 LW 0.80 G
+92.00 25.00 M 100.00 17.00 L
+stroke
+0.3 LW 0.80 G
+92.00 22.00 M 100.00 14.00 L
+stroke
+0.3 LW 0.80 G
+92.00 21.00 M 100.00 13.00 L
+stroke
+0.3 LW 0.80 G
+92.00 20.00 M 100.00 12.00 L
+stroke
+0.3 LW 0.80 G
+92.00 18.00 M 100.00 10.00 L
+stroke
+0.3 LW 0.80 G
+92.00 17.00 M 100.00 9.00 L
+stroke
+0.3 LW 0.80 G
+92.00 16.00 M 100.00 8.00 L
+stroke
+0.3 LW 0.80 G
+92.00 15.00 M 100.00 7.00 L
+stroke
+0.3 LW 0.80 G
+92.00 14.00 M 100.00 6.00 L
+stroke
+0.3 LW 0.80 G
+92.00 13.00 M 100.00 5.00 L
+stroke
+0.3 LW 0.80 G
+92.00 12.00 M 100.00 4.00 L
+stroke
+0.3 LW 0.80 G
+92.00 11.00 M 100.00 3.00 L
+stroke
+0.3 LW 0.80 G
+92.00 10.00 M 100.00 2.00 L
+stroke
+0.3 LW 0.80 G
+92.00 9.00 M 100.00 1.00 L
+stroke
+0.3 LW 0.80 G
+93.00 51.00 M 101.00 43.00 L
+stroke
+0.3 LW 0.80 G
+93.00 50.00 M 101.00 42.00 L
+stroke
+0.3 LW 0.80 G
+93.00 47.00 M 101.00 39.00 L
+stroke
+0.3 LW 0.80 G
+93.00 46.00 M 101.00 38.00 L
+stroke
+0.3 LW 0.80 G
+93.00 44.00 M 101.00 36.00 L
+stroke
+0.3 LW 0.80 G
+93.00 42.00 M 101.00 34.00 L
+stroke
+0.3 LW 0.80 G
+93.00 41.00 M 101.00 33.00 L
+stroke
+0.3 LW 0.80 G
+93.00 38.00 M 101.00 30.00 L
+stroke
+0.3 LW 0.80 G
+93.00 37.00 M 101.00 29.00 L
+stroke
+0.3 LW 0.80 G
+93.00 34.00 M 101.00 26.00 L
+stroke
+0.3 LW 0.80 G
+93.00 33.00 M 101.00 25.00 L
+stroke
+0.3 LW 0.80 G
+93.00 31.00 M 101.00 23.00 L
+stroke
+0.3 LW 0.80 G
+93.00 28.00 M 101.00 20.00 L
+stroke
+0.3 LW 0.80 G
+93.00 27.00 M 101.00 19.00 L
+stroke
+0.3 LW 0.80 G
+93.00 25.00 M 101.00 17.00 L
+stroke
+0.3 LW 0.80 G
+93.00 24.00 M 101.00 16.00 L
+stroke
+0.3 LW 0.80 G
+93.00 20.00 M 101.00 12.00 L
+stroke
+0.3 LW 0.80 G
+93.00 19.00 M 101.00 11.00 L
+stroke
+0.3 LW 0.80 G
+93.00 17.00 M 101.00 9.00 L
+stroke
+0.3 LW 0.80 G
+93.00 16.00 M 101.00 8.00 L
+stroke
+0.3 LW 0.80 G
+93.00 15.00 M 101.00 7.00 L
+stroke
+0.3 LW 0.80 G
+93.00 13.00 M 101.00 5.00 L
+stroke
+0.3 LW 0.80 G
+93.00 12.00 M 101.00 4.00 L
+stroke
+0.3 LW 0.80 G
+93.00 10.00 M 101.00 2.00 L
+stroke
+0.3 LW 0.80 G
+94.00 51.00 M 102.00 43.00 L
+stroke
+0.3 LW 0.80 G
+94.00 50.00 M 102.00 42.00 L
+stroke
+0.3 LW 0.80 G
+94.00 49.00 M 102.00 41.00 L
+stroke
+0.3 LW 0.80 G
+94.00 45.00 M 102.00 37.00 L
+stroke
+0.3 LW 0.80 G
+94.00 25.00 M 102.00 17.00 L
+stroke
+0.3 LW 0.80 G
+94.00 24.00 M 102.00 16.00 L
+stroke
+0.3 LW 0.80 G
+94.00 23.00 M 102.00 15.00 L
+stroke
+0.3 LW 0.80 G
+94.00 19.00 M 102.00 11.00 L
+stroke
+0.3 LW 0.80 G
+94.00 18.00 M 102.00 10.00 L
+stroke
+0.3 LW 0.80 G
+95.00 49.00 M 103.00 41.00 L
+stroke
+0.3 LW 0.80 G
+95.00 36.00 M 103.00 28.00 L
+stroke
+0.3 LW 0.80 G
+95.00 27.00 M 103.00 19.00 L
+stroke
+0.3 LW 0.80 G
+95.00 26.00 M 103.00 18.00 L
+stroke
+0.3 LW 0.80 G
+95.00 24.00 M 103.00 16.00 L
+stroke
+0.3 LW 0.80 G
+95.00 23.00 M 103.00 15.00 L
+stroke
+0.3 LW 0.80 G
+96.00 54.00 M 104.00 46.00 L
+stroke
+0.3 LW 0.80 G
+96.00 53.00 M 104.00 45.00 L
+stroke
+0.3 LW 0.80 G
+96.00 49.00 M 104.00 41.00 L
+stroke
+0.3 LW 0.80 G
+96.00 23.00 M 104.00 15.00 L
+stroke
+0.3 LW 0.80 G
+96.00 22.00 M 104.00 14.00 L
+stroke
+0.3 LW 0.80 G
+97.00 54.00 M 105.00 46.00 L
+stroke
+0.3 LW 0.80 G
+97.00 53.00 M 105.00 45.00 L
+stroke
+0.3 LW 0.80 G
+97.00 52.00 M 105.00 44.00 L
+stroke
+0.3 LW 0.80 G
+97.00 22.00 M 105.00 14.00 L
+stroke
+0.3 LW 0.80 G
+98.00 54.00 M 106.00 46.00 L
+stroke
+0.3 LW 0.80 G
+98.00 53.00 M 106.00 45.00 L
+stroke
+0.3 LW 0.80 G
+98.00 52.00 M 106.00 44.00 L
+stroke
+0.3 LW 0.80 G
+99.00 54.00 M 107.00 46.00 L
+stroke
+0.3 LW 0.80 G
+99.00 53.00 M 107.00 45.00 L
+stroke
+0.3 LW 0.80 G
+99.00 52.00 M 107.00 44.00 L
+stroke
+0.3 LW 0.80 G
+99.00 51.00 M 107.00 43.00 L
+stroke
+0.3 LW 0.80 G
+99.00 50.00 M 107.00 42.00 L
+stroke
+0.3 LW 0.80 G
+99.00 23.00 M 107.00 15.00 L
+stroke
+0.3 LW 0.80 G
+99.00 22.00 M 107.00 14.00 L
+stroke
+0.3 LW 0.80 G
+99.00 21.00 M 107.00 13.00 L
+stroke
+0.3 LW 0.80 G
+99.00 20.00 M 107.00 12.00 L
+stroke
+0.3 LW 0.80 G
+100.00 54.00 M 108.00 46.00 L
+stroke
+0.3 LW 0.80 G
+100.00 53.00 M 108.00 45.00 L
+stroke
+0.3 LW 0.80 G
+100.00 52.00 M 108.00 44.00 L
+stroke
+0.3 LW 0.80 G
+100.00 51.00 M 108.00 43.00 L
+stroke
+0.3 LW 0.80 G
+100.00 50.00 M 108.00 42.00 L
+stroke
+0.3 LW 0.80 G
+100.00 49.00 M 108.00 41.00 L
+stroke
+0.3 LW 0.80 G
+100.00 24.00 M 108.00 16.00 L
+stroke
+0.3 LW 0.80 G
+100.00 23.00 M 108.00 15.00 L
+stroke
+0.3 LW 0.80 G
+100.00 22.00 M 108.00 14.00 L
+stroke
+0.3 LW 0.80 G
+100.00 21.00 M 108.00 13.00 L
+stroke
+0.3 LW 0.80 G
+100.00 20.00 M 108.00 12.00 L
+stroke
+0.3 LW 0.80 G
+101.00 52.00 M 109.00 44.00 L
+stroke
+0.3 LW 0.80 G
+101.00 51.00 M 109.00 43.00 L
+stroke
+0.3 LW 0.80 G
+101.00 48.00 M 109.00 40.00 L
+stroke
+0.3 LW 0.80 G
+101.00 47.00 M 109.00 39.00 L
+stroke
+0.3 LW 0.80 G
+101.00 22.00 M 109.00 14.00 L
+stroke
+0.3 LW 0.80 G
+101.00 21.00 M 109.00 13.00 L
+stroke
+0.3 LW 0.80 G
+102.00 51.00 M 110.00 43.00 L
+stroke
+0.3 LW 0.80 G
+102.00 50.00 M 110.00 42.00 L
+stroke
+0.3 LW 0.80 G
+102.00 48.00 M 110.00 40.00 L
+stroke
+0.3 LW 0.80 G
+102.00 47.00 M 110.00 39.00 L
+stroke
+0.3 LW 0.80 G
+102.00 42.00 M 110.00 34.00 L
+stroke
+0.3 LW 0.80 G
+102.00 39.00 M 110.00 31.00 L
+stroke
+0.3 LW 0.80 G
+102.00 38.00 M 110.00 30.00 L
+stroke
+0.3 LW 0.80 G
+102.00 35.00 M 110.00 27.00 L
+stroke
+0.3 LW 0.80 G
+102.00 34.00 M 110.00 26.00 L
+stroke
+0.3 LW 0.80 G
+102.00 28.00 M 110.00 20.00 L
+stroke
+0.3 LW 0.80 G
+102.00 20.00 M 110.00 12.00 L
+stroke
+0.3 LW 0.80 G
+102.00 17.00 M 110.00 9.00 L
+stroke
+0.3 LW 0.80 G
+103.00 51.00 M 111.00 43.00 L
+stroke
+0.3 LW 0.80 G
+103.00 50.00 M 111.00 42.00 L
+stroke
+0.3 LW 0.80 G
+103.00 47.00 M 111.00 39.00 L
+stroke
+0.3 LW 0.80 G
+103.00 46.00 M 111.00 38.00 L
+stroke
+0.3 LW 0.80 G
+103.00 44.00 M 111.00 36.00 L
+stroke
+0.3 LW 0.80 G
+103.00 41.00 M 111.00 33.00 L
+stroke
+0.3 LW 0.80 G
+103.00 38.00 M 111.00 30.00 L
+stroke
+0.3 LW 0.80 G
+103.00 34.00 M 111.00 26.00 L
+stroke
+0.3 LW 0.80 G
+103.00 33.00 M 111.00 25.00 L
+stroke
+0.3 LW 0.80 G
+103.00 20.00 M 111.00 12.00 L
+stroke
+0.3 LW 0.80 G
+103.00 19.00 M 111.00 11.00 L
+stroke
+0.3 LW 0.80 G
+104.00 49.00 M 112.00 41.00 L
+stroke
+0.3 LW 0.80 G
+104.00 48.00 M 112.00 40.00 L
+stroke
+0.3 LW 0.80 G
+104.00 46.00 M 112.00 38.00 L
+stroke
+0.3 LW 0.80 G
+104.00 45.00 M 112.00 37.00 L
+stroke
+0.3 LW 0.80 G
+104.00 44.00 M 112.00 36.00 L
+stroke
+0.3 LW 0.80 G
+104.00 43.00 M 112.00 35.00 L
+stroke
+0.3 LW 0.80 G
+104.00 42.00 M 112.00 34.00 L
+stroke
+0.3 LW 0.80 G
+104.00 41.00 M 112.00 33.00 L
+stroke
+0.3 LW 0.80 G
+104.00 40.00 M 112.00 32.00 L
+stroke
+0.3 LW 0.80 G
+104.00 39.00 M 112.00 31.00 L
+stroke
+0.3 LW 0.80 G
+104.00 38.00 M 112.00 30.00 L
+stroke
+0.3 LW 0.80 G
+104.00 37.00 M 112.00 29.00 L
+stroke
+0.3 LW 0.80 G
+104.00 36.00 M 112.00 28.00 L
+stroke
+0.3 LW 0.80 G
+104.00 35.00 M 112.00 27.00 L
+stroke
+0.3 LW 0.80 G
+104.00 34.00 M 112.00 26.00 L
+stroke
+0.3 LW 0.80 G
+104.00 33.00 M 112.00 25.00 L
+stroke
+0.3 LW 0.80 G
+104.00 32.00 M 112.00 24.00 L
+stroke
+0.3 LW 0.80 G
+104.00 31.00 M 112.00 23.00 L
+stroke
+0.3 LW 0.80 G
+104.00 30.00 M 112.00 22.00 L
+stroke
+0.3 LW 0.80 G
+104.00 29.00 M 112.00 21.00 L
+stroke
+0.3 LW 0.80 G
+104.00 28.00 M 112.00 20.00 L
+stroke
+0.3 LW 0.80 G
+104.00 27.00 M 112.00 19.00 L
+stroke
+0.3 LW 0.80 G
+104.00 26.00 M 112.00 18.00 L
+stroke
+0.3 LW 0.80 G
+104.00 19.00 M 112.00 11.00 L
+stroke
+0.3 LW 0.80 G
+104.00 18.00 M 112.00 10.00 L
+stroke
+0.3 LW 0.80 G
+104.00 17.00 M 112.00 9.00 L
+stroke
+0.3 LW 0.80 G
+104.00 16.00 M 112.00 8.00 L
+stroke
+0.3 LW 0.80 G
+104.00 15.00 M 112.00 7.00 L
+stroke
+0.3 LW 0.80 G
+104.00 14.00 M 112.00 6.00 L
+stroke
+0.3 LW 0.80 G
+104.00 13.00 M 112.00 5.00 L
+stroke
+0.3 LW 0.80 G
+104.00 12.00 M 112.00 4.00 L
+stroke
+0.3 LW 0.80 G
+104.00 11.00 M 112.00 3.00 L
+stroke
+0.3 LW 0.80 G
+104.00 10.00 M 112.00 2.00 L
+stroke
+0.3 LW 0.80 G
+104.00 9.00 M 112.00 1.00 L
+stroke
+0.3 LW 0.80 G
+105.00 48.00 M 113.00 40.00 L
+stroke
+0.3 LW 0.80 G
+105.00 47.00 M 113.00 39.00 L
+stroke
+0.3 LW 0.80 G
+105.00 46.00 M 113.00 38.00 L
+stroke
+0.3 LW 0.80 G
+105.00 45.00 M 113.00 37.00 L
+stroke
+0.3 LW 0.80 G
+105.00 44.00 M 113.00 36.00 L
+stroke
+0.3 LW 0.80 G
+105.00 43.00 M 113.00 35.00 L
+stroke
+0.3 LW 0.80 G
+105.00 42.00 M 113.00 34.00 L
+stroke
+0.3 LW 0.80 G
+105.00 41.00 M 113.00 33.00 L
+stroke
+0.3 LW 0.80 G
+105.00 40.00 M 113.00 32.00 L
+stroke
+0.3 LW 0.80 G
+105.00 39.00 M 113.00 31.00 L
+stroke
+0.3 LW 0.80 G
+105.00 38.00 M 113.00 30.00 L
+stroke
+0.3 LW 0.80 G
+105.00 37.00 M 113.00 29.00 L
+stroke
+0.3 LW 0.80 G
+105.00 36.00 M 113.00 28.00 L
+stroke
+0.3 LW 0.80 G
+105.00 35.00 M 113.00 27.00 L
+stroke
+0.3 LW 0.80 G
+105.00 34.00 M 113.00 26.00 L
+stroke
+0.3 LW 0.80 G
+105.00 33.00 M 113.00 25.00 L
+stroke
+0.3 LW 0.80 G
+105.00 32.00 M 113.00 24.00 L
+stroke
+0.3 LW 0.80 G
+105.00 31.00 M 113.00 23.00 L
+stroke
+0.3 LW 0.80 G
+105.00 30.00 M 113.00 22.00 L
+stroke
+0.3 LW 0.80 G
+105.00 29.00 M 113.00 21.00 L
+stroke
+0.3 LW 0.80 G
+105.00 28.00 M 113.00 20.00 L
+stroke
+0.3 LW 0.80 G
+105.00 27.00 M 113.00 19.00 L
+stroke
+0.3 LW 0.80 G
+105.00 26.00 M 113.00 18.00 L
+stroke
+0.3 LW 0.80 G
+105.00 25.00 M 113.00 17.00 L
+stroke
+0.3 LW 0.80 G
+105.00 19.00 M 113.00 11.00 L
+stroke
+0.3 LW 0.80 G
+105.00 18.00 M 113.00 10.00 L
+stroke
+0.3 LW 0.80 G
+105.00 17.00 M 113.00 9.00 L
+stroke
+0.3 LW 0.80 G
+105.00 16.00 M 113.00 8.00 L
+stroke
+0.3 LW 0.80 G
+105.00 15.00 M 113.00 7.00 L
+stroke
+0.3 LW 0.80 G
+105.00 14.00 M 113.00 6.00 L
+stroke
+0.3 LW 0.80 G
+105.00 13.00 M 113.00 5.00 L
+stroke
+0.3 LW 0.80 G
+105.00 12.00 M 113.00 4.00 L
+stroke
+0.3 LW 0.80 G
+105.00 11.00 M 113.00 3.00 L
+stroke
+0.3 LW 0.80 G
+105.00 10.00 M 113.00 2.00 L
+stroke
+0.3 LW 0.80 G
+105.00 9.00 M 113.00 1.00 L
+stroke
+0.3 LW 0.80 G
+106.00 48.00 M 114.00 40.00 L
+stroke
+0.3 LW 0.80 G
+106.00 47.00 M 114.00 39.00 L
+stroke
+0.3 LW 0.80 G
+106.00 46.00 M 114.00 38.00 L
+stroke
+0.3 LW 0.80 G
+106.00 45.00 M 114.00 37.00 L
+stroke
+0.3 LW 0.80 G
+106.00 44.00 M 114.00 36.00 L
+stroke
+0.3 LW 0.80 G
+106.00 43.00 M 114.00 35.00 L
+stroke
+0.3 LW 0.80 G
+106.00 42.00 M 114.00 34.00 L
+stroke
+0.3 LW 0.80 G
+106.00 41.00 M 114.00 33.00 L
+stroke
+0.3 LW 0.80 G
+106.00 40.00 M 114.00 32.00 L
+stroke
+0.3 LW 0.80 G
+106.00 39.00 M 114.00 31.00 L
+stroke
+0.3 LW 0.80 G
+106.00 38.00 M 114.00 30.00 L
+stroke
+0.3 LW 0.80 G
+106.00 37.00 M 114.00 29.00 L
+stroke
+0.3 LW 0.80 G
+106.00 36.00 M 114.00 28.00 L
+stroke
+0.3 LW 0.80 G
+106.00 35.00 M 114.00 27.00 L
+stroke
+0.3 LW 0.80 G
+106.00 34.00 M 114.00 26.00 L
+stroke
+0.3 LW 0.80 G
+106.00 33.00 M 114.00 25.00 L
+stroke
+0.3 LW 0.80 G
+106.00 32.00 M 114.00 24.00 L
+stroke
+0.3 LW 0.80 G
+106.00 31.00 M 114.00 23.00 L
+stroke
+0.3 LW 0.80 G
+106.00 30.00 M 114.00 22.00 L
+stroke
+0.3 LW 0.80 G
+106.00 29.00 M 114.00 21.00 L
+stroke
+0.3 LW 0.80 G
+106.00 28.00 M 114.00 20.00 L
+stroke
+0.3 LW 0.80 G
+106.00 27.00 M 114.00 19.00 L
+stroke
+0.3 LW 0.80 G
+106.00 26.00 M 114.00 18.00 L
+stroke
+0.3 LW 0.80 G
+106.00 25.00 M 114.00 17.00 L
+stroke
+0.3 LW 0.80 G
+106.00 18.00 M 114.00 10.00 L
+stroke
+0.3 LW 0.80 G
+106.00 17.00 M 114.00 9.00 L
+stroke
+0.3 LW 0.80 G
+106.00 16.00 M 114.00 8.00 L
+stroke
+0.3 LW 0.80 G
+106.00 15.00 M 114.00 7.00 L
+stroke
+0.3 LW 0.80 G
+106.00 14.00 M 114.00 6.00 L
+stroke
+0.3 LW 0.80 G
+106.00 13.00 M 114.00 5.00 L
+stroke
+0.3 LW 0.80 G
+106.00 12.00 M 114.00 4.00 L
+stroke
+0.3 LW 0.80 G
+106.00 11.00 M 114.00 3.00 L
+stroke
+0.3 LW 0.80 G
+106.00 10.00 M 114.00 2.00 L
+stroke
+0.3 LW 0.80 G
+106.00 9.00 M 114.00 1.00 L
+stroke
+0.3 LW 0.80 G
+107.00 48.00 M 115.00 40.00 L
+stroke
+0.3 LW 0.80 G
+107.00 47.00 M 115.00 39.00 L
+stroke
+0.3 LW 0.80 G
+107.00 46.00 M 115.00 38.00 L
+stroke
+0.3 LW 0.80 G
+107.00 45.00 M 115.00 37.00 L
+stroke
+0.3 LW 0.80 G
+107.00 44.00 M 115.00 36.00 L
+stroke
+0.3 LW 0.80 G
+107.00 43.00 M 115.00 35.00 L
+stroke
+0.3 LW 0.80 G
+107.00 42.00 M 115.00 34.00 L
+stroke
+0.3 LW 0.80 G
+107.00 41.00 M 115.00 33.00 L
+stroke
+0.3 LW 0.80 G
+107.00 40.00 M 115.00 32.00 L
+stroke
+0.3 LW 0.80 G
+107.00 39.00 M 115.00 31.00 L
+stroke
+0.3 LW 0.80 G
+107.00 38.00 M 115.00 30.00 L
+stroke
+0.3 LW 0.80 G
+107.00 37.00 M 115.00 29.00 L
+stroke
+0.3 LW 0.80 G
+107.00 36.00 M 115.00 28.00 L
+stroke
+0.3 LW 0.80 G
+107.00 35.00 M 115.00 27.00 L
+stroke
+0.3 LW 0.80 G
+107.00 34.00 M 115.00 26.00 L
+stroke
+0.3 LW 0.80 G
+107.00 33.00 M 115.00 25.00 L
+stroke
+0.3 LW 0.80 G
+107.00 32.00 M 115.00 24.00 L
+stroke
+0.3 LW 0.80 G
+107.00 31.00 M 115.00 23.00 L
+stroke
+0.3 LW 0.80 G
+107.00 30.00 M 115.00 22.00 L
+stroke
+0.3 LW 0.80 G
+107.00 29.00 M 115.00 21.00 L
+stroke
+0.3 LW 0.80 G
+107.00 28.00 M 115.00 20.00 L
+stroke
+0.3 LW 0.80 G
+107.00 27.00 M 115.00 19.00 L
+stroke
+0.3 LW 0.80 G
+107.00 26.00 M 115.00 18.00 L
+stroke
+0.3 LW 0.80 G
+107.00 25.00 M 115.00 17.00 L
+stroke
+0.3 LW 0.80 G
+107.00 18.00 M 115.00 10.00 L
+stroke
+0.3 LW 0.80 G
+107.00 17.00 M 115.00 9.00 L
+stroke
+0.3 LW 0.80 G
+107.00 16.00 M 115.00 8.00 L
+stroke
+0.3 LW 0.80 G
+107.00 15.00 M 115.00 7.00 L
+stroke
+0.3 LW 0.80 G
+107.00 14.00 M 115.00 6.00 L
+stroke
+0.3 LW 0.80 G
+107.00 13.00 M 115.00 5.00 L
+stroke
+0.3 LW 0.80 G
+107.00 12.00 M 115.00 4.00 L
+stroke
+0.3 LW 0.80 G
+107.00 11.00 M 115.00 3.00 L
+stroke
+0.3 LW 0.80 G
+107.00 10.00 M 115.00 2.00 L
+stroke
+0.3 LW 0.80 G
+107.00 9.00 M 115.00 1.00 L
+stroke
+0.3 LW 0.80 G
+108.00 48.00 M 116.00 40.00 L
+stroke
+0.3 LW 0.80 G
+108.00 47.00 M 116.00 39.00 L
+stroke
+0.3 LW 0.80 G
+108.00 46.00 M 116.00 38.00 L
+stroke
+0.3 LW 0.80 G
+108.00 45.00 M 116.00 37.00 L
+stroke
+0.3 LW 0.80 G
+108.00 44.00 M 116.00 36.00 L
+stroke
+0.3 LW 0.80 G
+108.00 43.00 M 116.00 35.00 L
+stroke
+0.3 LW 0.80 G
+108.00 42.00 M 116.00 34.00 L
+stroke
+0.3 LW 0.80 G
+108.00 41.00 M 116.00 33.00 L
+stroke
+0.3 LW 0.80 G
+108.00 40.00 M 116.00 32.00 L
+stroke
+0.3 LW 0.80 G
+108.00 39.00 M 116.00 31.00 L
+stroke
+0.3 LW 0.80 G
+108.00 38.00 M 116.00 30.00 L
+stroke
+0.3 LW 0.80 G
+108.00 37.00 M 116.00 29.00 L
+stroke
+0.3 LW 0.80 G
+108.00 36.00 M 116.00 28.00 L
+stroke
+0.3 LW 0.80 G
+108.00 35.00 M 116.00 27.00 L
+stroke
+0.3 LW 0.80 G
+108.00 34.00 M 116.00 26.00 L
+stroke
+0.3 LW 0.80 G
+108.00 33.00 M 116.00 25.00 L
+stroke
+0.3 LW 0.80 G
+108.00 32.00 M 116.00 24.00 L
+stroke
+0.3 LW 0.80 G
+108.00 31.00 M 116.00 23.00 L
+stroke
+0.3 LW 0.80 G
+108.00 30.00 M 116.00 22.00 L
+stroke
+0.3 LW 0.80 G
+108.00 29.00 M 116.00 21.00 L
+stroke
+0.3 LW 0.80 G
+108.00 28.00 M 116.00 20.00 L
+stroke
+0.3 LW 0.80 G
+108.00 27.00 M 116.00 19.00 L
+stroke
+0.3 LW 0.80 G
+108.00 26.00 M 116.00 18.00 L
+stroke
+0.3 LW 0.80 G
+108.00 25.00 M 116.00 17.00 L
+stroke
+0.3 LW 0.80 G
+108.00 18.00 M 116.00 10.00 L
+stroke
+0.3 LW 0.80 G
+108.00 17.00 M 116.00 9.00 L
+stroke
+0.3 LW 0.80 G
+108.00 16.00 M 116.00 8.00 L
+stroke
+0.3 LW 0.80 G
+108.00 15.00 M 116.00 7.00 L
+stroke
+0.3 LW 0.80 G
+108.00 14.00 M 116.00 6.00 L
+stroke
+0.3 LW 0.80 G
+108.00 13.00 M 116.00 5.00 L
+stroke
+0.3 LW 0.80 G
+108.00 12.00 M 116.00 4.00 L
+stroke
+0.3 LW 0.80 G
+108.00 11.00 M 116.00 3.00 L
+stroke
+0.3 LW 0.80 G
+108.00 10.00 M 116.00 2.00 L
+stroke
+0.3 LW 0.80 G
+108.00 9.00 M 116.00 1.00 L
+stroke
+0.3 LW 0.80 G
+109.00 48.00 M 117.00 40.00 L
+stroke
+0.3 LW 0.80 G
+109.00 47.00 M 117.00 39.00 L
+stroke
+0.3 LW 0.80 G
+109.00 46.00 M 117.00 38.00 L
+stroke
+0.3 LW 0.80 G
+109.00 45.00 M 117.00 37.00 L
+stroke
+0.3 LW 0.80 G
+109.00 44.00 M 117.00 36.00 L
+stroke
+0.3 LW 0.80 G
+109.00 43.00 M 117.00 35.00 L
+stroke
+0.3 LW 0.80 G
+109.00 42.00 M 117.00 34.00 L
+stroke
+0.3 LW 0.80 G
+109.00 41.00 M 117.00 33.00 L
+stroke
+0.3 LW 0.80 G
+109.00 40.00 M 117.00 32.00 L
+stroke
+0.3 LW 0.80 G
+109.00 39.00 M 117.00 31.00 L
+stroke
+0.3 LW 0.80 G
+109.00 38.00 M 117.00 30.00 L
+stroke
+0.3 LW 0.80 G
+109.00 37.00 M 117.00 29.00 L
+stroke
+0.3 LW 0.80 G
+109.00 36.00 M 117.00 28.00 L
+stroke
+0.3 LW 0.80 G
+109.00 35.00 M 117.00 27.00 L
+stroke
+0.3 LW 0.80 G
+109.00 34.00 M 117.00 26.00 L
+stroke
+0.3 LW 0.80 G
+109.00 33.00 M 117.00 25.00 L
+stroke
+0.3 LW 0.80 G
+109.00 32.00 M 117.00 24.00 L
+stroke
+0.3 LW 0.80 G
+109.00 31.00 M 117.00 23.00 L
+stroke
+0.3 LW 0.80 G
+109.00 30.00 M 117.00 22.00 L
+stroke
+0.3 LW 0.80 G
+109.00 29.00 M 117.00 21.00 L
+stroke
+0.3 LW 0.80 G
+109.00 28.00 M 117.00 20.00 L
+stroke
+0.3 LW 0.80 G
+109.00 27.00 M 117.00 19.00 L
+stroke
+0.3 LW 0.80 G
+109.00 26.00 M 117.00 18.00 L
+stroke
+0.3 LW 0.80 G
+109.00 25.00 M 117.00 17.00 L
+stroke
+0.3 LW 0.80 G
+109.00 18.00 M 117.00 10.00 L
+stroke
+0.3 LW 0.80 G
+109.00 17.00 M 117.00 9.00 L
+stroke
+0.3 LW 0.80 G
+109.00 16.00 M 117.00 8.00 L
+stroke
+0.3 LW 0.80 G
+109.00 15.00 M 117.00 7.00 L
+stroke
+0.3 LW 0.80 G
+109.00 14.00 M 117.00 6.00 L
+stroke
+0.3 LW 0.80 G
+109.00 13.00 M 117.00 5.00 L
+stroke
+0.3 LW 0.80 G
+109.00 12.00 M 117.00 4.00 L
+stroke
+0.3 LW 0.80 G
+109.00 11.00 M 117.00 3.00 L
+stroke
+0.3 LW 0.80 G
+109.00 10.00 M 117.00 2.00 L
+stroke
+0.3 LW 0.80 G
+109.00 9.00 M 117.00 1.00 L
+stroke
+0.3 LW 0.80 G
+110.00 48.00 M 118.00 40.00 L
+stroke
+0.3 LW 0.80 G
+110.00 47.00 M 118.00 39.00 L
+stroke
+0.3 LW 0.80 G
+110.00 46.00 M 118.00 38.00 L
+stroke
+0.3 LW 0.80 G
+110.00 45.00 M 118.00 37.00 L
+stroke
+0.3 LW 0.80 G
+110.00 44.00 M 118.00 36.00 L
+stroke
+0.3 LW 0.80 G
+110.00 43.00 M 118.00 35.00 L
+stroke
+0.3 LW 0.80 G
+110.00 42.00 M 118.00 34.00 L
+stroke
+0.3 LW 0.80 G
+110.00 41.00 M 118.00 33.00 L
+stroke
+0.3 LW 0.80 G
+110.00 40.00 M 118.00 32.00 L
+stroke
+0.3 LW 0.80 G
+110.00 39.00 M 118.00 31.00 L
+stroke
+0.3 LW 0.80 G
+110.00 38.00 M 118.00 30.00 L
+stroke
+0.3 LW 0.80 G
+110.00 37.00 M 118.00 29.00 L
+stroke
+0.3 LW 0.80 G
+110.00 36.00 M 118.00 28.00 L
+stroke
+0.3 LW 0.80 G
+110.00 35.00 M 118.00 27.00 L
+stroke
+0.3 LW 0.80 G
+110.00 34.00 M 118.00 26.00 L
+stroke
+0.3 LW 0.80 G
+110.00 33.00 M 118.00 25.00 L
+stroke
+0.3 LW 0.80 G
+110.00 32.00 M 118.00 24.00 L
+stroke
+0.3 LW 0.80 G
+110.00 31.00 M 118.00 23.00 L
+stroke
+0.3 LW 0.80 G
+110.00 30.00 M 118.00 22.00 L
+stroke
+0.3 LW 0.80 G
+110.00 29.00 M 118.00 21.00 L
+stroke
+0.3 LW 0.80 G
+110.00 28.00 M 118.00 20.00 L
+stroke
+0.3 LW 0.80 G
+110.00 27.00 M 118.00 19.00 L
+stroke
+0.3 LW 0.80 G
+110.00 26.00 M 118.00 18.00 L
+stroke
+0.3 LW 0.80 G
+110.00 25.00 M 118.00 17.00 L
+stroke
+0.3 LW 0.80 G
+110.00 18.00 M 118.00 10.00 L
+stroke
+0.3 LW 0.80 G
+110.00 17.00 M 118.00 9.00 L
+stroke
+0.3 LW 0.80 G
+110.00 16.00 M 118.00 8.00 L
+stroke
+0.3 LW 0.80 G
+110.00 15.00 M 118.00 7.00 L
+stroke
+0.3 LW 0.80 G
+110.00 14.00 M 118.00 6.00 L
+stroke
+0.3 LW 0.80 G
+110.00 13.00 M 118.00 5.00 L
+stroke
+0.3 LW 0.80 G
+110.00 12.00 M 118.00 4.00 L
+stroke
+0.3 LW 0.80 G
+110.00 11.00 M 118.00 3.00 L
+stroke
+0.3 LW 0.80 G
+110.00 10.00 M 118.00 2.00 L
+stroke
+0.3 LW 0.80 G
+110.00 9.00 M 118.00 1.00 L
+stroke
+0.3 LW 0.80 G
+111.00 46.00 M 119.00 38.00 L
+stroke
+0.3 LW 0.80 G
+111.00 45.00 M 119.00 37.00 L
+stroke
+0.3 LW 0.80 G
+111.00 44.00 M 119.00 36.00 L
+stroke
+0.3 LW 0.80 G
+111.00 43.00 M 119.00 35.00 L
+stroke
+0.3 LW 0.80 G
+111.00 42.00 M 119.00 34.00 L
+stroke
+0.3 LW 0.80 G
+111.00 41.00 M 119.00 33.00 L
+stroke
+0.3 LW 0.80 G
+111.00 40.00 M 119.00 32.00 L
+stroke
+0.3 LW 0.80 G
+111.00 39.00 M 119.00 31.00 L
+stroke
+0.3 LW 0.80 G
+111.00 38.00 M 119.00 30.00 L
+stroke
+0.3 LW 0.80 G
+111.00 37.00 M 119.00 29.00 L
+stroke
+0.3 LW 0.80 G
+111.00 36.00 M 119.00 28.00 L
+stroke
+0.3 LW 0.80 G
+111.00 35.00 M 119.00 27.00 L
+stroke
+0.3 LW 0.80 G
+111.00 34.00 M 119.00 26.00 L
+stroke
+0.3 LW 0.80 G
+111.00 33.00 M 119.00 25.00 L
+stroke
+0.3 LW 0.80 G
+111.00 32.00 M 119.00 24.00 L
+stroke
+0.3 LW 0.80 G
+111.00 31.00 M 119.00 23.00 L
+stroke
+0.3 LW 0.80 G
+111.00 30.00 M 119.00 22.00 L
+stroke
+0.3 LW 0.80 G
+111.00 29.00 M 119.00 21.00 L
+stroke
+0.3 LW 0.80 G
+111.00 28.00 M 119.00 20.00 L
+stroke
+0.3 LW 0.80 G
+111.00 27.00 M 119.00 19.00 L
+stroke
+0.3 LW 0.80 G
+111.00 26.00 M 119.00 18.00 L
+stroke
+0.3 LW 0.80 G
+111.00 25.00 M 119.00 17.00 L
+stroke
+0.3 LW 0.80 G
+111.00 19.00 M 119.00 11.00 L
+stroke
+0.3 LW 0.80 G
+111.00 17.00 M 119.00 9.00 L
+stroke
+0.3 LW 0.80 G
+111.00 16.00 M 119.00 8.00 L
+stroke
+0.3 LW 0.80 G
+111.00 15.00 M 119.00 7.00 L
+stroke
+0.3 LW 0.80 G
+111.00 14.00 M 119.00 6.00 L
+stroke
+0.3 LW 0.80 G
+111.00 13.00 M 119.00 5.00 L
+stroke
+0.3 LW 0.80 G
+111.00 12.00 M 119.00 4.00 L
+stroke
+0.3 LW 0.80 G
+111.00 11.00 M 119.00 3.00 L
+stroke
+0.3 LW 0.80 G
+111.00 10.00 M 119.00 2.00 L
+stroke
+0.3 LW 0.80 G
+111.00 9.00 M 119.00 1.00 L
+stroke
+0.3 LW 0.80 G
+112.00 50.00 M 120.00 42.00 L
+stroke
+0.3 LW 0.80 G
+112.00 49.00 M 120.00 41.00 L
+stroke
+0.3 LW 0.80 G
+112.00 25.00 M 120.00 17.00 L
+stroke
+0.3 LW 0.80 G
+112.00 24.00 M 120.00 16.00 L
+stroke
+0.3 LW 0.80 G
+113.00 50.00 M 121.00 42.00 L
+stroke
+0.3 LW 0.80 G
+113.00 49.00 M 121.00 41.00 L
+stroke
+0.3 LW 0.80 G
+113.00 24.00 M 121.00 16.00 L
+stroke
+0.3 LW 0.80 G
+113.00 23.00 M 121.00 15.00 L
+stroke
+0.3 LW 0.80 G
+114.00 49.00 M 122.00 41.00 L
+stroke
+0.3 LW 0.80 G
+114.00 48.00 M 122.00 40.00 L
+stroke
+0.3 LW 0.80 G
+114.00 23.00 M 122.00 15.00 L
+stroke
+0.3 LW 0.80 G
+114.00 22.00 M 122.00 14.00 L
+stroke
+0.3 LW 0.80 G
+115.00 54.00 M 123.00 46.00 L
+stroke
+0.3 LW 0.80 G
+115.00 53.00 M 123.00 45.00 L
+stroke
+0.3 LW 0.80 G
+115.00 52.00 M 123.00 44.00 L
+stroke
+0.3 LW 0.80 G
+115.00 22.00 M 123.00 14.00 L
+stroke
+0.3 LW 0.80 G
+115.00 21.00 M 123.00 13.00 L
+stroke
+0.3 LW 0.80 G
+116.00 54.00 M 124.00 46.00 L
+stroke
+0.3 LW 0.80 G
+116.00 53.00 M 124.00 45.00 L
+stroke
+0.3 LW 0.80 G
+116.00 52.00 M 124.00 44.00 L
+stroke
+0.3 LW 0.80 G
+116.00 51.00 M 124.00 43.00 L
+stroke
+0.3 LW 0.80 G
+116.00 23.00 M 124.00 15.00 L
+stroke
+0.3 LW 0.80 G
+116.00 22.00 M 124.00 14.00 L
+stroke
+0.3 LW 0.80 G
+116.00 21.00 M 124.00 13.00 L
+stroke
+0.3 LW 0.80 G
+117.00 54.00 M 125.00 46.00 L
+stroke
+0.3 LW 0.80 G
+117.00 53.00 M 125.00 45.00 L
+stroke
+0.3 LW 0.80 G
+117.00 52.00 M 125.00 44.00 L
+stroke
+0.3 LW 0.80 G
+117.00 51.00 M 125.00 43.00 L
+stroke
+0.3 LW 0.80 G
+117.00 24.00 M 125.00 16.00 L
+stroke
+0.3 LW 0.80 G
+117.00 22.00 M 125.00 14.00 L
+stroke
+0.3 LW 0.80 G
+117.00 21.00 M 125.00 13.00 L
+stroke
+stroke
+newpath
+255.00 0.00 0.00 R 1.0 LW
+17.00 53.00 M 18.00 52.00 L
+stroke
+255.00 0.00 0.00 R 0.3 LW
+18.00 52.00 M 19.00 51.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+19.00 51.00 M 20.00 50.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+20.00 50.00 M 21.00 49.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+21.00 49.00 M 22.00 48.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+22.00 48.00 M 23.00 47.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+23.00 47.00 M 24.00 46.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+24.00 46.00 M 25.00 45.00 L
+stroke
+255.00 0.00 0.00 R 0.3 LW
+25.00 45.00 M 25.00 44.00 L
+stroke
+255.00 0.00 0.00 R 0.3 LW
+25.00 44.00 M 25.00 43.00 L
+stroke
+255.00 0.00 0.00 R 0.3 LW
+25.00 43.00 M 25.00 42.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+25.00 42.00 M 26.00 41.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+26.00 41.00 M 27.00 40.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+27.00 40.00 M 28.00 39.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+28.00 39.00 M 29.00 38.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+29.00 38.00 M 30.00 37.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+30.00 37.00 M 31.00 36.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+31.00 36.00 M 32.00 35.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+32.00 35.00 M 33.00 34.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+33.00 34.00 M 34.00 33.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+34.00 33.00 M 35.00 32.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+35.00 32.00 M 36.00 31.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+36.00 31.00 M 37.00 30.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+37.00 30.00 M 38.00 29.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+38.00 29.00 M 39.00 28.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+39.00 28.00 M 40.00 27.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+40.00 27.00 M 41.00 26.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+41.00 26.00 M 42.00 25.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+42.00 25.00 M 43.00 24.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+43.00 24.00 M 44.00 23.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+44.00 23.00 M 45.00 22.00 L
+stroke
+255.00 0.00 0.00 R 1.0 LW
+45.00 22.00 M 46.00 21.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+46.00 21.00 M 47.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+47.00 20.00 M 48.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+48.00 20.00 M 49.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+49.00 20.00 M 50.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+50.00 20.00 M 51.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+51.00 20.00 M 52.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+52.00 20.00 M 53.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+53.00 20.00 M 54.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+54.00 20.00 M 55.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+55.00 20.00 M 56.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+56.00 20.00 M 57.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+57.00 20.00 M 58.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+58.00 20.00 M 59.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+59.00 20.00 M 60.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+60.00 20.00 M 61.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+61.00 20.00 M 62.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+62.00 20.00 M 63.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+63.00 20.00 M 64.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+64.00 20.00 M 65.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+65.00 20.00 M 66.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+66.00 20.00 M 67.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+67.00 20.00 M 68.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+68.00 20.00 M 69.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+69.00 20.00 M 70.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+70.00 20.00 M 71.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+71.00 20.00 M 72.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+72.00 20.00 M 73.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+73.00 20.00 M 74.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+74.00 20.00 M 75.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+75.00 20.00 M 76.00 20.00 L
+stroke
+205.00 0.00 205.00 R 0.3 LW
+76.00 20.00 M 77.00 20.00 L
+stroke
+205.00 0.00 205.00 R 1.0 LW
+77.00 20.00 M 78.00 19.00 L
+stroke
+205.00 0.00 205.00 R 1.0 LW
+78.00 19.00 M 79.00 18.00 L
+stroke
+205.00 0.00 205.00 R 1.0 LW
+79.00 18.00 M 80.00 17.00 L
+stroke
+205.00 0.00 205.00 R 1.0 LW
+80.00 17.00 M 81.00 16.00 L
+stroke
+205.00 0.00 205.00 R 1.0 LW
+81.00 16.00 M 82.00 15.00 L
+stroke
+205.00 0.00 205.00 R 1.0 LW
+82.00 15.00 M 83.00 14.00 L
+stroke
+205.00 0.00 205.00 R 1.0 LW
+83.00 14.00 M 84.00 13.00 L
+stroke
+205.00 0.00 205.00 R 1.0 LW
+84.00 13.00 M 85.00 12.00 L
+stroke
+205.00 0.00 205.00 R 1.0 LW
+85.00 12.00 M 86.00 11.00 L
+stroke
+205.00 0.00 205.00 R 1.0 LW
+86.00 11.00 M 87.00 10.00 L
+stroke
+205.00 0.00 205.00 R 1.0 LW
+87.00 10.00 M 88.00 9.00 L
+stroke
+205.00 0.00 205.00 R 1.0 LW
+88.00 9.00 M 89.00 8.00 L
+stroke
+205.00 0.00 205.00 R 1.0 LW
+89.00 8.00 M 90.00 7.00 L
+stroke
+205.00 0.00 205.00 R 1.0 LW
+90.00 7.00 M 91.00 6.00 L
+stroke
+205.00 0.00 205.00 R 1.0 LW
+91.00 6.00 M 92.00 5.00 L
+stroke
+205.00 0.00 205.00 R 1.0 LW
+92.00 5.00 M 93.00 4.00 L
+stroke
+205.00 0.00 205.00 R 1.0 LW
+93.00 4.00 M 94.00 3.00 L
+stroke
+205.00 0.00 205.00 R 1.0 LW
+94.00 3.00 M 95.00 2.00 L
+stroke
+stroke
+%draw arrows
+gsave
+0 0 0 R
+gsave
+77.00 20.00 downleftarrow
+grestore
+grestore
+grestore
+showpage
+%%Trailer

@@ -1,0 +1,37 @@
+Align F4MNZ6.pdb 371 with F4MR19.pdb 318
+Twists 5 ini-len 200 ini-rmsd 9.53 opt-equ 197 opt-rmsd 5.11 chain-rmsd 18.68 Score 175.59 align-len 341 gaps 144 (42.23%)
+P-value 3.37e-01 Afp-num 40622 Identity 5.87% Similarity 16.72%
+Block  0 afp  2 score 45.81 rmsd  1.36 gap 0 (0.00%)
+Block  1 afp  2 score 27.85 rmsd  3.58 gap 1 (0.06%)
+Block  2 afp  2 score 47.38 rmsd  0.84 gap 0 (0.00%)
+Block  3 afp  2 score 32.70 rmsd  1.82 gap 0 (0.00%)
+Block  4 afp  6 score 34.70 rmsd  6.17 gap 59 (0.55%)
+Block  5 afp 11 score 131.15 rmsd 12.65 gap 25 (0.22%)
+
+                  .    :    .    :    .    :    .    :    .    :    .    :    .    :
+Chain 1:   51 AFISRSELKEIVSSNNTTISNTTSSTAVMTSTSTTSIGTQTNNNNDLKNASERLKALAANNFTK------
+              111111111111111111              2222222222 22223333333333333333       
+Chain 2:    9 SQAHLNRLKTTVDSIKHQTN------------NSHQTIIISD-SKYTDNTKRQYIKEIFDNSENIVLSEN
+
+                  .    :    .    :    .    :    .    :    .    :    .    :    .    :
+Chain 1:  115 -----NKKQAWDSLQNASMTF---YKKVQPTAVNVLGYEQITKDNVEKLDKELKTVFLVFKDNTKETEKL
+                   44444444444444     55555555555555555   5555555 555555555555555555
+Chain 2:   66 NIPQDTATDWNCAMQLANGKYVVFVKEGDFLYPNFVEEIQK---ISDQHNADLIEFNQNYNGLVDDQISY
+
+                  .    :    .    :    .    :    .    :    .    :    .    :    .    :
+Chain 1:  177 EV--ELLPEINNGNKVIDNGNLYLDLLEKPENLKLANQK-------------------------------
+              55  5555555555555                                                     
+Chain 2:  133 NLLEANKLYDLNKDYEVFAYIQRLIYTKAFKLDIIRKNNLTFRRKVRFDHLFTYKFLSYSNTCYISDDYL
+
+                  .    :    .    :    .    :    .    :    .    :    .    :    .    :
+Chain 1:  214 -------------SIIEVLRPEITKIKVVLQNTKNNNSTNKEDIKNTEVFNLLIKQLSIYLANAVKYFNS
+                           6666666666666666666          6666   666666666666666666666
+Chain 2:  203 SLHRISVMKYSAFDLLRQWPHIINYFRQINKY----------KLLS---DQLTYAHYYQTCYKFLDLIEK
+
+                  .    :    .    :    .    :    .    :    .    :    .    :
+Chain 1:  271 ESGIITTNPTFSYKTRSNQIYDYIVKNKKDELYKKLETAFTSEFNKINFIDIFKDFQFDEN
+              6                 666666          666666666666666666666666666
+Chain 2:  260 Y-----------------NNPVLY----------KKALNITENKLKTKINRFVKKNKVFLE
+
+Note: positions are from PDB; the numbers between alignments are block index
+

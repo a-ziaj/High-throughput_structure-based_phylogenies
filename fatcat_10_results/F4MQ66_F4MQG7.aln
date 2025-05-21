@@ -1,0 +1,12 @@
+Align F4MQ66.pdb 54 with F4MQG7.pdb 222
+Twists 0 ini-len 16 ini-rmsd 2.76 opt-equ 22 opt-rmsd 3.12 chain-rmsd 2.76 Score 25.42 align-len 23 gaps 1 (4.35%)
+P-value 9.61e-01 Afp-num 3478 Identity 0.00% Similarity 21.74%
+Block  0 afp  2 score 25.42 rmsd  2.76 gap 5 (0.24%)
+
+                  .    :    .    :
+Chain 1:   28 AEARKREYHLSKKEKRIYKQKQN
+              11111111111111 11111111
+Chain 2:   49 ILKYTFKDNENEFI-DGIQYWDT
+
+Note: positions are from PDB; the numbers between alignments are block index
+

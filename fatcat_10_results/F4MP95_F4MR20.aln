@@ -1,0 +1,25 @@
+Align F4MP95.pdb 190 with F4MR20.pdb 336
+Twists 3 ini-len 88 ini-rmsd 4.49 opt-equ 110 opt-rmsd 3.90 chain-rmsd 19.76 Score 138.54 align-len 191 gaps 81 (42.41%)
+P-value 2.98e-01 Afp-num 21230 Identity 6.28% Similarity 13.61%
+Block  0 afp  3 score 66.63 rmsd  1.65 gap 0 (0.00%)
+Block  1 afp  3 score 64.82 rmsd  2.68 gap 40 (0.62%)
+Block  2 afp  2 score 39.93 rmsd  1.68 gap 0 (0.00%)
+Block  3 afp  3 score 57.17 rmsd  2.64 gap 0 (0.00%)
+
+                  .    :    .    :    .    :    .    :    .    :    .    :    .    :
+Chain 1:   21 LDSSITRPTLTRIKEDMFNIISNYFIFENKTSLDLFGGSGSLSIEGLSRGIKFAIIN-------------
+              11111111111111111111111111            2222222222222222                
+Chain 2:  125 DALGRDLWARLWHGLRYSLTLSVVATF-----------IQVIIGLFIGIMMGHFRIFDKLMTFVIKIISN
+
+                  .    :    .    :    .    :    .    :    .    :    .    :    .    :
+Chain 1:   78 ----------------DLNKDANKIISFNLKKIPTSDYVLYQKDY-LELLNLLKIQHQKVDLVYLDP---
+                              2222222222222222222222        333333333333333         
+Chain 2:  184 VPSIIILITITIIIKPTFWVMVFALSFTSWTGIANQMRSQVLRAKSFEWVSASKVLGTPTYKVLLNYLPV
+
+                  .    :    .    :    .    :    .    :    .    :
+Chain 1:  128 --------PFKQIDYYYVVFDFLINNNLLNDWAIIISETNQKLDLTKIKDL
+                      444444444444444444444444444            4444
+Chain 2:  254 LIPLLITEIVFHIPGIILSETSLAFIGLSIPNVAT------------LGNL
+
+Note: positions are from PDB; the numbers between alignments are block index
+

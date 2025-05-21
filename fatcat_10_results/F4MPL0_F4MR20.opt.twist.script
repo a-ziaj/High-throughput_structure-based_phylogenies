@@ -1,0 +1,50 @@
+#!rasmol -script
+# File: fatcat_10_results/F4MPL0_F4MR20.opt.twist.script
+# Creator: FATCAT
+
+zap
+load pdb "fatcat_10_results/F4MPL0_F4MR20.opt.twist.pdb"
+background white
+set ambient 40
+set specular on
+wireframe off
+
+select all
+cartoon
+
+select *A
+color [219,219,219]
+select *B
+color [232,232,232]
+
+ 
+select 330-385A
+color [181,181,181]
+select 2-33B
+color [255,0,0]
+
+select 419-478A
+color [181,181,181]
+select 36-89B
+color [205,0,205]
+
+select 508-540A
+color [181,181,181]
+select 126-158B
+color [255,255,0]
+
+select 567-644A
+color [181,181,181]
+select 160-230B
+color [0,255,0]
+
+select 672-735A
+color [181,181,181]
+select 231-283B
+color [0,0,255]
+
+select 745-801A
+color [181,181,181]
+select 284-336B
+color [0,255,255]
+

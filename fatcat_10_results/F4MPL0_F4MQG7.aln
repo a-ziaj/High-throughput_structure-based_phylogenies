@@ -1,0 +1,18 @@
+Align F4MPL0.pdb 804 with F4MQG7.pdb 222
+Twists 1 ini-len 32 ini-rmsd 3.73 opt-equ 55 opt-rmsd 4.25 chain-rmsd 4.15 Score 46.00 align-len 104 gaps 49 (47.12%)
+P-value 9.97e-01 Afp-num 57324 Identity 6.73% Similarity 14.42%
+Block  0 afp  3 score 41.14 rmsd  3.78 gap 5 (0.17%)
+Block  1 afp  1 score 18.69 rmsd  1.88 gap 0 (0.00%)
+
+                  .    :    .    :    .    :    .    :    .    :    .    :    .    :
+Chain 1:  185 YMAEEKLLQQALKQNYQIRVETQGS--KGIGTALTNKEIKEADVVII-ATDTAVDLTRFTGKK-------
+              1111   11111   1111111111  1111111   111111111  2222222222222         
+Chain 2:    1 MFKQ---AIYNTDKTECLEIGYFENWKGEIQIEQ---FLPTTKKVPKVLPKQITILKYTFKDNENEFIDG
+
+                  .    :    .    :    .    :
+Chain 1:  245 VYKTKVSNAIKDPEKTINDALKLATIYNQTSQEF
+              2222                   22        2
+Chain 2:   65 IQYWDTSNVTNMSRMFYEAQSFNQPIGNWDTSNA
+
+Note: positions are from PDB; the numbers between alignments are block index
+

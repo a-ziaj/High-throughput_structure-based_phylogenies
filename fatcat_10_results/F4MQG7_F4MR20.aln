@@ -1,0 +1,27 @@
+Align F4MQG7.pdb 222 with F4MR20.pdb 336
+Twists 0 ini-len 16 ini-rmsd 2.26 opt-equ 25 opt-rmsd 3.12 chain-rmsd 2.26 Score 28.45 align-len 214 gaps 189 (88.32%)
+P-value 9.92e-01 Afp-num 22206 Identity 6.07% Similarity 15.89%
+Block  0 afp  2 score 28.45 rmsd  2.26 gap 2 (0.11%)
+
+                  .    :    .    :    .    :    .    :    .    :    .    :    .    :
+Chain 1:    9 TDKTECLEIGYFENWKGEIQIEQFLPTTKKVPKVLPKQITILKYTFKDNENEFIDGIQYWDTSNVTNMSR
+              111  1111                                                             
+Chain 2:   35 ILRPLAHQQWQLVGNLLEFSETSKMHNQKNAFIEFFYRFSRSFAGVFGFVILATLIILSLIIPLTTKDPL
+
+                  .    :    .    :    .    :    .    :    .    :    .    :    .    :
+Chain 1:   79 MFYEAQSFNQPIGNWDTSNATNMEYMFYGAKSFNQPIGNWNTSNATNMAGMFFGAYNFNRNISMWHVSNV
+                                                                                    
+Chain 2:  105 IIDVENRNETFFTNGHILGTDALGRDLWARLWHGLRYSLTLSVVATFIQVIIGLFIGIMMGHFRIFDKLM
+
+                  .    :    .    :    .    :    .    :    .    :    .    :    .    :
+Chain 1:  149 TDMSFMFKGAQNFNQDISSWNTSKVKNMNFMFFGASSFNQDLSKWDSSNVNVFGQ---NIGVSNPNWKAE
+                                                                 1  1   111111111111
+Chain 2:  175 TFVIKIISNVPSIIILITITIIIKPTFWVMVFALSFTSWTGIANQMRSQVLRAKSFEWVSASKVLGTPTY
+
+              
+Chain 1:  216 HQPQ
+              1111
+Chain 2:  245 KVLL
+
+Note: positions are from PDB; the numbers between alignments are block index
+

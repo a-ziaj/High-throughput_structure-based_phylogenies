@@ -1,0 +1,18 @@
+Align F4MPW3.pdb 219 with F4MQG7.pdb 222
+Twists 1 ini-len 24 ini-rmsd 2.77 opt-equ 37 opt-rmsd 3.46 chain-rmsd 4.33 Score 39.42 align-len 113 gaps 76 (67.26%)
+P-value 9.74e-01 Afp-num 19096 Identity 5.31% Similarity 17.70%
+Block  0 afp  2 score 38.29 rmsd  3.22 gap 6 (0.27%)
+Block  1 afp  1 score 20.56 rmsd  1.51 gap 0 (0.00%)
+
+                  .    :    .    :    .    :    .    :    .    :    .    :    .    :
+Chain 1:   29 ILKLYQYQ-----NILLAISKIGLVNASCCLSYILNHYQIDQILNIGTCCSLNQEYKQNDIVIVNKAYYF
+              11111111     11111111111           2222222222222                      
+Chain 2:    1 MFKQAIYNTDKTECLEIGYFENWKGEIQIEQFLPTTKKVPKVLPKQITILKYTFKDNENEFIDGIQYWDT
+
+                  .    :    .    :    .    :    .    :
+Chain 1:   94 SVDVTGFSYSYGQIPKLPKYFLANNFLNLSLDYKICNIASGDV
+                                                    22222
+Chain 2:   71 SNVTNMSRMFYEAQSFNQPIGNWDT-------------SNATN
+
+Note: positions are from PDB; the numbers between alignments are block index
+
