@@ -6,12 +6,13 @@ echo "Job ID: $job_id"
 
 #dirs and paths
 input_dir="${1:-10_pdb_subset}" #run ./script.sh input_dir, if input_dir not provided it will use 10_pdb_subset
-output_base_dir="fatcat_results"
+output_base_dir="fatcat_results_2/${input_dir}"
 output_dir="${output_base_dir}/alignments"
 matrix_dir="${output_base_dir}/matrices"
 log_dir="${output_base_dir}/logs"
 tmp_dir="${output_base_dir}/tmp"
 
+mkdir -p "$output_base_dir"
 mkdir -p "$output_dir"
 mkdir -p "$matrix_dir"
 mkdir -p "$log_dir"
@@ -100,8 +101,15 @@ for ((i=0; i < num_files; i++)); do
         #run foldseek for TM-score
         tmp_output_dir="${tmp_dir}/${prefix}_foldseek"
         mkdir -p "$tmp_output_dir"
-        foldseek easy-search "${files[i]}" "${files[j]}" aln.m8 "$tmp_output_dir" --format-output "alntmscore" > /dev/null
-        tmscore=$(cat aln.m8 2>/dev/null || echo "Nan")
+        foldseek easy-search "${files[i]}" "${files[j]}" aln.m8 "$tmp_output_dir" --format-output "alnlen,qstart,qend,tstart,tend,alntmscore" > /dev/null
+        #tmscore=$(cat aln.m8 2>/dev/null || echo "Nan")
+	alnlen=$(awk 'NR==1 {print $1}' aln.m8 2>/dev/null || echo "NaN")
+	qstart=$(awk 'NR==1 {print $2}' aln.m8 2>/dev/null || echo "NaN")
+	qend=$(awk 'NR==1 {print $3}' aln.m8 2>/dev/null || echo "NaN")
+	tstart=$(awk 'NR==1 {print $4}' aln.m8 2>/dev/null || echo "NaN")
+	tend=$(awk 'NR==1 {print $5}' aln.m8 2>/dev/null || echo "NaN")
+	tmscore=$(awk 'NR==1 {print $6}' aln.m8 2>/dev/null || echo "NaN")
+
 
         #get num of atoms and residues in each prot
         atoms1=$(grep '^ATOM' "${files[i]}" | wc -l)
@@ -117,9 +125,9 @@ for ((i=0; i < num_files; i++)); do
 #csv
 	csv_file="results.csv"
 	if [ ! -f "$csv_file" ]; then
-		echo "Protein1,Atoms1,Residues1,Protein2,Atoms2,Residues2,TM_score,FATCAT_score" > "$csv_file"
+		echo "Protein1,Atoms1,Residues1,Protein2,Atoms2,Residues2,FATCAT_score,P-value,TMscore,FoldSeekAlignmentLen,QuerySTart,QueryEnd,TargetStart,TargetEnd" > "$csv_file"
 	fi
-	echo "$f1,$atoms1,$residues1,$f2,$atoms2,$residues2,$tmscore,$score" >> "$csv_file"
+	echo "$f1,$atoms1,$residues1,$f2,$atoms2,$residues2,$score,$pvalue,$tmscore,$alnlen,$qstart,$qend,$tstart,$tend" >> "$csv_file"
 
 
         end_time=$(date +%s)
