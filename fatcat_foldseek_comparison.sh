@@ -123,7 +123,9 @@ for ((i=0; i < num_files; i++)); do
         echo "fatcat score: $score"
         } | tee -a results.txt
 #csv
-	csv_file="results.csv"
+	#csv_file="results_${input_dir}.csv"
+	csv_file="results_${input_dir%/}.csv"
+
 	if [ ! -f "$csv_file" ]; then
 		echo "Protein1,Atoms1,Residues1,Protein2,Atoms2,Residues2,FATCAT_score,P-value,TMscore,FoldSeekAlignmentLen,QuerySTart,QueryEnd,TargetStart,TargetEnd" > "$csv_file"
 	fi
